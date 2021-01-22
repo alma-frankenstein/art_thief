@@ -29,7 +29,7 @@ actual_height = 0
 # TODO Parallelize the tile fetch
 
 for i in range(tile_count_width):
-  # actual_height = 0
+  actual_height = 0
   for j in range(tile_count_height):
     try:
       r = requests.get(root_url.format(i, j))

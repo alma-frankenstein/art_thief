@@ -12,8 +12,8 @@ root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles
 
 # Mucha 3x3
 # Dali 5x8 (final: Fetching image 4_7.jpg)
-TILE_COUNT_WIDTH = 5
-TILE_COUNT_HEIGHT = 8
+TILE_COUNT_WIDTH = 10
+TILE_COUNT_HEIGHT = 10
 TILE_SIZE = 512
 
 # TODO It should be safe to assume the first tile is enough to determine the maximum TILE_SIZE.
@@ -33,11 +33,12 @@ for i in range(TILE_COUNT_WIDTH):
     for j in range(TILE_COUNT_HEIGHT):
         print(f"Fetching image {i}_{j}.jpg")
         r = requests.get(root_url.format(i, j))
-        im = Image.open(BytesIO(r.content))
-        width, height = im.size
-        actual_height += height
-        actual_width += width
-        new_image.paste(im, (TILE_SIZE * i, TILE_SIZE * j))
+        if r.ok:
+            im = Image.open(BytesIO(r.content))
+            width, height = im.size
+            actual_height += height
+            actual_width += width
+            new_image.paste(im, (TILE_SIZE * i, TILE_SIZE * j))
 
 actual_width /= TILE_COUNT_HEIGHT
 
