@@ -29,7 +29,6 @@ actual_height = 0
 # TODO Parallelize the tile fetch
 
 for i in range(TILE_COUNT_WIDTH):
-    actual_height = 0
     for j in range(TILE_COUNT_HEIGHT):
         print(f"Fetching image {i}_{j}.jpg")
         r = requests.get(root_url.format(i, j))
@@ -39,6 +38,11 @@ for i in range(TILE_COUNT_WIDTH):
         actual_width += width
         new_image.paste(im, (TILE_SIZE * i, TILE_SIZE * j))
 
+# TODO Currently actual_height and actual_width are computed by summing up the pixel count for each tile
+#   on each of the iterations through.   This causes it to be a multiple of the TILE_COUNT_*   There MUST be a better way
+#   to do this.   Such as detecting when a tile is < TILE_SIZE  or detecting when a fetch is unsuccessful.
+
+actual_height /= TILE_COUNT_WIDTH
 actual_width /= TILE_COUNT_HEIGHT
 
 print(f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
