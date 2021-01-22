@@ -7,13 +7,13 @@ from PIL import Image
 # TODO Automate the tile counts
 # TODO Include Metadata (artist, title, etc)
 
-# root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
-root_url = "https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg"  # Mucha
+root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
+# root_url = "https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg"  # Mucha
 
 # Mucha 3x3
 # Dali 5x8 (final: Fetching image 4_7.jpg)
-tile_count_width = 5
-tile_count_height = 8
+tile_count_width = 9
+tile_count_height = 9
 TILE_SIZE = 512
 
 # TODO It should be safe to assume the first tile is enough to determine the maximum TILE_SIZE.
@@ -25,11 +25,12 @@ new_image = Image.new('RGB', (TILE_SIZE * tile_count_width, TILE_SIZE * tile_cou
 #  actual_width = (tile_count_width - 1) * TILE_SIZE + SMALLEST_WIDTH
 actual_width = 0
 actual_height = 0
+height_counter = 0
 
 # TODO Parallelize the tile fetch
 
 for i in range(tile_count_width):
-  actual_height = 0
+  #actual_height = 0
   for j in range(tile_count_height):
     try:
       r = requests.get(root_url.format(i, j))
@@ -39,6 +40,9 @@ for i in range(tile_count_width):
       actual_width += width
       new_image.paste(im, (TILE_SIZE * i, TILE_SIZE * j))
       print(f"Fetching image {i}_{j}.jpg")
+      if r.ok and j == 0:
+        height_counter += 1
+        print(height_counter)
     except OSError:
       if i == 0:
         tile_count_height -= 1
@@ -48,6 +52,7 @@ for i in range(tile_count_width):
         # print(f"tile count width: {tile_count_width}")
 
 actual_width /= tile_count_height
+actual_height /=  height_counter
 # print(f"actual width: {actual_width}")
 # print(f"actual height: {actual_height}")print(f"actual width: {actual_width}")
 # print(f"actual height: {actual_height}")
