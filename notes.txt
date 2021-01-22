@@ -4,7 +4,7 @@
    * used https://www.freeformatter.com/json-escape.html
 * format it, starting and ending with the square brackets
   * https://www.freeformatter.com/json-formatter.html
-* parse (different for each example):
+* parse:
    print(dali[0][1]["json"]["data"]["artwork"]["images"][0]["url"])
    print(mucha[0]["data"]["artwork"]["images"][0]["url"])
 * or, search for '/large.jpg', find the ID that precedes it
