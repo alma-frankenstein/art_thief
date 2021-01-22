@@ -1,0 +1,3675 @@
+[
+    [
+      "{\"queryID\":\"artworkRoutes_ArtworkQuery\",\"variables\":{\"artworkID\":\"sadamasa-motonaga-work-18\"}}",
+      {
+        "ok": true,
+        "status": 200,
+        "url": "https:\u002F\u002Fmetaphysics-production.artsy.net\u002Fv2",
+        "headers": {
+          "_headers": {
+            "server": [
+              "nginx\u002F1.17.10"
+            ],
+            "date": [
+              "Wed, 13 Jan 2021 07:31:16 GMT"
+            ],
+            "content-type": [
+              "application\u002Fjson; charset=utf-8"
+            ],
+            "transfer-encoding": [
+              "chunked"
+            ],
+            "connection": [
+              "close"
+            ],
+            "x-powered-by": [
+              "Express"
+            ],
+            "access-control-allow-origin": [
+              "*"
+            ],
+            "etag": [
+              "W\u002F\"ad1c-kQP0vRMhTZTc5nVtJLrQVIoGPWw\""
+            ],
+            "vary": [
+              "Accept-Encoding"
+            ],
+            "content-encoding": [
+              "gzip"
+            ],
+            "strict-transport-security": [
+              "max-age=15724800; includeSubDomains"
+            ]
+          }
+        },
+        "json": {
+          "data": {
+            "artwork": {
+              "slug": "sadamasa-motonaga-work-18",
+              "internalID": "5a3baa0f8b0c141e3fa6a94f",
+              "is_acquireable": true,
+              "is_offerable": true,
+              "availability": "for sale",
+              "listPrice": {
+                "__typename": "Money",
+                "display": "£7,000",
+                "major": 7000,
+                "currencyCode": "GBP",
+                "minor": 700000
+              },
+              "is_in_auction": false,
+              "sale": null,
+              "artists": [
+                {
+                  "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                  "slug": "sadamasa-motonaga",
+                  "internalID": "4f0648328501fa10ca00029c",
+                  "name": "Sadamasa Motonaga",
+                  "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                  "image": {
+                    "cropped": {
+                      "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=100&height=100&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLorrxYHI41vMvU9sexw06w%2Flarge.jpg"
+                    }
+                  },
+                  "formatted_nationality_and_birthday": "Japanese, 1922–2011",
+                  "counts": {
+                    "partner_shows": 26,
+                    "follows": 642
+                  },
+                  "exhibition_highlights": [
+                    {
+                      "partner": {
+                        "__typename": "Partner",
+                        "name": "Dallas Museum of Art",
+                        "id": "UGFydG5lcjo1MDRlNjEyYmI4ZmIwMjAwMDIwMDA4MGQ="
+                      },
+                      "name": "Between Action and the Unknown: The Art of Kazuo Shiraga and Sadamasa Motonaga",
+                      "start_at": "2015",
+                      "cover_image": {
+                        "cropped": {
+                          "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=800&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2Fs6pwldx48ZtDq-59MjJKGA%2Flarge.jpg"
+                        }
+                      },
+                      "city": "Dallas",
+                      "id": "U2hvdzo1NTE1OTg3NzcyNjE2OTUxYzJiZjQxMDA="
+                    },
+                    {
+                      "partner": {
+                        "__typename": "Partner",
+                        "name": "Whitestone Gallery",
+                        "id": "UGFydG5lcjo1MDc3NmQwMGZkYWI2MTAwMDIwMDAxZmE="
+                      },
+                      "name": "Gallery Collection",
+                      "start_at": "2020",
+                      "cover_image": {
+                        "cropped": {
+                          "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=800&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FaWp-wq5834-BRAKXivSDAg%2Flarge.jpg"
+                        }
+                      },
+                      "city": "Hong Kong",
+                      "id": "U2hvdzo1ZTFkOWUxN2VjOWFmOTAwMGViYzkwODE="
+                    },
+                    {
+                      "partner": {
+                        "__typename": "Partner",
+                        "name": "Hauser & Wirth",
+                        "id": "UGFydG5lcjo1MTkxMjM2NGEwMTM0YzYxMzAwMDAwMDE="
+                      },
+                      "name": "Gutai",
+                      "start_at": "2018",
+                      "cover_image": {
+                        "cropped": {
+                          "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=800&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F0YN7W1dXAHwnFkD4bQJkOg%2Flarge.jpg"
+                        }
+                      },
+                      "city": "New York",
+                      "id": "U2hvdzo1YmUwYmFjYzdmZmQ0MTQ3YWVlYzg4ZDE="
+                    }
+                  ],
+                  "collections": [
+                    "Museum of Modern Art (MoMA)"
+                  ],
+                  "highlights": {
+                    "partnersConnection": {
+                      "edges": [
+                        {
+                          "node": {
+                            "__typename": "Partner",
+                            "id": "UGFydG5lcjo1MzU1MmY5YzZhMjFkYjY2MDUwMDAwMTY=",
+                            "categories": [
+                              {
+                                "slug": "established",
+                                "id": "UGFydG5lckNhdGVnb3J5OjU1ZmIxYTlhNzI2MTY5Njk0YTAwMDAwMQ=="
+                              },
+                              {
+                                "slug": "modern",
+                                "id": "UGFydG5lckNhdGVnb3J5OjU1ZjBkMWVjNzc2ZjcyMTkzOTAwMDAwYQ=="
+                              },
+                              {
+                                "slug": "painting",
+                                "id": "UGFydG5lckNhdGVnb3J5OjU1ZjBkMWVjNzc2ZjcyMTkzOTAwMDAwMA=="
+                              },
+                              {
+                                "slug": "top-established",
+                                "id": "UGFydG5lckNhdGVnb3J5OjVhMDQ4MTAyZWJhZDY0N2M3YmVjYzA0OQ=="
+                              }
+                            ]
+                          },
+                          "id": "UGFydG5lckFydGlzdEVkZ2U6NTM4ZWZkYTJlYmFkNjQ3NDEwMDAwMDI2"
+                        }
+                      ]
+                    }
+                  },
+                  "auctionResultsConnection": null,
+                  "biographyBlurb": {
+                    "text": "\u003Cp\u003ESadamasa Motonaga is an abstract painter best known for his involvement in the \u003Ca href=\"\u002Fgene\u002Fgutai\"\u003EGutai Group\u003C\u002Fa\u003E. Motonaga graduated from trade school; with aspirations to be a manga artist, he began to make figural and landscape works on canvas under the tutelage of painter Mankichi Hamabe. In 1952, he began to make abstract objects and paintings, which garnered him an invitation to join the Gutai exhibitions. One of his most famous works was a site-specific installation with pools of colored water suspended in vinyl tubes hanging from trees. From then, he experimented with water and smoke as ephemeral artistic materials. Inspired in part by \u003Cem\u003Etarashikomi\u003C\u002Fem\u003E techniques in traditional Japanese painting, he began to make paintings generated by chance, tilting canvases and pooling paint. \u003C\u002Fp\u003E\n"
+                  },
+                  "is_followed": false,
+                  "related": {
+                    "suggestedConnection": null
+                  },
+                  "is_consignable": false
+                }
+              ],
+              "artist": {
+                "internalID": "4f0648328501fa10ca00029c",
+                "slug": "sadamasa-motonaga",
+                "name": "Sadamasa Motonaga",
+                "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                "image": {
+                  "cropped": {
+                    "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=100&height=100&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLorrxYHI41vMvU9sexw06w%2Flarge.jpg"
+                  }
+                },
+                "formatted_nationality_and_birthday": "Japanese, 1922–2011",
+                "counts": {
+                  "partner_shows": 26,
+                  "follows": 642
+                },
+                "exhibition_highlights": [
+                  {
+                    "partner": {
+                      "__typename": "Partner",
+                      "name": "Dallas Museum of Art",
+                      "id": "UGFydG5lcjo1MDRlNjEyYmI4ZmIwMjAwMDIwMDA4MGQ="
+                    },
+                    "name": "Between Action and the Unknown: The Art of Kazuo Shiraga and Sadamasa Motonaga",
+                    "start_at": "2015",
+                    "cover_image": {
+                      "cropped": {
+                        "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=800&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2Fs6pwldx48ZtDq-59MjJKGA%2Flarge.jpg"
+                      }
+                    },
+                    "city": "Dallas",
+                    "id": "U2hvdzo1NTE1OTg3NzcyNjE2OTUxYzJiZjQxMDA="
+                  },
+                  {
+                    "partner": {
+                      "__typename": "Partner",
+                      "name": "Whitestone Gallery",
+                      "id": "UGFydG5lcjo1MDc3NmQwMGZkYWI2MTAwMDIwMDAxZmE="
+                    },
+                    "name": "Gallery Collection",
+                    "start_at": "2020",
+                    "cover_image": {
+                      "cropped": {
+                        "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=800&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FaWp-wq5834-BRAKXivSDAg%2Flarge.jpg"
+                      }
+                    },
+                    "city": "Hong Kong",
+                    "id": "U2hvdzo1ZTFkOWUxN2VjOWFmOTAwMGViYzkwODE="
+                  },
+                  {
+                    "partner": {
+                      "__typename": "Partner",
+                      "name": "Hauser & Wirth",
+                      "id": "UGFydG5lcjo1MTkxMjM2NGEwMTM0YzYxMzAwMDAwMDE="
+                    },
+                    "name": "Gutai",
+                    "start_at": "2018",
+                    "cover_image": {
+                      "cropped": {
+                        "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=800&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F0YN7W1dXAHwnFkD4bQJkOg%2Flarge.jpg"
+                      }
+                    },
+                    "city": "New York",
+                    "id": "U2hvdzo1YmUwYmFjYzdmZmQ0MTQ3YWVlYzg4ZDE="
+                  }
+                ],
+                "collections": [
+                  "Museum of Modern Art (MoMA)"
+                ],
+                "highlights": {
+                  "partnersConnection": {
+                    "edges": [
+                      {
+                        "node": {
+                          "__typename": "Partner",
+                          "id": "UGFydG5lcjo1MzU1MmY5YzZhMjFkYjY2MDUwMDAwMTY=",
+                          "categories": [
+                            {
+                              "slug": "established",
+                              "id": "UGFydG5lckNhdGVnb3J5OjU1ZmIxYTlhNzI2MTY5Njk0YTAwMDAwMQ=="
+                            },
+                            {
+                              "slug": "modern",
+                              "id": "UGFydG5lckNhdGVnb3J5OjU1ZjBkMWVjNzc2ZjcyMTkzOTAwMDAwYQ=="
+                            },
+                            {
+                              "slug": "painting",
+                              "id": "UGFydG5lckNhdGVnb3J5OjU1ZjBkMWVjNzc2ZjcyMTkzOTAwMDAwMA=="
+                            },
+                            {
+                              "slug": "top-established",
+                              "id": "UGFydG5lckNhdGVnb3J5OjVhMDQ4MTAyZWJhZDY0N2M3YmVjYzA0OQ=="
+                            }
+                          ]
+                        },
+                        "id": "UGFydG5lckFydGlzdEVkZ2U6NTM4ZWZkYTJlYmFkNjQ3NDEwMDAwMDI2"
+                      }
+                    ]
+                  }
+                },
+                "auctionResultsConnection": null,
+                "biographyBlurb": {
+                  "text": "\u003Cp\u003ESadamasa Motonaga is an abstract painter best known for his involvement in the \u003Ca href=\"\u002Fgene\u002Fgutai\"\u003EGutai Group\u003C\u002Fa\u003E. Motonaga graduated from trade school; with aspirations to be a manga artist, he began to make figural and landscape works on canvas under the tutelage of painter Mankichi Hamabe. In 1952, he began to make abstract objects and paintings, which garnered him an invitation to join the Gutai exhibitions. One of his most famous works was a site-specific installation with pools of colored water suspended in vinyl tubes hanging from trees. From then, he experimented with water and smoke as ephemeral artistic materials. Inspired in part by \u003Cem\u003Etarashikomi\u003C\u002Fem\u003E techniques in traditional Japanese painting, he began to make paintings generated by chance, tilting canvases and pooling paint. \u003C\u002Fp\u003E\n"
+                },
+                "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                "is_followed": false,
+                "related": {
+                  "artistsConnection": {
+                    "pageInfo": {
+                      "hasNextPage": true,
+                      "endCursor": "YXJyYXljb25uZWN0aW9uOjM="
+                    },
+                    "edges": [
+                      {
+                        "node": {
+                          "name": "Amelia Midori Miller",
+                          "slug": "amelia-midori-miller",
+                          "href": "\u002Fartist\u002Famelia-midori-miller",
+                          "image": {
+                            "cropped": {
+                              "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FsqOuAv8-ybUr7ag4ELIpww%2Flarge.jpg"
+                            }
+                          },
+                          "formatted_nationality_and_birthday": "Japanese, b. 1985",
+                          "id": "QXJ0aXN0OjU0ODgwYmNiNzI2MTY5MmNlMTdkMDIwMA==",
+                          "internalID": "54880bcb7261692ce17d0200",
+                          "is_followed": false,
+                          "counts": {
+                            "follows": 66
+                          },
+                          "__typename": "Artist"
+                        },
+                        "cursor": "YXJyYXljb25uZWN0aW9uOjA="
+                      },
+                      {
+                        "node": {
+                          "name": "Shu Takahashi",
+                          "slug": "shu-takahashi",
+                          "href": "\u002Fartist\u002Fshu-takahashi",
+                          "image": {
+                            "cropped": {
+                              "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2Fhowosus00WzQcMIIMPaboQ%2Flarge.jpg"
+                            }
+                          },
+                          "formatted_nationality_and_birthday": "Japanese, b. 1930",
+                          "id": "QXJ0aXN0OjU3YWRkZDkxMjc1YjI0MmY3NzAwMDcxMg==",
+                          "internalID": "57addd91275b242f77000712",
+                          "is_followed": false,
+                          "counts": {
+                            "follows": 537
+                          },
+                          "__typename": "Artist"
+                        },
+                        "cursor": "YXJyYXljb25uZWN0aW9uOjE="
+                      },
+                      {
+                        "node": {
+                          "name": "Shinpei Kusanagi",
+                          "slug": "shinpei-kusanagi",
+                          "href": "\u002Fartist\u002Fshinpei-kusanagi",
+                          "image": {
+                            "cropped": {
+                              "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F8GP5Tg7Rxig2BA0qIVVm3g%2Flarge.jpg"
+                            }
+                          },
+                          "formatted_nationality_and_birthday": "",
+                          "id": "QXJ0aXN0OjUxZmFlODQxMjc1YjI0NWY3YjAwMDFjYw==",
+                          "internalID": "51fae841275b245f7b0001cc",
+                          "is_followed": false,
+                          "counts": {
+                            "follows": 309
+                          },
+                          "__typename": "Artist"
+                        },
+                        "cursor": "YXJyYXljb25uZWN0aW9uOjI="
+                      },
+                      {
+                        "node": {
+                          "name": "Yoshio Imamura",
+                          "slug": "yoshio-imamura",
+                          "href": "\u002Fartist\u002Fyoshio-imamura",
+                          "image": {
+                            "cropped": {
+                              "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FaMgBnDztXmbCNn_4igf6WA%2Flarge.jpg"
+                            }
+                          },
+                          "formatted_nationality_and_birthday": "Japanese, b. 1948",
+                          "id": "QXJ0aXN0OjU1ZDNmODI2NzI2MTY5NGIzMjAwMDJkYQ==",
+                          "internalID": "55d3f8267261694b320002da",
+                          "is_followed": false,
+                          "counts": {
+                            "follows": 10
+                          },
+                          "__typename": "Artist"
+                        },
+                        "cursor": "YXJyYXljb25uZWN0aW9uOjM="
+                      }
+                    ]
+                  }
+                }
+              },
+              "href": "\u002Fartwork\u002Fsadamasa-motonaga-work-18",
+              "date": "1968",
+              "artist_names": "Sadamasa Motonaga",
+              "sale_message": "£7,000",
+              "partner": {
+                "name": "Repetto Gallery",
+                "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                "type": "Gallery",
+                "profile": {
+                  "image": {
+                    "resized": {
+                      "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fit&width=320&height=192&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FIcS0zKm70bbzRU6WNpIUpw%2Fsquare.jpg"
+                    }
+                  },
+                  "id": "UHJvZmlsZTo1MTU5ZGFkMzlhNjA4MzI0MzkwMDAyMWI=",
+                  "slug": "repetto-gallery",
+                  "name": "Repetto Gallery",
+                  "internalID": "5159dad39a6083243900021b",
+                  "is_followed": false,
+                  "icon": {
+                    "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FRBUkEs8ywLpvak6QE6iStg\u002Fsquare140.png"
+                  }
+                },
+                "initials": "RG",
+                "href": "\u002Frepetto-gallery",
+                "locations": [
+                  {
+                    "city": "London",
+                    "id": "TG9jYXRpb246NTQxNmY4NTk3MjYxNjkyZDYzMTEwMDAw"
+                  }
+                ],
+                "isVerifiedSeller": false,
+                "internalID": "50abcb3125e77810fd000041",
+                "slug": "repetto-gallery",
+                "is_default_profile_public": true
+              },
+              "image_rights": "",
+              "is_shareable": true,
+              "meta_image": {
+                "resized": {
+                  "width": 640,
+                  "height": 948,
+                  "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fit&width=640&height=948&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FVXoIWFSftnp0WI6SJ_1_zw%2Flarge.jpg"
+                }
+              },
+              "meta": {
+                "title": "Sadamasa Motonaga | Work (1968) | Available for Sale | Artsy",
+                "description": "Available for sale from Repetto Gallery, Sadamasa Motonaga, Work (1968), Pen, watercolour on paper, 14.8 × 10 cm",
+                "long_description": "Available for sale from Repetto Gallery, Sadamasa Motonaga, Work (1968), Pen, watercolour on paper, 14.8 × 10 cm"
+              },
+              "context": null,
+              "is_price_hidden": false,
+              "is_price_range": false,
+              "category": "Drawing, Collage or other Work on Paper",
+              "dimensions": {
+                "in": "5 4\u002F5 × 3 9\u002F10 in",
+                "cm": "14.8 × 10 cm"
+              },
+              "cultural_maker": null,
+              "is_biddable": false,
+              "edition_sets": [],
+              "sale_artwork": null,
+              "title": "Work",
+              "medium": "Pen, watercolour on paper",
+              "edition_of": null,
+              "attributionClass": {
+                "shortDescription": "This is a unique work",
+                "id": "QXR0cmlidXRpb25DbGFzczp1bmlxdWU="
+              },
+              "myLotStanding": null,
+              "is_for_sale": true,
+              "is_inquireable": false,
+              "priceIncludesTaxDisplay": "VAT included in price",
+              "shippingInfo": "Free shipping worldwide",
+              "shippingOrigin": "London, GB",
+              "hasCertificateOfAuthenticity": false,
+              "description": null,
+              "additional_information": null,
+              "series": null,
+              "publisher": null,
+              "manufacturer": null,
+              "canRequestLotConditionsReport": false,
+              "framed": {
+                "label": "Framed",
+                "details": "Included"
+              },
+              "signatureInfo": {
+                "label": "Signature",
+                "details": "Hand-signed by artist, Signed and dated"
+              },
+              "conditionDescription": null,
+              "certificateOfAuthenticity": {
+                "label": "Certificate of authenticity",
+                "details": "Not included"
+              },
+              "mediumType": {
+                "__typename": "ArtworkMedium",
+                "name": "Drawing, Collage or other Work on Paper",
+                "longDescription": "Includes collages; drawings; figure drawing; pen and ink; sketch. This also includes paintings where paper is the support."
+              },
+              "articles": [],
+              "literature": "\u003Cp\u003ESadamasa Motonaga; the Energy of Infancy, exhibition catalogue, Repetto Gallery, London, 2016\u003C\u002Fp\u003E\n",
+              "exhibition_history": "\u003Cp\u003E2016, London, UK, Sadamasa Motonaga, The Energy of Infancy, June 29th – July 29th, Repetto Gallery.\u003C\u002Fp\u003E\n",
+              "provenance": null,
+              "image_alt": "Sadamasa Motonaga, ‘Work’, 1968, Repetto Gallery",
+              "id": "QXJ0d29yazo1YTNiYWEwZjhiMGMxNDFlM2ZhNmE5NGY=",
+              "is_saved": false,
+              "images": [
+                {
+                  "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FVXoIWFSftnp0WI6SJ_1_zw\u002Flarger.jpg",
+                  "internalID": "5a3baa119c18db371ce5062d",
+                  "uri": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FVXoIWFSftnp0WI6SJ_1_zw\u002Flarge.jpg",
+                  "placeholder": {
+                    "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fit&width=30&height=44&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FVXoIWFSftnp0WI6SJ_1_zw%2Fsmall.jpg"
+                  },
+                  "aspectRatio": 0.67,
+                  "is_zoomable": true,
+                  "is_default": true,
+                  "deepZoom": {
+                    "Image": {
+                      "xmlns": "http:\u002F\u002Fschemas.microsoft.com\u002Fdeepzoom\u002F2008",
+                      "Url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FVXoIWFSftnp0WI6SJ_1_zw\u002Fdztiles\u002F",
+                      "Format": "jpg",
+                      "TileSize": 512,
+                      "Overlap": 0,
+                      "Size": {
+                        "Width": 1349,
+                        "Height": 2000
+                      }
+                    }
+                  }
+                }
+              ],
+              "artworkMeta": {
+                "share": "Check out Sadamasa Motonaga, Work (1968), From Repetto Gallery"
+              },
+              "image": {
+                "internalID": "5a3baa119c18db371ce5062d",
+                "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FVXoIWFSftnp0WI6SJ_1_zw\u002Flarger.jpg",
+                "height": 2000,
+                "width": 1349
+              },
+              "is_downloadable": false,
+              "is_hangable": true,
+              "contextGrids": [
+                {
+                  "__typename": "ArtistArtworkGrid",
+                  "title": "Other works by Sadamasa Motonaga",
+                  "ctaTitle": "View all works by Sadamasa Motonaga",
+                  "ctaHref": "\u002Fartist\u002Fsadamasa-motonaga",
+                  "artworksConnection": {
+                    "edges": [
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ZTI1Yzg2MmEyNmNkMzAwMGU5MzZiODY=",
+                          "slug": "sadamasa-motonaga-drawn-form-in-on-upper-side",
+                          "href": "\u002Fartwork\u002Fsadamasa-motonaga-drawn-form-in-on-upper-side",
+                          "internalID": "5e25c862a26cd3000e936b86",
+                          "image": {
+                            "aspect_ratio": 1.27,
+                            "placeholder": "78.51959361393324%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002F9tq9ueFBKbJbAmtfb8boPw\u002Flarge.jpg"
+                          },
+                          "title": "Drawn form in on upper side",
+                          "image_title": "Sadamasa Motonaga, ‘Drawn form in on upper side’, 1990",
+                          "date": "1990",
+                          "sale_message": "Contact For Price",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                              "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                              "name": "Sadamasa Motonaga"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Repetto Gallery",
+                            "href": "\u002Frepetto-gallery",
+                            "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ZTI1Yzk1M2EyNmNkMzAwMTI4NjUwOWI=",
+                          "slug": "sadamasa-motonaga-black-circle-and-red-horizontally-long",
+                          "href": "\u002Fartwork\u002Fsadamasa-motonaga-black-circle-and-red-horizontally-long",
+                          "internalID": "5e25c953a26cd3001286509b",
+                          "image": {
+                            "aspect_ratio": 0.78,
+                            "placeholder": "128.83076923076925%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FqMZVoSq1S-d4pZ2aOjqgrw\u002Flarge.jpg"
+                          },
+                          "title": "Black circle and red horizontally long",
+                          "image_title": "Sadamasa Motonaga, ‘Black circle and red horizontally long’, 1996",
+                          "date": "1996",
+                          "sale_message": "Contact For Price",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                              "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                              "name": "Sadamasa Motonaga"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Repetto Gallery",
+                            "href": "\u002Frepetto-gallery",
+                            "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ZTBlNjFmZTlmZjI0ODAwMTI4NGRmMzI=",
+                          "slug": "sadamasa-motonaga-untitled-62",
+                          "href": "\u002Fartwork\u002Fsadamasa-motonaga-untitled-62",
+                          "internalID": "5e0e61fe9ff248001284df32",
+                          "image": {
+                            "aspect_ratio": 1,
+                            "placeholder": "100%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FcwscYaKpa_bpwmaMUfJ_SA\u002Flarge.jpg"
+                          },
+                          "title": "Untitled",
+                          "image_title": "Sadamasa Motonaga, ‘Untitled’, 1998",
+                          "date": "1998",
+                          "sale_message": null,
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                              "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                              "name": "Sadamasa Motonaga"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Rago\u002FWright",
+                            "href": "\u002Fauction\u002Fpartner-595e69f6a09a671938435977",
+                            "id": "UGFydG5lcjo1OTVlNjlmNmEwOWE2NzE5Mzg0MzU5Nzc=",
+                            "type": "Auction House"
+                          },
+                          "sale": {
+                            "is_auction": true,
+                            "is_closed": true,
+                            "id": "U2FsZTo1ZTBlM2I1MTM5ZTMxNTAwMTQyOTk3MzA=",
+                            "is_live_open": false,
+                            "is_open": false,
+                            "is_preview": false,
+                            "display_timely_at": null
+                          },
+                          "sale_artwork": {
+                            "counts": {
+                              "bidder_positions": 1
+                            },
+                            "highest_bid": {
+                              "display": "$250"
+                            },
+                            "opening_bid": {
+                              "display": "$250"
+                            },
+                            "id": "U2FsZUFydHdvcms6NWUwZTYxZmY4MTkwNTIwMDBlZmUzMjVk"
+                          },
+                          "is_inquireable": false,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1OGRkY2I4NThiMGMxNDNjZjlmMmE1YTQ=",
+                          "slug": "sadamasa-motonaga-2",
+                          "href": "\u002Fartwork\u002Fsadamasa-motonaga-2",
+                          "internalID": "58ddcb858b0c143cf9f2a5a4",
+                          "image": {
+                            "aspect_ratio": 0.8,
+                            "placeholder": "125.69546120058565%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FuIPV4MWKqYj-njN5MHxqcA\u002Flarge.jpg"
+                          },
+                          "title": "Untitled",
+                          "image_title": "Sadamasa Motonaga",
+                          "date": "",
+                          "sale_message": "Contact For Price",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                              "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                              "name": "Sadamasa Motonaga"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Aki Gallery",
+                            "href": "\u002Faki-gallery",
+                            "id": "UGFydG5lcjo1NDRlOWMzODcyNjE2OTJlMDBiMDA0MDA=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1YTNiYTcyOWM5ZGMyNDY0YmMxZjQ0NmI=",
+                          "slug": "sadamasa-motonaga-one-orange-and-three-grey-shapes",
+                          "href": "\u002Fartwork\u002Fsadamasa-motonaga-one-orange-and-three-grey-shapes",
+                          "internalID": "5a3ba729c9dc2464bc1f446b",
+                          "image": {
+                            "aspect_ratio": 0.73,
+                            "placeholder": "137.26835964310226%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FbBOdJq-eK8PnAf0c2QHTAA\u002Flarge.jpg"
+                          },
+                          "title": "One orange and three grey shapes",
+                          "image_title": "Sadamasa Motonaga, ‘One orange and three grey shapes’, 1994",
+                          "date": "1994",
+                          "sale_message": "Contact For Price",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                              "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                              "name": "Sadamasa Motonaga"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Repetto Gallery",
+                            "href": "\u002Frepetto-gallery",
+                            "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1OTA5NDlkYjJhODkzYTVlNmY5ZGUxZTg=",
+                          "slug": "sadamasa-motonaga-senohikuiorenjiwamannakaatari-1",
+                          "href": "\u002Fartwork\u002Fsadamasa-motonaga-senohikuiorenjiwamannakaatari-1",
+                          "internalID": "590949db2a893a5e6f9de1e8",
+                          "image": {
+                            "aspect_ratio": 1.4,
+                            "placeholder": "71.5%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FhkYTpgsASpfTrj4wmhMPlQ\u002Flarge.jpg"
+                          },
+                          "title": "Senohikuiorenjiwamannakaatari",
+                          "image_title": "Sadamasa Motonaga, ‘Senohikuiorenjiwamannakaatari’",
+                          "date": "",
+                          "sale_message": "Contact For Price",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                              "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                              "name": "Sadamasa Motonaga"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Aki Gallery",
+                            "href": "\u002Faki-gallery",
+                            "id": "UGFydG5lcjo1NDRlOWMzODcyNjE2OTJlMDBiMDA0MDA=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1OGRkY2I4ODhiM2I4MTNjOTMzNzU2NTc=",
+                          "slug": "sadamasa-motonaga",
+                          "href": "\u002Fartwork\u002Fsadamasa-motonaga",
+                          "internalID": "58ddcb888b3b813c93375657",
+                          "image": {
+                            "aspect_ratio": 0.86,
+                            "placeholder": "116.77445432497979%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FKtymjlQjZITUZQnc5j-Vxw\u002Flarge.jpg"
+                          },
+                          "title": "Untitled",
+                          "image_title": "Sadamasa Motonaga",
+                          "date": "",
+                          "sale_message": "Contact For Price",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                              "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                              "name": "Sadamasa Motonaga"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Aki Gallery",
+                            "href": "\u002Faki-gallery",
+                            "id": "UGFydG5lcjo1NDRlOWMzODcyNjE2OTJlMDBiMDA0MDA=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ZTZmMTQ0MzNmYWVhMjAwMTI2OGM5MDg=",
+                          "slug": "sadamasa-motonaga-work-30",
+                          "href": "\u002Fartwork\u002Fsadamasa-motonaga-work-30",
+                          "internalID": "5e6f14433faea2001268c908",
+                          "image": {
+                            "aspect_ratio": 0.61,
+                            "placeholder": "163.46699068448766%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FCuYz9v6TCtAfL4Iv70IxJw\u002Flarge.jpg"
+                          },
+                          "title": "Work",
+                          "image_title": "Sadamasa Motonaga, ‘Work’, 1965",
+                          "date": "1965",
+                          "sale_message": null,
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                              "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                              "name": "Sadamasa Motonaga"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Art Perspective",
+                            "href": "\u002Fart-perspective",
+                            "id": "UGFydG5lcjo1ZTU4MGRkMDlmZDYxOTAwMGI4YjllOTk=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": false,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "__typename": "PartnerArtworkGrid",
+                  "title": "Other works from Repetto Gallery",
+                  "ctaTitle": "View all works from Repetto Gallery",
+                  "ctaHref": "\u002Frepetto-gallery",
+                  "artworksConnection": {
+                    "edges": [
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ZmQ4YTM3ZjQxNjE0ZjMxMzdjMWI3NmY=",
+                          "slug": "arcangelo-sassolino-contro-freccia",
+                          "href": "\u002Fartwork\u002Farcangelo-sassolino-contro-freccia",
+                          "internalID": "5fd8a37f41614f3137c1b76f",
+                          "image": {
+                            "aspect_ratio": 1.51,
+                            "placeholder": "66.32513661202186%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002F8yADkoL4kjwNWprKh8F2Eg\u002Flarge.jpg"
+                          },
+                          "title": "Contro freccia",
+                          "image_title": "Arcangelo Sassolino, ‘Contro freccia’, 2020",
+                          "date": "2020",
+                          "sale_message": "€10,000 - 15,000",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRmNWY2NGMyM2I1NTUyMzBhYzAwMDU4Zg==",
+                              "href": "\u002Fartist\u002Farcangelo-sassolino",
+                              "name": "Arcangelo Sassolino"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Repetto Gallery",
+                            "href": "\u002Frepetto-gallery",
+                            "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ZmJkNGE2MmRjY2M4MTc1OWVkMGEwOGQ=",
+                          "slug": "franca-sonnino-libro-nero-scritta-bianca",
+                          "href": "\u002Fartwork\u002Ffranca-sonnino-libro-nero-scritta-bianca",
+                          "internalID": "5fbd4a62dccc81759ed0a08d",
+                          "image": {
+                            "aspect_ratio": 1.25,
+                            "placeholder": "80.18171493469619%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FKtV3PZiDL0J93XmuJBCM3w\u002Flarge.jpg"
+                          },
+                          "title": "Libro nero scritta bianca",
+                          "image_title": "Franca Sonnino, ‘Libro nero scritta bianca’, 2000",
+                          "date": "2000",
+                          "sale_message": "€5,000 - 7,500",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjVjOGJhYzk3M2E1NmYyNTFhMzcxYzFhNQ==",
+                              "href": "\u002Fartist\u002Ffranca-sonnino",
+                              "name": "Franca Sonnino"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Repetto Gallery",
+                            "href": "\u002Frepetto-gallery",
+                            "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ZmJkNDljNTQyNjBlZDA2YzAxYjI3YmU=",
+                          "slug": "shirin-neshat-pari-from-women-without-men-series-1",
+                          "href": "\u002Fartwork\u002Fshirin-neshat-pari-from-women-without-men-series-1",
+                          "internalID": "5fbd49c54260ed06c01b27be",
+                          "image": {
+                            "aspect_ratio": 0.7,
+                            "placeholder": "143.62302483069976%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FHD1RcIndgCCyiftBX_pS3Q\u002Flarge.jpg"
+                          },
+                          "title": "Pari (from Women Without Men series)",
+                          "image_title": "Shirin Neshat, ‘Pari (from Women Without Men series)’, 2008",
+                          "date": "2008",
+                          "sale_message": "Contact For Price",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRlOTc1ZmRkN2QxNDJjMDAwMTAwMjRlMw==",
+                              "href": "\u002Fartist\u002Fshirin-neshat",
+                              "name": "Shirin Neshat"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Repetto Gallery",
+                            "href": "\u002Frepetto-gallery",
+                            "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ZmJkNDg2OGEzOTI4MjAwMTI0MTEwZmE=",
+                          "slug": "bruno-munari-scritture-illeggibili-di-un-popolo-sconosciuto-5",
+                          "href": "\u002Fartwork\u002Fbruno-munari-scritture-illeggibili-di-un-popolo-sconosciuto-5",
+                          "internalID": "5fbd4868a3928200124110fa",
+                          "image": {
+                            "aspect_ratio": 1.32,
+                            "placeholder": "75.59799740404227%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FaDfTsS3qX6JpjONA-rhfXQ\u002Flarge.jpg"
+                          },
+                          "title": "Scritture illeggibili di un popolo sconosciuto 5",
+                          "image_title": "Bruno Munari, ‘Scritture illeggibili di un popolo sconosciuto 5’, 1975",
+                          "date": "1975",
+                          "sale_message": "€7,500 - 10,000",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDJhNA==",
+                              "href": "\u002Fartist\u002Fbruno-munari",
+                              "name": "Bruno Munari"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Repetto Gallery",
+                            "href": "\u002Frepetto-gallery",
+                            "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ZmJkNDg2NWIxZDA1YzIxZDBiODQ2OGI=",
+                          "slug": "bruno-munari-scritture-illeggibili-di-un-popolo-sconosciuto",
+                          "href": "\u002Fartwork\u002Fbruno-munari-scritture-illeggibili-di-un-popolo-sconosciuto",
+                          "internalID": "5fbd4865b1d05c21d0b8468b",
+                          "image": {
+                            "aspect_ratio": 1.31,
+                            "placeholder": "76.52896995708154%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FMvOFYas7QqPUYnNsm_wOjA\u002Flarge.jpg"
+                          },
+                          "title": "Scritture illeggibili di un popolo sconosciuto ",
+                          "image_title": "Bruno Munari, ‘Scritture illeggibili di un popolo sconosciuto ’, 1975",
+                          "date": "1975",
+                          "sale_message": "€7,500 - 10,000",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDJhNA==",
+                              "href": "\u002Fartist\u002Fbruno-munari",
+                              "name": "Bruno Munari"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Repetto Gallery",
+                            "href": "\u002Frepetto-gallery",
+                            "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ZmJkNDc0YmQ3OTlmZDI0MGY1M2U1NjQ=",
+                          "slug": "jannis-kounellis-untitled-485",
+                          "href": "\u002Fartwork\u002Fjannis-kounellis-untitled-485",
+                          "internalID": "5fbd474bd799fd240f53e564",
+                          "image": {
+                            "aspect_ratio": 1.46,
+                            "placeholder": "68.58913893006333%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FwEotF7bCD26b2bsgdo74gg\u002Flarge.jpg"
+                          },
+                          "title": "Untitled",
+                          "image_title": "Jannis Kounellis, ‘Untitled’, 1961",
+                          "date": "1961",
+                          "sale_message": "€100,000 - 150,000",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRkZDM0NWU3NDc4ZjU5MDAwMTAwNTEyNQ==",
+                              "href": "\u002Fartist\u002Fjannis-kounellis",
+                              "name": "Jannis Kounellis"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Repetto Gallery",
+                            "href": "\u002Frepetto-gallery",
+                            "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ZmJkNDU1Nzc2ZjdlNjE4NGEwZDliMmI=",
+                          "slug": "lucio-fontana-untitled-37",
+                          "href": "\u002Fartwork\u002Flucio-fontana-untitled-37",
+                          "internalID": "5fbd455776f7e6184a0d9b2b",
+                          "image": {
+                            "aspect_ratio": 0.69,
+                            "placeholder": "144.65020576131687%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FgGJSICquGljH6SGoenChxQ\u002Flarge.jpg"
+                          },
+                          "title": "Untitled",
+                          "image_title": "Lucio Fontana, ‘Untitled’, 1956-1957",
+                          "date": "1956-1957",
+                          "sale_message": "Contact For Price",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRkZTUwM2Q2ODdmNTk4MDAwMTAwNGE1ZQ==",
+                              "href": "\u002Fartist\u002Flucio-fontana",
+                              "name": "Lucio Fontana"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Repetto Gallery",
+                            "href": "\u002Frepetto-gallery",
+                            "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ZmJkNDRkN2JlMjczNTAwMTIwY2ZiNzQ=",
+                          "slug": "daniele-de-lonti-a",
+                          "href": "\u002Fartwork\u002Fdaniele-de-lonti-a",
+                          "internalID": "5fbd44d7be273500120cfb74",
+                          "image": {
+                            "aspect_ratio": 0.96,
+                            "placeholder": "104.7034764826176%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002Fdq6xRSw7DKQ6gCazVV427A\u002Flarge.jpg"
+                          },
+                          "title": "A",
+                          "image_title": "Daniele De Lonti, ‘A’, 2019",
+                          "date": "2019",
+                          "sale_message": "€1,000 - 2,500",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjUwNmIzMzUzNDQ2NjE3MDAwMjAwMDgxNw==",
+                              "href": "\u002Fartist\u002Fdaniele-de-lonti",
+                              "name": "Daniele De Lonti"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Repetto Gallery",
+                            "href": "\u002Frepetto-gallery",
+                            "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "__typename": "RelatedArtworkGrid",
+                  "title": "Related works",
+                  "ctaTitle": null,
+                  "ctaHref": null,
+                  "artworksConnection": {
+                    "edges": [
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1YjRmMjUxOTVmMGE0MjE5OTk3MThiMTc=",
+                          "slug": "kazuo-shiraga-highway",
+                          "href": "\u002Fartwork\u002Fkazuo-shiraga-highway",
+                          "internalID": "5b4f25195f0a421999718b17",
+                          "image": {
+                            "aspect_ratio": 1.4,
+                            "placeholder": "71.27244340359094%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FK74nu26JQBXVImkchSw9mA\u002Flarge.jpg"
+                          },
+                          "title": "Highway",
+                          "image_title": "Kazuo Shiraga, ‘Highway’, 1969",
+                          "date": "1969",
+                          "sale_message": "Sold",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRkZWRmZmFjMGNkNTdlMDAwMTAwN2Y2Zg==",
+                              "href": "\u002Fartist\u002Fkazuo-shiraga",
+                              "name": "Kazuo Shiraga"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "MAKI",
+                            "href": "\u002Fmaki-gallery",
+                            "id": "UGFydG5lcjo1NGQwZjIwYjc3NmY3MjYzOTBkODAxMDA=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ODMzNDA4MzljMThkYjMzMGEwMDEwMzY=",
+                          "slug": "yoshitoshi-mori-the-archer",
+                          "href": "\u002Fartwork\u002Fyoshitoshi-mori-the-archer",
+                          "internalID": "583340839c18db330a001036",
+                          "image": {
+                            "aspect_ratio": 0.73,
+                            "placeholder": "137.4%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002F1w2F5vVAF2Ds821df8200g\u002Flarge.jpg"
+                          },
+                          "title": "The Archer",
+                          "image_title": "Yoshitoshi Mori, ‘The Archer’, 1960",
+                          "date": "1960",
+                          "sale_message": "$310",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjU2Nzk5MTM5YWEwMGI1N2RmYjAwMDAyYg==",
+                              "href": "\u002Fartist\u002Fyoshitoshi-mori",
+                              "name": "Yoshitoshi Mori"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Ronin Gallery",
+                            "href": "\u002Fronin-gallery",
+                            "id": "UGFydG5lcjo1NDI0MTg3ZTcyNjE2OTA0ODc5MDA1MDA=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1YTU2NzRlNWIyMDJhMzUxNzFjZmVmMDE=",
+                          "slug": "matsumi-kanemitsu-yellow-orange-black",
+                          "href": "\u002Fartwork\u002Fmatsumi-kanemitsu-yellow-orange-black",
+                          "internalID": "5a5674e5b202a35171cfef01",
+                          "image": {
+                            "aspect_ratio": 0.78,
+                            "placeholder": "128.09734513274336%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FkA-D6YK-QwMBVBrQvuJrPw\u002Flarge.jpg"
+                          },
+                          "title": "Yellow-Orange-Black",
+                          "image_title": "Matsumi Kanemitsu, ‘Yellow-Orange-Black’, 1960",
+                          "date": "1960",
+                          "sale_message": "$10,000",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjUyNDQ2NTUxOGIzYjgxMTUzZTAwMDE1Mg==",
+                              "href": "\u002Fartist\u002Fmatsumi-kanemitsu",
+                              "name": "Matsumi Kanemitsu"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Louis Stern Fine Arts",
+                            "href": "\u002Flouis-stern-fine-arts",
+                            "id": "UGFydG5lcjo1MGM1NTUyMjQ4MjJkMzE1MDkwMDAwNjg=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ZWMzYzgzZGVlYzBkZDAwMTJkOGZmYTY=",
+                          "slug": "katsuhiro-yamaguchi-untitled-5",
+                          "href": "\u002Fartwork\u002Fkatsuhiro-yamaguchi-untitled-5",
+                          "internalID": "5ec3c83deec0dd0012d8ffa6",
+                          "image": {
+                            "aspect_ratio": 1.37,
+                            "placeholder": "72.76575729068674%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FgrPtSu1liUJWfTAqLzGlQQ\u002Flarge.jpg"
+                          },
+                          "title": "Untitled",
+                          "image_title": "Katsuhiro Yamaguchi, ‘Untitled’, ca. 1950",
+                          "date": "ca. 1950",
+                          "sale_message": "Contact For Price",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjUyNTU4ODcwMjc1YjI0ZTYzZDAwMGFiMQ==",
+                              "href": "\u002Fartist\u002Fkatsuhiro-yamaguchi",
+                              "name": "Katsuhiro Yamaguchi"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Annely Juda Fine Art",
+                            "href": "\u002Fannely-juda-fine-art",
+                            "id": "UGFydG5lcjo0ZGRhZmEyMWI4YmE1ZTAwMDEwMDFlYzc=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ZWEzNTJmNDM3ZTY0OTAwMGVmMjVmNjA=",
+                          "slug": "gladys-nilsson-untitled-1",
+                          "href": "\u002Fartwork\u002Fgladys-nilsson-untitled-1",
+                          "internalID": "5ea352f437e649000ef25f60",
+                          "image": {
+                            "aspect_ratio": 0.68,
+                            "placeholder": "146.3057790782736%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FWqLWMp3PGQHltZzk3LIFLg\u002Flarge.jpg"
+                          },
+                          "title": "Untitled",
+                          "image_title": "Gladys Nilsson, ‘Untitled’, 1969",
+                          "date": "1969",
+                          "sale_message": "Contact For Price",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjUyM2I1MThkY2Q1MzBlZDk2YzAwMDI1Ng==",
+                              "href": "\u002Fartist\u002Fgladys-nilsson",
+                              "name": "Gladys Nilsson"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Matthew Marks Gallery",
+                            "href": "\u002Fmatthew-marks",
+                            "id": "UGFydG5lcjo1MTU1ZDQ5YmI4ODg1MTQ4NmYwMDAxMTg=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1NjAzODEzMjcyNjE2OTY5NTUwMDA1N2U=",
+                          "slug": "keiichi-tanaami-wonder-woman-03",
+                          "href": "\u002Fartwork\u002Fkeiichi-tanaami-wonder-woman-03",
+                          "internalID": "56038132726169695500057e",
+                          "image": {
+                            "aspect_ratio": 1.25,
+                            "placeholder": "80.21978021978022%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FL7suKfHBmNfkwtihuS6VMA\u002Flarge.jpg"
+                          },
+                          "title": "Wonder Woman_03",
+                          "image_title": "Keiichi Tanaami, ‘Wonder Woman_03’, 1967",
+                          "date": "1967",
+                          "sale_message": null,
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRkZDI4ZTU1MTdhMzdjMDAwMTAwNDRhOQ==",
+                              "href": "\u002Fartist\u002Fkeiichi-tanaami",
+                              "name": "Keiichi Tanaami"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Nanzuka",
+                            "href": "\u002Fnanzuka",
+                            "id": "UGFydG5lcjo0ZGQyOGRkN2VmZjVmYTAwMDEwMDQxMGI=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": false,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ZDFiYjQ0OGQ0ZWNmNjJiNTE4ZTY4Nzg=",
+                          "slug": "kokuta-suda-untitled-6",
+                          "href": "\u002Fartwork\u002Fkokuta-suda-untitled-6",
+                          "internalID": "5d1bb448d4ecf62b518e6878",
+                          "image": {
+                            "aspect_ratio": 1,
+                            "placeholder": "100%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FwqVU7lWszarQnFuPB4Lg2A\u002Flarge.jpg"
+                          },
+                          "title": "Untitled",
+                          "image_title": "Kokuta Suda, ‘Untitled’, c. 1960",
+                          "date": "c. 1960",
+                          "sale_message": null,
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjU4YmVmNjBkYzlkYzI0MGY2ZTBkM2NmMQ==",
+                              "href": "\u002Fartist\u002Fkokuta-suda",
+                              "name": "Kokuta Suda"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Rago\u002FWright",
+                            "href": "\u002Fauction\u002Fpartner-595e69f6a09a671938435977",
+                            "id": "UGFydG5lcjo1OTVlNjlmNmEwOWE2NzE5Mzg0MzU5Nzc=",
+                            "type": "Auction House"
+                          },
+                          "sale": {
+                            "is_auction": true,
+                            "is_closed": true,
+                            "id": "U2FsZTo1ZDFhMTg3OGQ2OTU0ZTAwMTFkODE4YmU=",
+                            "is_live_open": false,
+                            "is_open": false,
+                            "is_preview": false,
+                            "display_timely_at": null
+                          },
+                          "sale_artwork": {
+                            "counts": {
+                              "bidder_positions": 0
+                            },
+                            "highest_bid": {
+                              "display": null
+                            },
+                            "opening_bid": {
+                              "display": "$500"
+                            },
+                            "id": "U2FsZUFydHdvcms6NWQxYmI0NDgwNDYzZDY3ZjkyYjFkMmNm"
+                          },
+                          "is_inquireable": false,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      },
+                      {
+                        "__typename": "ArtworkEdge",
+                        "node": {
+                          "id": "QXJ0d29yazo1ZjlhYTA0ZDkxYTY4YjAwMTJjYmEzNzQ=",
+                          "slug": "kumi-sugai-composition-1",
+                          "href": "\u002Fartwork\u002Fkumi-sugai-composition-1",
+                          "internalID": "5f9aa04d91a68b0012cba374",
+                          "image": {
+                            "aspect_ratio": 0.76,
+                            "placeholder": "131.67484232655923%",
+                            "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FianyEuardEgLzF9JKL4A9Q\u002Flarge.jpg"
+                          },
+                          "title": "Composition",
+                          "image_title": "Kumi Sugaï, ‘Composition’, 1963",
+                          "date": "1963",
+                          "sale_message": "£10,000 - 15,000",
+                          "cultural_maker": null,
+                          "artists": [
+                            {
+                              "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDM3OA==",
+                              "href": "\u002Fartist\u002Fkumi-sugai",
+                              "name": "Kumi Sugaï"
+                            }
+                          ],
+                          "collecting_institution": null,
+                          "partner": {
+                            "name": "Omer Tiroche Gallery",
+                            "href": "\u002Fomer-tiroche-gallery",
+                            "id": "UGFydG5lcjo1NTMwM2ZiYTc3NmY3MjM2MDM1NzAzMDA=",
+                            "type": "Gallery"
+                          },
+                          "sale": null,
+                          "sale_artwork": null,
+                          "is_inquireable": true,
+                          "is_saved": false,
+                          "is_biddable": false
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "layers": [
+                {
+                  "name": "Most Similar",
+                  "internalID": "main",
+                  "id": "QXJ0d29ya0xheWVyOm1haW4="
+                },
+                {
+                  "name": "For Sale",
+                  "internalID": "for-sale",
+                  "id": "QXJ0d29ya0xheWVyOmZvci1zYWxl"
+                }
+              ],
+              "layer": {
+                "name": "Most Similar",
+                "artworksConnection": {
+                  "edges": [
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1YjRmMjUxOTVmMGE0MjE5OTk3MThiMTc=",
+                        "slug": "kazuo-shiraga-highway",
+                        "href": "\u002Fartwork\u002Fkazuo-shiraga-highway",
+                        "internalID": "5b4f25195f0a421999718b17",
+                        "image": {
+                          "aspect_ratio": 1.4,
+                          "placeholder": "71.27244340359094%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FK74nu26JQBXVImkchSw9mA\u002Flarge.jpg"
+                        },
+                        "title": "Highway",
+                        "image_title": "Kazuo Shiraga, ‘Highway’, 1969",
+                        "date": "1969",
+                        "sale_message": "Sold",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRkZWRmZmFjMGNkNTdlMDAwMTAwN2Y2Zg==",
+                            "href": "\u002Fartist\u002Fkazuo-shiraga",
+                            "name": "Kazuo Shiraga"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "MAKI",
+                          "href": "\u002Fmaki-gallery",
+                          "id": "UGFydG5lcjo1NGQwZjIwYjc3NmY3MjYzOTBkODAxMDA=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ODMzNDA4MzljMThkYjMzMGEwMDEwMzY=",
+                        "slug": "yoshitoshi-mori-the-archer",
+                        "href": "\u002Fartwork\u002Fyoshitoshi-mori-the-archer",
+                        "internalID": "583340839c18db330a001036",
+                        "image": {
+                          "aspect_ratio": 0.73,
+                          "placeholder": "137.4%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002F1w2F5vVAF2Ds821df8200g\u002Flarge.jpg"
+                        },
+                        "title": "The Archer",
+                        "image_title": "Yoshitoshi Mori, ‘The Archer’, 1960",
+                        "date": "1960",
+                        "sale_message": "$310",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjU2Nzk5MTM5YWEwMGI1N2RmYjAwMDAyYg==",
+                            "href": "\u002Fartist\u002Fyoshitoshi-mori",
+                            "name": "Yoshitoshi Mori"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Ronin Gallery",
+                          "href": "\u002Fronin-gallery",
+                          "id": "UGFydG5lcjo1NDI0MTg3ZTcyNjE2OTA0ODc5MDA1MDA=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1YTU2NzRlNWIyMDJhMzUxNzFjZmVmMDE=",
+                        "slug": "matsumi-kanemitsu-yellow-orange-black",
+                        "href": "\u002Fartwork\u002Fmatsumi-kanemitsu-yellow-orange-black",
+                        "internalID": "5a5674e5b202a35171cfef01",
+                        "image": {
+                          "aspect_ratio": 0.78,
+                          "placeholder": "128.09734513274336%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FkA-D6YK-QwMBVBrQvuJrPw\u002Flarge.jpg"
+                        },
+                        "title": "Yellow-Orange-Black",
+                        "image_title": "Matsumi Kanemitsu, ‘Yellow-Orange-Black’, 1960",
+                        "date": "1960",
+                        "sale_message": "$10,000",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjUyNDQ2NTUxOGIzYjgxMTUzZTAwMDE1Mg==",
+                            "href": "\u002Fartist\u002Fmatsumi-kanemitsu",
+                            "name": "Matsumi Kanemitsu"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Louis Stern Fine Arts",
+                          "href": "\u002Flouis-stern-fine-arts",
+                          "id": "UGFydG5lcjo1MGM1NTUyMjQ4MjJkMzE1MDkwMDAwNjg=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZWMzYzgzZGVlYzBkZDAwMTJkOGZmYTY=",
+                        "slug": "katsuhiro-yamaguchi-untitled-5",
+                        "href": "\u002Fartwork\u002Fkatsuhiro-yamaguchi-untitled-5",
+                        "internalID": "5ec3c83deec0dd0012d8ffa6",
+                        "image": {
+                          "aspect_ratio": 1.37,
+                          "placeholder": "72.76575729068674%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FgrPtSu1liUJWfTAqLzGlQQ\u002Flarge.jpg"
+                        },
+                        "title": "Untitled",
+                        "image_title": "Katsuhiro Yamaguchi, ‘Untitled’, ca. 1950",
+                        "date": "ca. 1950",
+                        "sale_message": "Contact For Price",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjUyNTU4ODcwMjc1YjI0ZTYzZDAwMGFiMQ==",
+                            "href": "\u002Fartist\u002Fkatsuhiro-yamaguchi",
+                            "name": "Katsuhiro Yamaguchi"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Annely Juda Fine Art",
+                          "href": "\u002Fannely-juda-fine-art",
+                          "id": "UGFydG5lcjo0ZGRhZmEyMWI4YmE1ZTAwMDEwMDFlYzc=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZWEzNTJmNDM3ZTY0OTAwMGVmMjVmNjA=",
+                        "slug": "gladys-nilsson-untitled-1",
+                        "href": "\u002Fartwork\u002Fgladys-nilsson-untitled-1",
+                        "internalID": "5ea352f437e649000ef25f60",
+                        "image": {
+                          "aspect_ratio": 0.68,
+                          "placeholder": "146.3057790782736%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FWqLWMp3PGQHltZzk3LIFLg\u002Flarge.jpg"
+                        },
+                        "title": "Untitled",
+                        "image_title": "Gladys Nilsson, ‘Untitled’, 1969",
+                        "date": "1969",
+                        "sale_message": "Contact For Price",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjUyM2I1MThkY2Q1MzBlZDk2YzAwMDI1Ng==",
+                            "href": "\u002Fartist\u002Fgladys-nilsson",
+                            "name": "Gladys Nilsson"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Matthew Marks Gallery",
+                          "href": "\u002Fmatthew-marks",
+                          "id": "UGFydG5lcjo1MTU1ZDQ5YmI4ODg1MTQ4NmYwMDAxMTg=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1NjAzODEzMjcyNjE2OTY5NTUwMDA1N2U=",
+                        "slug": "keiichi-tanaami-wonder-woman-03",
+                        "href": "\u002Fartwork\u002Fkeiichi-tanaami-wonder-woman-03",
+                        "internalID": "56038132726169695500057e",
+                        "image": {
+                          "aspect_ratio": 1.25,
+                          "placeholder": "80.21978021978022%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FL7suKfHBmNfkwtihuS6VMA\u002Flarge.jpg"
+                        },
+                        "title": "Wonder Woman_03",
+                        "image_title": "Keiichi Tanaami, ‘Wonder Woman_03’, 1967",
+                        "date": "1967",
+                        "sale_message": null,
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRkZDI4ZTU1MTdhMzdjMDAwMTAwNDRhOQ==",
+                            "href": "\u002Fartist\u002Fkeiichi-tanaami",
+                            "name": "Keiichi Tanaami"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Nanzuka",
+                          "href": "\u002Fnanzuka",
+                          "id": "UGFydG5lcjo0ZGQyOGRkN2VmZjVmYTAwMDEwMDQxMGI=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": false,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZDFiYjQ0OGQ0ZWNmNjJiNTE4ZTY4Nzg=",
+                        "slug": "kokuta-suda-untitled-6",
+                        "href": "\u002Fartwork\u002Fkokuta-suda-untitled-6",
+                        "internalID": "5d1bb448d4ecf62b518e6878",
+                        "image": {
+                          "aspect_ratio": 1,
+                          "placeholder": "100%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FwqVU7lWszarQnFuPB4Lg2A\u002Flarge.jpg"
+                        },
+                        "title": "Untitled",
+                        "image_title": "Kokuta Suda, ‘Untitled’, c. 1960",
+                        "date": "c. 1960",
+                        "sale_message": null,
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjU4YmVmNjBkYzlkYzI0MGY2ZTBkM2NmMQ==",
+                            "href": "\u002Fartist\u002Fkokuta-suda",
+                            "name": "Kokuta Suda"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Rago\u002FWright",
+                          "href": "\u002Fauction\u002Fpartner-595e69f6a09a671938435977",
+                          "id": "UGFydG5lcjo1OTVlNjlmNmEwOWE2NzE5Mzg0MzU5Nzc=",
+                          "type": "Auction House"
+                        },
+                        "sale": {
+                          "is_auction": true,
+                          "is_closed": true,
+                          "id": "U2FsZTo1ZDFhMTg3OGQ2OTU0ZTAwMTFkODE4YmU=",
+                          "is_live_open": false,
+                          "is_open": false,
+                          "is_preview": false,
+                          "display_timely_at": null
+                        },
+                        "sale_artwork": {
+                          "counts": {
+                            "bidder_positions": 0
+                          },
+                          "highest_bid": {
+                            "display": null
+                          },
+                          "opening_bid": {
+                            "display": "$500"
+                          },
+                          "id": "U2FsZUFydHdvcms6NWQxYmI0NDgwNDYzZDY3ZjkyYjFkMmNm"
+                        },
+                        "is_inquireable": false,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZjlhYTA0ZDkxYTY4YjAwMTJjYmEzNzQ=",
+                        "slug": "kumi-sugai-composition-1",
+                        "href": "\u002Fartwork\u002Fkumi-sugai-composition-1",
+                        "internalID": "5f9aa04d91a68b0012cba374",
+                        "image": {
+                          "aspect_ratio": 0.76,
+                          "placeholder": "131.67484232655923%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FianyEuardEgLzF9JKL4A9Q\u002Flarge.jpg"
+                        },
+                        "title": "Composition",
+                        "image_title": "Kumi Sugaï, ‘Composition’, 1963",
+                        "date": "1963",
+                        "sale_message": "£10,000 - 15,000",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDM3OA==",
+                            "href": "\u002Fartist\u002Fkumi-sugai",
+                            "name": "Kumi Sugaï"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Omer Tiroche Gallery",
+                          "href": "\u002Fomer-tiroche-gallery",
+                          "id": "UGFydG5lcjo1NTMwM2ZiYTc3NmY3MjM2MDM1NzAzMDA=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    }
+                  ]
+                },
+                "id": "QXJ0d29ya0xheWVyOm1haW4="
+              },
+              "artistSeriesConnection": {
+                "edges": []
+              },
+              "seriesArtist": {
+                "artistSeriesConnection": {
+                  "edges": []
+                },
+                "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw=="
+              },
+              "seriesForCounts": {
+                "edges": []
+              },
+              "pricingContext": null
+            },
+            "me": null
+          }
+        },
+        "data": {
+          "artwork": {
+            "slug": "sadamasa-motonaga-work-18",
+            "internalID": "5a3baa0f8b0c141e3fa6a94f",
+            "is_acquireable": true,
+            "is_offerable": true,
+            "availability": "for sale",
+            "listPrice": {
+              "__typename": "Money",
+              "display": "£7,000",
+              "major": 7000,
+              "currencyCode": "GBP",
+              "minor": 700000
+            },
+            "is_in_auction": false,
+            "sale": null,
+            "artists": [
+              {
+                "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                "slug": "sadamasa-motonaga",
+                "internalID": "4f0648328501fa10ca00029c",
+                "name": "Sadamasa Motonaga",
+                "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                "image": {
+                  "cropped": {
+                    "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=100&height=100&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLorrxYHI41vMvU9sexw06w%2Flarge.jpg"
+                  }
+                },
+                "formatted_nationality_and_birthday": "Japanese, 1922–2011",
+                "counts": {
+                  "partner_shows": 26,
+                  "follows": 642
+                },
+                "exhibition_highlights": [
+                  {
+                    "partner": {
+                      "__typename": "Partner",
+                      "name": "Dallas Museum of Art",
+                      "id": "UGFydG5lcjo1MDRlNjEyYmI4ZmIwMjAwMDIwMDA4MGQ="
+                    },
+                    "name": "Between Action and the Unknown: The Art of Kazuo Shiraga and Sadamasa Motonaga",
+                    "start_at": "2015",
+                    "cover_image": {
+                      "cropped": {
+                        "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=800&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2Fs6pwldx48ZtDq-59MjJKGA%2Flarge.jpg"
+                      }
+                    },
+                    "city": "Dallas",
+                    "id": "U2hvdzo1NTE1OTg3NzcyNjE2OTUxYzJiZjQxMDA="
+                  },
+                  {
+                    "partner": {
+                      "__typename": "Partner",
+                      "name": "Whitestone Gallery",
+                      "id": "UGFydG5lcjo1MDc3NmQwMGZkYWI2MTAwMDIwMDAxZmE="
+                    },
+                    "name": "Gallery Collection",
+                    "start_at": "2020",
+                    "cover_image": {
+                      "cropped": {
+                        "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=800&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FaWp-wq5834-BRAKXivSDAg%2Flarge.jpg"
+                      }
+                    },
+                    "city": "Hong Kong",
+                    "id": "U2hvdzo1ZTFkOWUxN2VjOWFmOTAwMGViYzkwODE="
+                  },
+                  {
+                    "partner": {
+                      "__typename": "Partner",
+                      "name": "Hauser & Wirth",
+                      "id": "UGFydG5lcjo1MTkxMjM2NGEwMTM0YzYxMzAwMDAwMDE="
+                    },
+                    "name": "Gutai",
+                    "start_at": "2018",
+                    "cover_image": {
+                      "cropped": {
+                        "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=800&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F0YN7W1dXAHwnFkD4bQJkOg%2Flarge.jpg"
+                      }
+                    },
+                    "city": "New York",
+                    "id": "U2hvdzo1YmUwYmFjYzdmZmQ0MTQ3YWVlYzg4ZDE="
+                  }
+                ],
+                "collections": [
+                  "Museum of Modern Art (MoMA)"
+                ],
+                "highlights": {
+                  "partnersConnection": {
+                    "edges": [
+                      {
+                        "node": {
+                          "__typename": "Partner",
+                          "id": "UGFydG5lcjo1MzU1MmY5YzZhMjFkYjY2MDUwMDAwMTY=",
+                          "categories": [
+                            {
+                              "slug": "established",
+                              "id": "UGFydG5lckNhdGVnb3J5OjU1ZmIxYTlhNzI2MTY5Njk0YTAwMDAwMQ=="
+                            },
+                            {
+                              "slug": "modern",
+                              "id": "UGFydG5lckNhdGVnb3J5OjU1ZjBkMWVjNzc2ZjcyMTkzOTAwMDAwYQ=="
+                            },
+                            {
+                              "slug": "painting",
+                              "id": "UGFydG5lckNhdGVnb3J5OjU1ZjBkMWVjNzc2ZjcyMTkzOTAwMDAwMA=="
+                            },
+                            {
+                              "slug": "top-established",
+                              "id": "UGFydG5lckNhdGVnb3J5OjVhMDQ4MTAyZWJhZDY0N2M3YmVjYzA0OQ=="
+                            }
+                          ]
+                        },
+                        "id": "UGFydG5lckFydGlzdEVkZ2U6NTM4ZWZkYTJlYmFkNjQ3NDEwMDAwMDI2"
+                      }
+                    ]
+                  }
+                },
+                "auctionResultsConnection": null,
+                "biographyBlurb": {
+                  "text": "\u003Cp\u003ESadamasa Motonaga is an abstract painter best known for his involvement in the \u003Ca href=\"\u002Fgene\u002Fgutai\"\u003EGutai Group\u003C\u002Fa\u003E. Motonaga graduated from trade school; with aspirations to be a manga artist, he began to make figural and landscape works on canvas under the tutelage of painter Mankichi Hamabe. In 1952, he began to make abstract objects and paintings, which garnered him an invitation to join the Gutai exhibitions. One of his most famous works was a site-specific installation with pools of colored water suspended in vinyl tubes hanging from trees. From then, he experimented with water and smoke as ephemeral artistic materials. Inspired in part by \u003Cem\u003Etarashikomi\u003C\u002Fem\u003E techniques in traditional Japanese painting, he began to make paintings generated by chance, tilting canvases and pooling paint. \u003C\u002Fp\u003E\n"
+                },
+                "is_followed": false,
+                "related": {
+                  "suggestedConnection": null
+                },
+                "is_consignable": false
+              }
+            ],
+            "artist": {
+              "internalID": "4f0648328501fa10ca00029c",
+              "slug": "sadamasa-motonaga",
+              "name": "Sadamasa Motonaga",
+              "href": "\u002Fartist\u002Fsadamasa-motonaga",
+              "image": {
+                "cropped": {
+                  "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=100&height=100&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLorrxYHI41vMvU9sexw06w%2Flarge.jpg"
+                }
+              },
+              "formatted_nationality_and_birthday": "Japanese, 1922–2011",
+              "counts": {
+                "partner_shows": 26,
+                "follows": 642
+              },
+              "exhibition_highlights": [
+                {
+                  "partner": {
+                    "__typename": "Partner",
+                    "name": "Dallas Museum of Art",
+                    "id": "UGFydG5lcjo1MDRlNjEyYmI4ZmIwMjAwMDIwMDA4MGQ="
+                  },
+                  "name": "Between Action and the Unknown: The Art of Kazuo Shiraga and Sadamasa Motonaga",
+                  "start_at": "2015",
+                  "cover_image": {
+                    "cropped": {
+                      "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=800&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2Fs6pwldx48ZtDq-59MjJKGA%2Flarge.jpg"
+                    }
+                  },
+                  "city": "Dallas",
+                  "id": "U2hvdzo1NTE1OTg3NzcyNjE2OTUxYzJiZjQxMDA="
+                },
+                {
+                  "partner": {
+                    "__typename": "Partner",
+                    "name": "Whitestone Gallery",
+                    "id": "UGFydG5lcjo1MDc3NmQwMGZkYWI2MTAwMDIwMDAxZmE="
+                  },
+                  "name": "Gallery Collection",
+                  "start_at": "2020",
+                  "cover_image": {
+                    "cropped": {
+                      "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=800&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FaWp-wq5834-BRAKXivSDAg%2Flarge.jpg"
+                    }
+                  },
+                  "city": "Hong Kong",
+                  "id": "U2hvdzo1ZTFkOWUxN2VjOWFmOTAwMGViYzkwODE="
+                },
+                {
+                  "partner": {
+                    "__typename": "Partner",
+                    "name": "Hauser & Wirth",
+                    "id": "UGFydG5lcjo1MTkxMjM2NGEwMTM0YzYxMzAwMDAwMDE="
+                  },
+                  "name": "Gutai",
+                  "start_at": "2018",
+                  "cover_image": {
+                    "cropped": {
+                      "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=800&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F0YN7W1dXAHwnFkD4bQJkOg%2Flarge.jpg"
+                    }
+                  },
+                  "city": "New York",
+                  "id": "U2hvdzo1YmUwYmFjYzdmZmQ0MTQ3YWVlYzg4ZDE="
+                }
+              ],
+              "collections": [
+                "Museum of Modern Art (MoMA)"
+              ],
+              "highlights": {
+                "partnersConnection": {
+                  "edges": [
+                    {
+                      "node": {
+                        "__typename": "Partner",
+                        "id": "UGFydG5lcjo1MzU1MmY5YzZhMjFkYjY2MDUwMDAwMTY=",
+                        "categories": [
+                          {
+                            "slug": "established",
+                            "id": "UGFydG5lckNhdGVnb3J5OjU1ZmIxYTlhNzI2MTY5Njk0YTAwMDAwMQ=="
+                          },
+                          {
+                            "slug": "modern",
+                            "id": "UGFydG5lckNhdGVnb3J5OjU1ZjBkMWVjNzc2ZjcyMTkzOTAwMDAwYQ=="
+                          },
+                          {
+                            "slug": "painting",
+                            "id": "UGFydG5lckNhdGVnb3J5OjU1ZjBkMWVjNzc2ZjcyMTkzOTAwMDAwMA=="
+                          },
+                          {
+                            "slug": "top-established",
+                            "id": "UGFydG5lckNhdGVnb3J5OjVhMDQ4MTAyZWJhZDY0N2M3YmVjYzA0OQ=="
+                          }
+                        ]
+                      },
+                      "id": "UGFydG5lckFydGlzdEVkZ2U6NTM4ZWZkYTJlYmFkNjQ3NDEwMDAwMDI2"
+                    }
+                  ]
+                }
+              },
+              "auctionResultsConnection": null,
+              "biographyBlurb": {
+                "text": "\u003Cp\u003ESadamasa Motonaga is an abstract painter best known for his involvement in the \u003Ca href=\"\u002Fgene\u002Fgutai\"\u003EGutai Group\u003C\u002Fa\u003E. Motonaga graduated from trade school; with aspirations to be a manga artist, he began to make figural and landscape works on canvas under the tutelage of painter Mankichi Hamabe. In 1952, he began to make abstract objects and paintings, which garnered him an invitation to join the Gutai exhibitions. One of his most famous works was a site-specific installation with pools of colored water suspended in vinyl tubes hanging from trees. From then, he experimented with water and smoke as ephemeral artistic materials. Inspired in part by \u003Cem\u003Etarashikomi\u003C\u002Fem\u003E techniques in traditional Japanese painting, he began to make paintings generated by chance, tilting canvases and pooling paint. \u003C\u002Fp\u003E\n"
+              },
+              "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+              "is_followed": false,
+              "related": {
+                "artistsConnection": {
+                  "pageInfo": {
+                    "hasNextPage": true,
+                    "endCursor": "YXJyYXljb25uZWN0aW9uOjM="
+                  },
+                  "edges": [
+                    {
+                      "node": {
+                        "name": "Amelia Midori Miller",
+                        "slug": "amelia-midori-miller",
+                        "href": "\u002Fartist\u002Famelia-midori-miller",
+                        "image": {
+                          "cropped": {
+                            "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FsqOuAv8-ybUr7ag4ELIpww%2Flarge.jpg"
+                          }
+                        },
+                        "formatted_nationality_and_birthday": "Japanese, b. 1985",
+                        "id": "QXJ0aXN0OjU0ODgwYmNiNzI2MTY5MmNlMTdkMDIwMA==",
+                        "internalID": "54880bcb7261692ce17d0200",
+                        "is_followed": false,
+                        "counts": {
+                          "follows": 66
+                        },
+                        "__typename": "Artist"
+                      },
+                      "cursor": "YXJyYXljb25uZWN0aW9uOjA="
+                    },
+                    {
+                      "node": {
+                        "name": "Shu Takahashi",
+                        "slug": "shu-takahashi",
+                        "href": "\u002Fartist\u002Fshu-takahashi",
+                        "image": {
+                          "cropped": {
+                            "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2Fhowosus00WzQcMIIMPaboQ%2Flarge.jpg"
+                          }
+                        },
+                        "formatted_nationality_and_birthday": "Japanese, b. 1930",
+                        "id": "QXJ0aXN0OjU3YWRkZDkxMjc1YjI0MmY3NzAwMDcxMg==",
+                        "internalID": "57addd91275b242f77000712",
+                        "is_followed": false,
+                        "counts": {
+                          "follows": 537
+                        },
+                        "__typename": "Artist"
+                      },
+                      "cursor": "YXJyYXljb25uZWN0aW9uOjE="
+                    },
+                    {
+                      "node": {
+                        "name": "Shinpei Kusanagi",
+                        "slug": "shinpei-kusanagi",
+                        "href": "\u002Fartist\u002Fshinpei-kusanagi",
+                        "image": {
+                          "cropped": {
+                            "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F8GP5Tg7Rxig2BA0qIVVm3g%2Flarge.jpg"
+                          }
+                        },
+                        "formatted_nationality_and_birthday": "",
+                        "id": "QXJ0aXN0OjUxZmFlODQxMjc1YjI0NWY3YjAwMDFjYw==",
+                        "internalID": "51fae841275b245f7b0001cc",
+                        "is_followed": false,
+                        "counts": {
+                          "follows": 309
+                        },
+                        "__typename": "Artist"
+                      },
+                      "cursor": "YXJyYXljb25uZWN0aW9uOjI="
+                    },
+                    {
+                      "node": {
+                        "name": "Yoshio Imamura",
+                        "slug": "yoshio-imamura",
+                        "href": "\u002Fartist\u002Fyoshio-imamura",
+                        "image": {
+                          "cropped": {
+                            "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fill&width=400&height=300&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FaMgBnDztXmbCNn_4igf6WA%2Flarge.jpg"
+                          }
+                        },
+                        "formatted_nationality_and_birthday": "Japanese, b. 1948",
+                        "id": "QXJ0aXN0OjU1ZDNmODI2NzI2MTY5NGIzMjAwMDJkYQ==",
+                        "internalID": "55d3f8267261694b320002da",
+                        "is_followed": false,
+                        "counts": {
+                          "follows": 10
+                        },
+                        "__typename": "Artist"
+                      },
+                      "cursor": "YXJyYXljb25uZWN0aW9uOjM="
+                    }
+                  ]
+                }
+              }
+            },
+            "href": "\u002Fartwork\u002Fsadamasa-motonaga-work-18",
+            "date": "1968",
+            "artist_names": "Sadamasa Motonaga",
+            "sale_message": "£7,000",
+            "partner": {
+              "name": "Repetto Gallery",
+              "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+              "type": "Gallery",
+              "profile": {
+                "image": {
+                  "resized": {
+                    "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fit&width=320&height=192&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FIcS0zKm70bbzRU6WNpIUpw%2Fsquare.jpg"
+                  }
+                },
+                "id": "UHJvZmlsZTo1MTU5ZGFkMzlhNjA4MzI0MzkwMDAyMWI=",
+                "slug": "repetto-gallery",
+                "name": "Repetto Gallery",
+                "internalID": "5159dad39a6083243900021b",
+                "is_followed": false,
+                "icon": {
+                  "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FRBUkEs8ywLpvak6QE6iStg\u002Fsquare140.png"
+                }
+              },
+              "initials": "RG",
+              "href": "\u002Frepetto-gallery",
+              "locations": [
+                {
+                  "city": "London",
+                  "id": "TG9jYXRpb246NTQxNmY4NTk3MjYxNjkyZDYzMTEwMDAw"
+                }
+              ],
+              "isVerifiedSeller": false,
+              "internalID": "50abcb3125e77810fd000041",
+              "slug": "repetto-gallery",
+              "is_default_profile_public": true
+            },
+            "image_rights": "",
+            "is_shareable": true,
+            "meta_image": {
+              "resized": {
+                "width": 640,
+                "height": 948,
+                "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fit&width=640&height=948&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FVXoIWFSftnp0WI6SJ_1_zw%2Flarge.jpg"
+              }
+            },
+            "meta": {
+              "title": "Sadamasa Motonaga | Work (1968) | Available for Sale | Artsy",
+              "description": "Available for sale from Repetto Gallery, Sadamasa Motonaga, Work (1968), Pen, watercolour on paper, 14.8 × 10 cm",
+              "long_description": "Available for sale from Repetto Gallery, Sadamasa Motonaga, Work (1968), Pen, watercolour on paper, 14.8 × 10 cm"
+            },
+            "context": null,
+            "is_price_hidden": false,
+            "is_price_range": false,
+            "category": "Drawing, Collage or other Work on Paper",
+            "dimensions": {
+              "in": "5 4\u002F5 × 3 9\u002F10 in",
+              "cm": "14.8 × 10 cm"
+            },
+            "cultural_maker": null,
+            "is_biddable": false,
+            "edition_sets": [],
+            "sale_artwork": null,
+            "title": "Work",
+            "medium": "Pen, watercolour on paper",
+            "edition_of": null,
+            "attributionClass": {
+              "shortDescription": "This is a unique work",
+              "id": "QXR0cmlidXRpb25DbGFzczp1bmlxdWU="
+            },
+            "myLotStanding": null,
+            "is_for_sale": true,
+            "is_inquireable": false,
+            "priceIncludesTaxDisplay": "VAT included in price",
+            "shippingInfo": "Free shipping worldwide",
+            "shippingOrigin": "London, GB",
+            "hasCertificateOfAuthenticity": false,
+            "description": null,
+            "additional_information": null,
+            "series": null,
+            "publisher": null,
+            "manufacturer": null,
+            "canRequestLotConditionsReport": false,
+            "framed": {
+              "label": "Framed",
+              "details": "Included"
+            },
+            "signatureInfo": {
+              "label": "Signature",
+              "details": "Hand-signed by artist, Signed and dated"
+            },
+            "conditionDescription": null,
+            "certificateOfAuthenticity": {
+              "label": "Certificate of authenticity",
+              "details": "Not included"
+            },
+            "mediumType": {
+              "__typename": "ArtworkMedium",
+              "name": "Drawing, Collage or other Work on Paper",
+              "longDescription": "Includes collages; drawings; figure drawing; pen and ink; sketch. This also includes paintings where paper is the support."
+            },
+            "articles": [],
+            "literature": "\u003Cp\u003ESadamasa Motonaga; the Energy of Infancy, exhibition catalogue, Repetto Gallery, London, 2016\u003C\u002Fp\u003E\n",
+            "exhibition_history": "\u003Cp\u003E2016, London, UK, Sadamasa Motonaga, The Energy of Infancy, June 29th – July 29th, Repetto Gallery.\u003C\u002Fp\u003E\n",
+            "provenance": null,
+            "image_alt": "Sadamasa Motonaga, ‘Work’, 1968, Repetto Gallery",
+            "id": "QXJ0d29yazo1YTNiYWEwZjhiMGMxNDFlM2ZhNmE5NGY=",
+            "is_saved": false,
+            "images": [
+              {
+                "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FVXoIWFSftnp0WI6SJ_1_zw\u002Flarger.jpg",
+                "internalID": "5a3baa119c18db371ce5062d",
+                "uri": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FVXoIWFSftnp0WI6SJ_1_zw\u002Flarge.jpg",
+                "placeholder": {
+                  "url": "https:\u002F\u002Fd7hftxdivxxvm.cloudfront.net?resize_to=fit&width=30&height=44&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FVXoIWFSftnp0WI6SJ_1_zw%2Fsmall.jpg"
+                },
+                "aspectRatio": 0.67,
+                "is_zoomable": true,
+                "is_default": true,
+                "deepZoom": {
+                  "Image": {
+                    "xmlns": "http:\u002F\u002Fschemas.microsoft.com\u002Fdeepzoom\u002F2008",
+                    "Url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FVXoIWFSftnp0WI6SJ_1_zw\u002Fdztiles\u002F",
+                    "Format": "jpg",
+                    "TileSize": 512,
+                    "Overlap": 0,
+                    "Size": {
+                      "Width": 1349,
+                      "Height": 2000
+                    }
+                  }
+                }
+              }
+            ],
+            "artworkMeta": {
+              "share": "Check out Sadamasa Motonaga, Work (1968), From Repetto Gallery"
+            },
+            "image": {
+              "internalID": "5a3baa119c18db371ce5062d",
+              "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FVXoIWFSftnp0WI6SJ_1_zw\u002Flarger.jpg",
+              "height": 2000,
+              "width": 1349
+            },
+            "is_downloadable": false,
+            "is_hangable": true,
+            "contextGrids": [
+              {
+                "__typename": "ArtistArtworkGrid",
+                "title": "Other works by Sadamasa Motonaga",
+                "ctaTitle": "View all works by Sadamasa Motonaga",
+                "ctaHref": "\u002Fartist\u002Fsadamasa-motonaga",
+                "artworksConnection": {
+                  "edges": [
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZTI1Yzg2MmEyNmNkMzAwMGU5MzZiODY=",
+                        "slug": "sadamasa-motonaga-drawn-form-in-on-upper-side",
+                        "href": "\u002Fartwork\u002Fsadamasa-motonaga-drawn-form-in-on-upper-side",
+                        "internalID": "5e25c862a26cd3000e936b86",
+                        "image": {
+                          "aspect_ratio": 1.27,
+                          "placeholder": "78.51959361393324%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002F9tq9ueFBKbJbAmtfb8boPw\u002Flarge.jpg"
+                        },
+                        "title": "Drawn form in on upper side",
+                        "image_title": "Sadamasa Motonaga, ‘Drawn form in on upper side’, 1990",
+                        "date": "1990",
+                        "sale_message": "Contact For Price",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                            "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                            "name": "Sadamasa Motonaga"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Repetto Gallery",
+                          "href": "\u002Frepetto-gallery",
+                          "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZTI1Yzk1M2EyNmNkMzAwMTI4NjUwOWI=",
+                        "slug": "sadamasa-motonaga-black-circle-and-red-horizontally-long",
+                        "href": "\u002Fartwork\u002Fsadamasa-motonaga-black-circle-and-red-horizontally-long",
+                        "internalID": "5e25c953a26cd3001286509b",
+                        "image": {
+                          "aspect_ratio": 0.78,
+                          "placeholder": "128.83076923076925%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FqMZVoSq1S-d4pZ2aOjqgrw\u002Flarge.jpg"
+                        },
+                        "title": "Black circle and red horizontally long",
+                        "image_title": "Sadamasa Motonaga, ‘Black circle and red horizontally long’, 1996",
+                        "date": "1996",
+                        "sale_message": "Contact For Price",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                            "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                            "name": "Sadamasa Motonaga"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Repetto Gallery",
+                          "href": "\u002Frepetto-gallery",
+                          "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZTBlNjFmZTlmZjI0ODAwMTI4NGRmMzI=",
+                        "slug": "sadamasa-motonaga-untitled-62",
+                        "href": "\u002Fartwork\u002Fsadamasa-motonaga-untitled-62",
+                        "internalID": "5e0e61fe9ff248001284df32",
+                        "image": {
+                          "aspect_ratio": 1,
+                          "placeholder": "100%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FcwscYaKpa_bpwmaMUfJ_SA\u002Flarge.jpg"
+                        },
+                        "title": "Untitled",
+                        "image_title": "Sadamasa Motonaga, ‘Untitled’, 1998",
+                        "date": "1998",
+                        "sale_message": null,
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                            "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                            "name": "Sadamasa Motonaga"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Rago\u002FWright",
+                          "href": "\u002Fauction\u002Fpartner-595e69f6a09a671938435977",
+                          "id": "UGFydG5lcjo1OTVlNjlmNmEwOWE2NzE5Mzg0MzU5Nzc=",
+                          "type": "Auction House"
+                        },
+                        "sale": {
+                          "is_auction": true,
+                          "is_closed": true,
+                          "id": "U2FsZTo1ZTBlM2I1MTM5ZTMxNTAwMTQyOTk3MzA=",
+                          "is_live_open": false,
+                          "is_open": false,
+                          "is_preview": false,
+                          "display_timely_at": null
+                        },
+                        "sale_artwork": {
+                          "counts": {
+                            "bidder_positions": 1
+                          },
+                          "highest_bid": {
+                            "display": "$250"
+                          },
+                          "opening_bid": {
+                            "display": "$250"
+                          },
+                          "id": "U2FsZUFydHdvcms6NWUwZTYxZmY4MTkwNTIwMDBlZmUzMjVk"
+                        },
+                        "is_inquireable": false,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1OGRkY2I4NThiMGMxNDNjZjlmMmE1YTQ=",
+                        "slug": "sadamasa-motonaga-2",
+                        "href": "\u002Fartwork\u002Fsadamasa-motonaga-2",
+                        "internalID": "58ddcb858b0c143cf9f2a5a4",
+                        "image": {
+                          "aspect_ratio": 0.8,
+                          "placeholder": "125.69546120058565%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FuIPV4MWKqYj-njN5MHxqcA\u002Flarge.jpg"
+                        },
+                        "title": "Untitled",
+                        "image_title": "Sadamasa Motonaga",
+                        "date": "",
+                        "sale_message": "Contact For Price",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                            "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                            "name": "Sadamasa Motonaga"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Aki Gallery",
+                          "href": "\u002Faki-gallery",
+                          "id": "UGFydG5lcjo1NDRlOWMzODcyNjE2OTJlMDBiMDA0MDA=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1YTNiYTcyOWM5ZGMyNDY0YmMxZjQ0NmI=",
+                        "slug": "sadamasa-motonaga-one-orange-and-three-grey-shapes",
+                        "href": "\u002Fartwork\u002Fsadamasa-motonaga-one-orange-and-three-grey-shapes",
+                        "internalID": "5a3ba729c9dc2464bc1f446b",
+                        "image": {
+                          "aspect_ratio": 0.73,
+                          "placeholder": "137.26835964310226%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FbBOdJq-eK8PnAf0c2QHTAA\u002Flarge.jpg"
+                        },
+                        "title": "One orange and three grey shapes",
+                        "image_title": "Sadamasa Motonaga, ‘One orange and three grey shapes’, 1994",
+                        "date": "1994",
+                        "sale_message": "Contact For Price",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                            "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                            "name": "Sadamasa Motonaga"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Repetto Gallery",
+                          "href": "\u002Frepetto-gallery",
+                          "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1OTA5NDlkYjJhODkzYTVlNmY5ZGUxZTg=",
+                        "slug": "sadamasa-motonaga-senohikuiorenjiwamannakaatari-1",
+                        "href": "\u002Fartwork\u002Fsadamasa-motonaga-senohikuiorenjiwamannakaatari-1",
+                        "internalID": "590949db2a893a5e6f9de1e8",
+                        "image": {
+                          "aspect_ratio": 1.4,
+                          "placeholder": "71.5%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FhkYTpgsASpfTrj4wmhMPlQ\u002Flarge.jpg"
+                        },
+                        "title": "Senohikuiorenjiwamannakaatari",
+                        "image_title": "Sadamasa Motonaga, ‘Senohikuiorenjiwamannakaatari’",
+                        "date": "",
+                        "sale_message": "Contact For Price",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                            "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                            "name": "Sadamasa Motonaga"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Aki Gallery",
+                          "href": "\u002Faki-gallery",
+                          "id": "UGFydG5lcjo1NDRlOWMzODcyNjE2OTJlMDBiMDA0MDA=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1OGRkY2I4ODhiM2I4MTNjOTMzNzU2NTc=",
+                        "slug": "sadamasa-motonaga",
+                        "href": "\u002Fartwork\u002Fsadamasa-motonaga",
+                        "internalID": "58ddcb888b3b813c93375657",
+                        "image": {
+                          "aspect_ratio": 0.86,
+                          "placeholder": "116.77445432497979%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FKtymjlQjZITUZQnc5j-Vxw\u002Flarge.jpg"
+                        },
+                        "title": "Untitled",
+                        "image_title": "Sadamasa Motonaga",
+                        "date": "",
+                        "sale_message": "Contact For Price",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                            "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                            "name": "Sadamasa Motonaga"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Aki Gallery",
+                          "href": "\u002Faki-gallery",
+                          "id": "UGFydG5lcjo1NDRlOWMzODcyNjE2OTJlMDBiMDA0MDA=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZTZmMTQ0MzNmYWVhMjAwMTI2OGM5MDg=",
+                        "slug": "sadamasa-motonaga-work-30",
+                        "href": "\u002Fartwork\u002Fsadamasa-motonaga-work-30",
+                        "internalID": "5e6f14433faea2001268c908",
+                        "image": {
+                          "aspect_ratio": 0.61,
+                          "placeholder": "163.46699068448766%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FCuYz9v6TCtAfL4Iv70IxJw\u002Flarge.jpg"
+                        },
+                        "title": "Work",
+                        "image_title": "Sadamasa Motonaga, ‘Work’, 1965",
+                        "date": "1965",
+                        "sale_message": null,
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw==",
+                            "href": "\u002Fartist\u002Fsadamasa-motonaga",
+                            "name": "Sadamasa Motonaga"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Art Perspective",
+                          "href": "\u002Fart-perspective",
+                          "id": "UGFydG5lcjo1ZTU4MGRkMDlmZDYxOTAwMGI4YjllOTk=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": false,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "__typename": "PartnerArtworkGrid",
+                "title": "Other works from Repetto Gallery",
+                "ctaTitle": "View all works from Repetto Gallery",
+                "ctaHref": "\u002Frepetto-gallery",
+                "artworksConnection": {
+                  "edges": [
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZmQ4YTM3ZjQxNjE0ZjMxMzdjMWI3NmY=",
+                        "slug": "arcangelo-sassolino-contro-freccia",
+                        "href": "\u002Fartwork\u002Farcangelo-sassolino-contro-freccia",
+                        "internalID": "5fd8a37f41614f3137c1b76f",
+                        "image": {
+                          "aspect_ratio": 1.51,
+                          "placeholder": "66.32513661202186%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002F8yADkoL4kjwNWprKh8F2Eg\u002Flarge.jpg"
+                        },
+                        "title": "Contro freccia",
+                        "image_title": "Arcangelo Sassolino, ‘Contro freccia’, 2020",
+                        "date": "2020",
+                        "sale_message": "€10,000 - 15,000",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRmNWY2NGMyM2I1NTUyMzBhYzAwMDU4Zg==",
+                            "href": "\u002Fartist\u002Farcangelo-sassolino",
+                            "name": "Arcangelo Sassolino"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Repetto Gallery",
+                          "href": "\u002Frepetto-gallery",
+                          "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZmJkNGE2MmRjY2M4MTc1OWVkMGEwOGQ=",
+                        "slug": "franca-sonnino-libro-nero-scritta-bianca",
+                        "href": "\u002Fartwork\u002Ffranca-sonnino-libro-nero-scritta-bianca",
+                        "internalID": "5fbd4a62dccc81759ed0a08d",
+                        "image": {
+                          "aspect_ratio": 1.25,
+                          "placeholder": "80.18171493469619%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FKtV3PZiDL0J93XmuJBCM3w\u002Flarge.jpg"
+                        },
+                        "title": "Libro nero scritta bianca",
+                        "image_title": "Franca Sonnino, ‘Libro nero scritta bianca’, 2000",
+                        "date": "2000",
+                        "sale_message": "€5,000 - 7,500",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjVjOGJhYzk3M2E1NmYyNTFhMzcxYzFhNQ==",
+                            "href": "\u002Fartist\u002Ffranca-sonnino",
+                            "name": "Franca Sonnino"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Repetto Gallery",
+                          "href": "\u002Frepetto-gallery",
+                          "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZmJkNDljNTQyNjBlZDA2YzAxYjI3YmU=",
+                        "slug": "shirin-neshat-pari-from-women-without-men-series-1",
+                        "href": "\u002Fartwork\u002Fshirin-neshat-pari-from-women-without-men-series-1",
+                        "internalID": "5fbd49c54260ed06c01b27be",
+                        "image": {
+                          "aspect_ratio": 0.7,
+                          "placeholder": "143.62302483069976%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FHD1RcIndgCCyiftBX_pS3Q\u002Flarge.jpg"
+                        },
+                        "title": "Pari (from Women Without Men series)",
+                        "image_title": "Shirin Neshat, ‘Pari (from Women Without Men series)’, 2008",
+                        "date": "2008",
+                        "sale_message": "Contact For Price",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRlOTc1ZmRkN2QxNDJjMDAwMTAwMjRlMw==",
+                            "href": "\u002Fartist\u002Fshirin-neshat",
+                            "name": "Shirin Neshat"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Repetto Gallery",
+                          "href": "\u002Frepetto-gallery",
+                          "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZmJkNDg2OGEzOTI4MjAwMTI0MTEwZmE=",
+                        "slug": "bruno-munari-scritture-illeggibili-di-un-popolo-sconosciuto-5",
+                        "href": "\u002Fartwork\u002Fbruno-munari-scritture-illeggibili-di-un-popolo-sconosciuto-5",
+                        "internalID": "5fbd4868a3928200124110fa",
+                        "image": {
+                          "aspect_ratio": 1.32,
+                          "placeholder": "75.59799740404227%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FaDfTsS3qX6JpjONA-rhfXQ\u002Flarge.jpg"
+                        },
+                        "title": "Scritture illeggibili di un popolo sconosciuto 5",
+                        "image_title": "Bruno Munari, ‘Scritture illeggibili di un popolo sconosciuto 5’, 1975",
+                        "date": "1975",
+                        "sale_message": "€7,500 - 10,000",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDJhNA==",
+                            "href": "\u002Fartist\u002Fbruno-munari",
+                            "name": "Bruno Munari"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Repetto Gallery",
+                          "href": "\u002Frepetto-gallery",
+                          "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZmJkNDg2NWIxZDA1YzIxZDBiODQ2OGI=",
+                        "slug": "bruno-munari-scritture-illeggibili-di-un-popolo-sconosciuto",
+                        "href": "\u002Fartwork\u002Fbruno-munari-scritture-illeggibili-di-un-popolo-sconosciuto",
+                        "internalID": "5fbd4865b1d05c21d0b8468b",
+                        "image": {
+                          "aspect_ratio": 1.31,
+                          "placeholder": "76.52896995708154%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FMvOFYas7QqPUYnNsm_wOjA\u002Flarge.jpg"
+                        },
+                        "title": "Scritture illeggibili di un popolo sconosciuto ",
+                        "image_title": "Bruno Munari, ‘Scritture illeggibili di un popolo sconosciuto ’, 1975",
+                        "date": "1975",
+                        "sale_message": "€7,500 - 10,000",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDJhNA==",
+                            "href": "\u002Fartist\u002Fbruno-munari",
+                            "name": "Bruno Munari"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Repetto Gallery",
+                          "href": "\u002Frepetto-gallery",
+                          "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZmJkNDc0YmQ3OTlmZDI0MGY1M2U1NjQ=",
+                        "slug": "jannis-kounellis-untitled-485",
+                        "href": "\u002Fartwork\u002Fjannis-kounellis-untitled-485",
+                        "internalID": "5fbd474bd799fd240f53e564",
+                        "image": {
+                          "aspect_ratio": 1.46,
+                          "placeholder": "68.58913893006333%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FwEotF7bCD26b2bsgdo74gg\u002Flarge.jpg"
+                        },
+                        "title": "Untitled",
+                        "image_title": "Jannis Kounellis, ‘Untitled’, 1961",
+                        "date": "1961",
+                        "sale_message": "€100,000 - 150,000",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRkZDM0NWU3NDc4ZjU5MDAwMTAwNTEyNQ==",
+                            "href": "\u002Fartist\u002Fjannis-kounellis",
+                            "name": "Jannis Kounellis"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Repetto Gallery",
+                          "href": "\u002Frepetto-gallery",
+                          "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZmJkNDU1Nzc2ZjdlNjE4NGEwZDliMmI=",
+                        "slug": "lucio-fontana-untitled-37",
+                        "href": "\u002Fartwork\u002Flucio-fontana-untitled-37",
+                        "internalID": "5fbd455776f7e6184a0d9b2b",
+                        "image": {
+                          "aspect_ratio": 0.69,
+                          "placeholder": "144.65020576131687%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FgGJSICquGljH6SGoenChxQ\u002Flarge.jpg"
+                        },
+                        "title": "Untitled",
+                        "image_title": "Lucio Fontana, ‘Untitled’, 1956-1957",
+                        "date": "1956-1957",
+                        "sale_message": "Contact For Price",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRkZTUwM2Q2ODdmNTk4MDAwMTAwNGE1ZQ==",
+                            "href": "\u002Fartist\u002Flucio-fontana",
+                            "name": "Lucio Fontana"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Repetto Gallery",
+                          "href": "\u002Frepetto-gallery",
+                          "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZmJkNDRkN2JlMjczNTAwMTIwY2ZiNzQ=",
+                        "slug": "daniele-de-lonti-a",
+                        "href": "\u002Fartwork\u002Fdaniele-de-lonti-a",
+                        "internalID": "5fbd44d7be273500120cfb74",
+                        "image": {
+                          "aspect_ratio": 0.96,
+                          "placeholder": "104.7034764826176%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002Fdq6xRSw7DKQ6gCazVV427A\u002Flarge.jpg"
+                        },
+                        "title": "A",
+                        "image_title": "Daniele De Lonti, ‘A’, 2019",
+                        "date": "2019",
+                        "sale_message": "€1,000 - 2,500",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjUwNmIzMzUzNDQ2NjE3MDAwMjAwMDgxNw==",
+                            "href": "\u002Fartist\u002Fdaniele-de-lonti",
+                            "name": "Daniele De Lonti"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Repetto Gallery",
+                          "href": "\u002Frepetto-gallery",
+                          "id": "UGFydG5lcjo1MGFiY2IzMTI1ZTc3ODEwZmQwMDAwNDE=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "__typename": "RelatedArtworkGrid",
+                "title": "Related works",
+                "ctaTitle": null,
+                "ctaHref": null,
+                "artworksConnection": {
+                  "edges": [
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1YjRmMjUxOTVmMGE0MjE5OTk3MThiMTc=",
+                        "slug": "kazuo-shiraga-highway",
+                        "href": "\u002Fartwork\u002Fkazuo-shiraga-highway",
+                        "internalID": "5b4f25195f0a421999718b17",
+                        "image": {
+                          "aspect_ratio": 1.4,
+                          "placeholder": "71.27244340359094%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FK74nu26JQBXVImkchSw9mA\u002Flarge.jpg"
+                        },
+                        "title": "Highway",
+                        "image_title": "Kazuo Shiraga, ‘Highway’, 1969",
+                        "date": "1969",
+                        "sale_message": "Sold",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRkZWRmZmFjMGNkNTdlMDAwMTAwN2Y2Zg==",
+                            "href": "\u002Fartist\u002Fkazuo-shiraga",
+                            "name": "Kazuo Shiraga"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "MAKI",
+                          "href": "\u002Fmaki-gallery",
+                          "id": "UGFydG5lcjo1NGQwZjIwYjc3NmY3MjYzOTBkODAxMDA=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ODMzNDA4MzljMThkYjMzMGEwMDEwMzY=",
+                        "slug": "yoshitoshi-mori-the-archer",
+                        "href": "\u002Fartwork\u002Fyoshitoshi-mori-the-archer",
+                        "internalID": "583340839c18db330a001036",
+                        "image": {
+                          "aspect_ratio": 0.73,
+                          "placeholder": "137.4%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002F1w2F5vVAF2Ds821df8200g\u002Flarge.jpg"
+                        },
+                        "title": "The Archer",
+                        "image_title": "Yoshitoshi Mori, ‘The Archer’, 1960",
+                        "date": "1960",
+                        "sale_message": "$310",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjU2Nzk5MTM5YWEwMGI1N2RmYjAwMDAyYg==",
+                            "href": "\u002Fartist\u002Fyoshitoshi-mori",
+                            "name": "Yoshitoshi Mori"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Ronin Gallery",
+                          "href": "\u002Fronin-gallery",
+                          "id": "UGFydG5lcjo1NDI0MTg3ZTcyNjE2OTA0ODc5MDA1MDA=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1YTU2NzRlNWIyMDJhMzUxNzFjZmVmMDE=",
+                        "slug": "matsumi-kanemitsu-yellow-orange-black",
+                        "href": "\u002Fartwork\u002Fmatsumi-kanemitsu-yellow-orange-black",
+                        "internalID": "5a5674e5b202a35171cfef01",
+                        "image": {
+                          "aspect_ratio": 0.78,
+                          "placeholder": "128.09734513274336%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FkA-D6YK-QwMBVBrQvuJrPw\u002Flarge.jpg"
+                        },
+                        "title": "Yellow-Orange-Black",
+                        "image_title": "Matsumi Kanemitsu, ‘Yellow-Orange-Black’, 1960",
+                        "date": "1960",
+                        "sale_message": "$10,000",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjUyNDQ2NTUxOGIzYjgxMTUzZTAwMDE1Mg==",
+                            "href": "\u002Fartist\u002Fmatsumi-kanemitsu",
+                            "name": "Matsumi Kanemitsu"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Louis Stern Fine Arts",
+                          "href": "\u002Flouis-stern-fine-arts",
+                          "id": "UGFydG5lcjo1MGM1NTUyMjQ4MjJkMzE1MDkwMDAwNjg=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZWMzYzgzZGVlYzBkZDAwMTJkOGZmYTY=",
+                        "slug": "katsuhiro-yamaguchi-untitled-5",
+                        "href": "\u002Fartwork\u002Fkatsuhiro-yamaguchi-untitled-5",
+                        "internalID": "5ec3c83deec0dd0012d8ffa6",
+                        "image": {
+                          "aspect_ratio": 1.37,
+                          "placeholder": "72.76575729068674%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FgrPtSu1liUJWfTAqLzGlQQ\u002Flarge.jpg"
+                        },
+                        "title": "Untitled",
+                        "image_title": "Katsuhiro Yamaguchi, ‘Untitled’, ca. 1950",
+                        "date": "ca. 1950",
+                        "sale_message": "Contact For Price",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjUyNTU4ODcwMjc1YjI0ZTYzZDAwMGFiMQ==",
+                            "href": "\u002Fartist\u002Fkatsuhiro-yamaguchi",
+                            "name": "Katsuhiro Yamaguchi"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Annely Juda Fine Art",
+                          "href": "\u002Fannely-juda-fine-art",
+                          "id": "UGFydG5lcjo0ZGRhZmEyMWI4YmE1ZTAwMDEwMDFlYzc=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZWEzNTJmNDM3ZTY0OTAwMGVmMjVmNjA=",
+                        "slug": "gladys-nilsson-untitled-1",
+                        "href": "\u002Fartwork\u002Fgladys-nilsson-untitled-1",
+                        "internalID": "5ea352f437e649000ef25f60",
+                        "image": {
+                          "aspect_ratio": 0.68,
+                          "placeholder": "146.3057790782736%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FWqLWMp3PGQHltZzk3LIFLg\u002Flarge.jpg"
+                        },
+                        "title": "Untitled",
+                        "image_title": "Gladys Nilsson, ‘Untitled’, 1969",
+                        "date": "1969",
+                        "sale_message": "Contact For Price",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjUyM2I1MThkY2Q1MzBlZDk2YzAwMDI1Ng==",
+                            "href": "\u002Fartist\u002Fgladys-nilsson",
+                            "name": "Gladys Nilsson"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Matthew Marks Gallery",
+                          "href": "\u002Fmatthew-marks",
+                          "id": "UGFydG5lcjo1MTU1ZDQ5YmI4ODg1MTQ4NmYwMDAxMTg=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1NjAzODEzMjcyNjE2OTY5NTUwMDA1N2U=",
+                        "slug": "keiichi-tanaami-wonder-woman-03",
+                        "href": "\u002Fartwork\u002Fkeiichi-tanaami-wonder-woman-03",
+                        "internalID": "56038132726169695500057e",
+                        "image": {
+                          "aspect_ratio": 1.25,
+                          "placeholder": "80.21978021978022%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FL7suKfHBmNfkwtihuS6VMA\u002Flarge.jpg"
+                        },
+                        "title": "Wonder Woman_03",
+                        "image_title": "Keiichi Tanaami, ‘Wonder Woman_03’, 1967",
+                        "date": "1967",
+                        "sale_message": null,
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRkZDI4ZTU1MTdhMzdjMDAwMTAwNDRhOQ==",
+                            "href": "\u002Fartist\u002Fkeiichi-tanaami",
+                            "name": "Keiichi Tanaami"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Nanzuka",
+                          "href": "\u002Fnanzuka",
+                          "id": "UGFydG5lcjo0ZGQyOGRkN2VmZjVmYTAwMDEwMDQxMGI=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": false,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZDFiYjQ0OGQ0ZWNmNjJiNTE4ZTY4Nzg=",
+                        "slug": "kokuta-suda-untitled-6",
+                        "href": "\u002Fartwork\u002Fkokuta-suda-untitled-6",
+                        "internalID": "5d1bb448d4ecf62b518e6878",
+                        "image": {
+                          "aspect_ratio": 1,
+                          "placeholder": "100%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FwqVU7lWszarQnFuPB4Lg2A\u002Flarge.jpg"
+                        },
+                        "title": "Untitled",
+                        "image_title": "Kokuta Suda, ‘Untitled’, c. 1960",
+                        "date": "c. 1960",
+                        "sale_message": null,
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjU4YmVmNjBkYzlkYzI0MGY2ZTBkM2NmMQ==",
+                            "href": "\u002Fartist\u002Fkokuta-suda",
+                            "name": "Kokuta Suda"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Rago\u002FWright",
+                          "href": "\u002Fauction\u002Fpartner-595e69f6a09a671938435977",
+                          "id": "UGFydG5lcjo1OTVlNjlmNmEwOWE2NzE5Mzg0MzU5Nzc=",
+                          "type": "Auction House"
+                        },
+                        "sale": {
+                          "is_auction": true,
+                          "is_closed": true,
+                          "id": "U2FsZTo1ZDFhMTg3OGQ2OTU0ZTAwMTFkODE4YmU=",
+                          "is_live_open": false,
+                          "is_open": false,
+                          "is_preview": false,
+                          "display_timely_at": null
+                        },
+                        "sale_artwork": {
+                          "counts": {
+                            "bidder_positions": 0
+                          },
+                          "highest_bid": {
+                            "display": null
+                          },
+                          "opening_bid": {
+                            "display": "$500"
+                          },
+                          "id": "U2FsZUFydHdvcms6NWQxYmI0NDgwNDYzZDY3ZjkyYjFkMmNm"
+                        },
+                        "is_inquireable": false,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    },
+                    {
+                      "__typename": "ArtworkEdge",
+                      "node": {
+                        "id": "QXJ0d29yazo1ZjlhYTA0ZDkxYTY4YjAwMTJjYmEzNzQ=",
+                        "slug": "kumi-sugai-composition-1",
+                        "href": "\u002Fartwork\u002Fkumi-sugai-composition-1",
+                        "internalID": "5f9aa04d91a68b0012cba374",
+                        "image": {
+                          "aspect_ratio": 0.76,
+                          "placeholder": "131.67484232655923%",
+                          "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FianyEuardEgLzF9JKL4A9Q\u002Flarge.jpg"
+                        },
+                        "title": "Composition",
+                        "image_title": "Kumi Sugaï, ‘Composition’, 1963",
+                        "date": "1963",
+                        "sale_message": "£10,000 - 15,000",
+                        "cultural_maker": null,
+                        "artists": [
+                          {
+                            "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDM3OA==",
+                            "href": "\u002Fartist\u002Fkumi-sugai",
+                            "name": "Kumi Sugaï"
+                          }
+                        ],
+                        "collecting_institution": null,
+                        "partner": {
+                          "name": "Omer Tiroche Gallery",
+                          "href": "\u002Fomer-tiroche-gallery",
+                          "id": "UGFydG5lcjo1NTMwM2ZiYTc3NmY3MjM2MDM1NzAzMDA=",
+                          "type": "Gallery"
+                        },
+                        "sale": null,
+                        "sale_artwork": null,
+                        "is_inquireable": true,
+                        "is_saved": false,
+                        "is_biddable": false
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "layers": [
+              {
+                "name": "Most Similar",
+                "internalID": "main",
+                "id": "QXJ0d29ya0xheWVyOm1haW4="
+              },
+              {
+                "name": "For Sale",
+                "internalID": "for-sale",
+                "id": "QXJ0d29ya0xheWVyOmZvci1zYWxl"
+              }
+            ],
+            "layer": {
+              "name": "Most Similar",
+              "artworksConnection": {
+                "edges": [
+                  {
+                    "__typename": "ArtworkEdge",
+                    "node": {
+                      "id": "QXJ0d29yazo1YjRmMjUxOTVmMGE0MjE5OTk3MThiMTc=",
+                      "slug": "kazuo-shiraga-highway",
+                      "href": "\u002Fartwork\u002Fkazuo-shiraga-highway",
+                      "internalID": "5b4f25195f0a421999718b17",
+                      "image": {
+                        "aspect_ratio": 1.4,
+                        "placeholder": "71.27244340359094%",
+                        "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FK74nu26JQBXVImkchSw9mA\u002Flarge.jpg"
+                      },
+                      "title": "Highway",
+                      "image_title": "Kazuo Shiraga, ‘Highway’, 1969",
+                      "date": "1969",
+                      "sale_message": "Sold",
+                      "cultural_maker": null,
+                      "artists": [
+                        {
+                          "id": "QXJ0aXN0OjRkZWRmZmFjMGNkNTdlMDAwMTAwN2Y2Zg==",
+                          "href": "\u002Fartist\u002Fkazuo-shiraga",
+                          "name": "Kazuo Shiraga"
+                        }
+                      ],
+                      "collecting_institution": null,
+                      "partner": {
+                        "name": "MAKI",
+                        "href": "\u002Fmaki-gallery",
+                        "id": "UGFydG5lcjo1NGQwZjIwYjc3NmY3MjYzOTBkODAxMDA=",
+                        "type": "Gallery"
+                      },
+                      "sale": null,
+                      "sale_artwork": null,
+                      "is_inquireable": true,
+                      "is_saved": false,
+                      "is_biddable": false
+                    }
+                  },
+                  {
+                    "__typename": "ArtworkEdge",
+                    "node": {
+                      "id": "QXJ0d29yazo1ODMzNDA4MzljMThkYjMzMGEwMDEwMzY=",
+                      "slug": "yoshitoshi-mori-the-archer",
+                      "href": "\u002Fartwork\u002Fyoshitoshi-mori-the-archer",
+                      "internalID": "583340839c18db330a001036",
+                      "image": {
+                        "aspect_ratio": 0.73,
+                        "placeholder": "137.4%",
+                        "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002F1w2F5vVAF2Ds821df8200g\u002Flarge.jpg"
+                      },
+                      "title": "The Archer",
+                      "image_title": "Yoshitoshi Mori, ‘The Archer’, 1960",
+                      "date": "1960",
+                      "sale_message": "$310",
+                      "cultural_maker": null,
+                      "artists": [
+                        {
+                          "id": "QXJ0aXN0OjU2Nzk5MTM5YWEwMGI1N2RmYjAwMDAyYg==",
+                          "href": "\u002Fartist\u002Fyoshitoshi-mori",
+                          "name": "Yoshitoshi Mori"
+                        }
+                      ],
+                      "collecting_institution": null,
+                      "partner": {
+                        "name": "Ronin Gallery",
+                        "href": "\u002Fronin-gallery",
+                        "id": "UGFydG5lcjo1NDI0MTg3ZTcyNjE2OTA0ODc5MDA1MDA=",
+                        "type": "Gallery"
+                      },
+                      "sale": null,
+                      "sale_artwork": null,
+                      "is_inquireable": true,
+                      "is_saved": false,
+                      "is_biddable": false
+                    }
+                  },
+                  {
+                    "__typename": "ArtworkEdge",
+                    "node": {
+                      "id": "QXJ0d29yazo1YTU2NzRlNWIyMDJhMzUxNzFjZmVmMDE=",
+                      "slug": "matsumi-kanemitsu-yellow-orange-black",
+                      "href": "\u002Fartwork\u002Fmatsumi-kanemitsu-yellow-orange-black",
+                      "internalID": "5a5674e5b202a35171cfef01",
+                      "image": {
+                        "aspect_ratio": 0.78,
+                        "placeholder": "128.09734513274336%",
+                        "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FkA-D6YK-QwMBVBrQvuJrPw\u002Flarge.jpg"
+                      },
+                      "title": "Yellow-Orange-Black",
+                      "image_title": "Matsumi Kanemitsu, ‘Yellow-Orange-Black’, 1960",
+                      "date": "1960",
+                      "sale_message": "$10,000",
+                      "cultural_maker": null,
+                      "artists": [
+                        {
+                          "id": "QXJ0aXN0OjUyNDQ2NTUxOGIzYjgxMTUzZTAwMDE1Mg==",
+                          "href": "\u002Fartist\u002Fmatsumi-kanemitsu",
+                          "name": "Matsumi Kanemitsu"
+                        }
+                      ],
+                      "collecting_institution": null,
+                      "partner": {
+                        "name": "Louis Stern Fine Arts",
+                        "href": "\u002Flouis-stern-fine-arts",
+                        "id": "UGFydG5lcjo1MGM1NTUyMjQ4MjJkMzE1MDkwMDAwNjg=",
+                        "type": "Gallery"
+                      },
+                      "sale": null,
+                      "sale_artwork": null,
+                      "is_inquireable": true,
+                      "is_saved": false,
+                      "is_biddable": false
+                    }
+                  },
+                  {
+                    "__typename": "ArtworkEdge",
+                    "node": {
+                      "id": "QXJ0d29yazo1ZWMzYzgzZGVlYzBkZDAwMTJkOGZmYTY=",
+                      "slug": "katsuhiro-yamaguchi-untitled-5",
+                      "href": "\u002Fartwork\u002Fkatsuhiro-yamaguchi-untitled-5",
+                      "internalID": "5ec3c83deec0dd0012d8ffa6",
+                      "image": {
+                        "aspect_ratio": 1.37,
+                        "placeholder": "72.76575729068674%",
+                        "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FgrPtSu1liUJWfTAqLzGlQQ\u002Flarge.jpg"
+                      },
+                      "title": "Untitled",
+                      "image_title": "Katsuhiro Yamaguchi, ‘Untitled’, ca. 1950",
+                      "date": "ca. 1950",
+                      "sale_message": "Contact For Price",
+                      "cultural_maker": null,
+                      "artists": [
+                        {
+                          "id": "QXJ0aXN0OjUyNTU4ODcwMjc1YjI0ZTYzZDAwMGFiMQ==",
+                          "href": "\u002Fartist\u002Fkatsuhiro-yamaguchi",
+                          "name": "Katsuhiro Yamaguchi"
+                        }
+                      ],
+                      "collecting_institution": null,
+                      "partner": {
+                        "name": "Annely Juda Fine Art",
+                        "href": "\u002Fannely-juda-fine-art",
+                        "id": "UGFydG5lcjo0ZGRhZmEyMWI4YmE1ZTAwMDEwMDFlYzc=",
+                        "type": "Gallery"
+                      },
+                      "sale": null,
+                      "sale_artwork": null,
+                      "is_inquireable": true,
+                      "is_saved": false,
+                      "is_biddable": false
+                    }
+                  },
+                  {
+                    "__typename": "ArtworkEdge",
+                    "node": {
+                      "id": "QXJ0d29yazo1ZWEzNTJmNDM3ZTY0OTAwMGVmMjVmNjA=",
+                      "slug": "gladys-nilsson-untitled-1",
+                      "href": "\u002Fartwork\u002Fgladys-nilsson-untitled-1",
+                      "internalID": "5ea352f437e649000ef25f60",
+                      "image": {
+                        "aspect_ratio": 0.68,
+                        "placeholder": "146.3057790782736%",
+                        "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FWqLWMp3PGQHltZzk3LIFLg\u002Flarge.jpg"
+                      },
+                      "title": "Untitled",
+                      "image_title": "Gladys Nilsson, ‘Untitled’, 1969",
+                      "date": "1969",
+                      "sale_message": "Contact For Price",
+                      "cultural_maker": null,
+                      "artists": [
+                        {
+                          "id": "QXJ0aXN0OjUyM2I1MThkY2Q1MzBlZDk2YzAwMDI1Ng==",
+                          "href": "\u002Fartist\u002Fgladys-nilsson",
+                          "name": "Gladys Nilsson"
+                        }
+                      ],
+                      "collecting_institution": null,
+                      "partner": {
+                        "name": "Matthew Marks Gallery",
+                        "href": "\u002Fmatthew-marks",
+                        "id": "UGFydG5lcjo1MTU1ZDQ5YmI4ODg1MTQ4NmYwMDAxMTg=",
+                        "type": "Gallery"
+                      },
+                      "sale": null,
+                      "sale_artwork": null,
+                      "is_inquireable": true,
+                      "is_saved": false,
+                      "is_biddable": false
+                    }
+                  },
+                  {
+                    "__typename": "ArtworkEdge",
+                    "node": {
+                      "id": "QXJ0d29yazo1NjAzODEzMjcyNjE2OTY5NTUwMDA1N2U=",
+                      "slug": "keiichi-tanaami-wonder-woman-03",
+                      "href": "\u002Fartwork\u002Fkeiichi-tanaami-wonder-woman-03",
+                      "internalID": "56038132726169695500057e",
+                      "image": {
+                        "aspect_ratio": 1.25,
+                        "placeholder": "80.21978021978022%",
+                        "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FL7suKfHBmNfkwtihuS6VMA\u002Flarge.jpg"
+                      },
+                      "title": "Wonder Woman_03",
+                      "image_title": "Keiichi Tanaami, ‘Wonder Woman_03’, 1967",
+                      "date": "1967",
+                      "sale_message": null,
+                      "cultural_maker": null,
+                      "artists": [
+                        {
+                          "id": "QXJ0aXN0OjRkZDI4ZTU1MTdhMzdjMDAwMTAwNDRhOQ==",
+                          "href": "\u002Fartist\u002Fkeiichi-tanaami",
+                          "name": "Keiichi Tanaami"
+                        }
+                      ],
+                      "collecting_institution": null,
+                      "partner": {
+                        "name": "Nanzuka",
+                        "href": "\u002Fnanzuka",
+                        "id": "UGFydG5lcjo0ZGQyOGRkN2VmZjVmYTAwMDEwMDQxMGI=",
+                        "type": "Gallery"
+                      },
+                      "sale": null,
+                      "sale_artwork": null,
+                      "is_inquireable": false,
+                      "is_saved": false,
+                      "is_biddable": false
+                    }
+                  },
+                  {
+                    "__typename": "ArtworkEdge",
+                    "node": {
+                      "id": "QXJ0d29yazo1ZDFiYjQ0OGQ0ZWNmNjJiNTE4ZTY4Nzg=",
+                      "slug": "kokuta-suda-untitled-6",
+                      "href": "\u002Fartwork\u002Fkokuta-suda-untitled-6",
+                      "internalID": "5d1bb448d4ecf62b518e6878",
+                      "image": {
+                        "aspect_ratio": 1,
+                        "placeholder": "100%",
+                        "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FwqVU7lWszarQnFuPB4Lg2A\u002Flarge.jpg"
+                      },
+                      "title": "Untitled",
+                      "image_title": "Kokuta Suda, ‘Untitled’, c. 1960",
+                      "date": "c. 1960",
+                      "sale_message": null,
+                      "cultural_maker": null,
+                      "artists": [
+                        {
+                          "id": "QXJ0aXN0OjU4YmVmNjBkYzlkYzI0MGY2ZTBkM2NmMQ==",
+                          "href": "\u002Fartist\u002Fkokuta-suda",
+                          "name": "Kokuta Suda"
+                        }
+                      ],
+                      "collecting_institution": null,
+                      "partner": {
+                        "name": "Rago\u002FWright",
+                        "href": "\u002Fauction\u002Fpartner-595e69f6a09a671938435977",
+                        "id": "UGFydG5lcjo1OTVlNjlmNmEwOWE2NzE5Mzg0MzU5Nzc=",
+                        "type": "Auction House"
+                      },
+                      "sale": {
+                        "is_auction": true,
+                        "is_closed": true,
+                        "id": "U2FsZTo1ZDFhMTg3OGQ2OTU0ZTAwMTFkODE4YmU=",
+                        "is_live_open": false,
+                        "is_open": false,
+                        "is_preview": false,
+                        "display_timely_at": null
+                      },
+                      "sale_artwork": {
+                        "counts": {
+                          "bidder_positions": 0
+                        },
+                        "highest_bid": {
+                          "display": null
+                        },
+                        "opening_bid": {
+                          "display": "$500"
+                        },
+                        "id": "U2FsZUFydHdvcms6NWQxYmI0NDgwNDYzZDY3ZjkyYjFkMmNm"
+                      },
+                      "is_inquireable": false,
+                      "is_saved": false,
+                      "is_biddable": false
+                    }
+                  },
+                  {
+                    "__typename": "ArtworkEdge",
+                    "node": {
+                      "id": "QXJ0d29yazo1ZjlhYTA0ZDkxYTY4YjAwMTJjYmEzNzQ=",
+                      "slug": "kumi-sugai-composition-1",
+                      "href": "\u002Fartwork\u002Fkumi-sugai-composition-1",
+                      "internalID": "5f9aa04d91a68b0012cba374",
+                      "image": {
+                        "aspect_ratio": 0.76,
+                        "placeholder": "131.67484232655923%",
+                        "url": "https:\u002F\u002Fd32dm0rphc51dk.cloudfront.net\u002FianyEuardEgLzF9JKL4A9Q\u002Flarge.jpg"
+                      },
+                      "title": "Composition",
+                      "image_title": "Kumi Sugaï, ‘Composition’, 1963",
+                      "date": "1963",
+                      "sale_message": "£10,000 - 15,000",
+                      "cultural_maker": null,
+                      "artists": [
+                        {
+                          "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDM3OA==",
+                          "href": "\u002Fartist\u002Fkumi-sugai",
+                          "name": "Kumi Sugaï"
+                        }
+                      ],
+                      "collecting_institution": null,
+                      "partner": {
+                        "name": "Omer Tiroche Gallery",
+                        "href": "\u002Fomer-tiroche-gallery",
+                        "id": "UGFydG5lcjo1NTMwM2ZiYTc3NmY3MjM2MDM1NzAzMDA=",
+                        "type": "Gallery"
+                      },
+                      "sale": null,
+                      "sale_artwork": null,
+                      "is_inquireable": true,
+                      "is_saved": false,
+                      "is_biddable": false
+                    }
+                  }
+                ]
+              },
+              "id": "QXJ0d29ya0xheWVyOm1haW4="
+            },
+            "artistSeriesConnection": {
+              "edges": []
+            },
+            "seriesArtist": {
+              "artistSeriesConnection": {
+                "edges": []
+              },
+              "id": "QXJ0aXN0OjRmMDY0ODMyODUwMWZhMTBjYTAwMDI5Yw=="
+            },
+            "seriesForCounts": {
+              "edges": []
+            },
+            "pricingContext": null
+          },
+          "me": null
+        }
+      }
+    ]
+  ]
