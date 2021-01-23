@@ -7,18 +7,18 @@ from PIL import Image
 # TODO Automate the tile counts
 # TODO Include Metadata (artist, title, etc)
 
-root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
-# root_url = "https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg"  # Mucha
+# root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
+root_url = "https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg"  # Mucha
 
 # Mucha 3x3
 # Dali 5x8 (final: Fetching image 4_7.jpg)
-tile_count_width = 9
-tile_count_height = 9
+TILE_WIDTH_RANGE = 9
+TILE_HEIGHT_RANGE = 9
 TILE_SIZE = 512
 
 # TODO It should be safe to assume the first tile is enough to determine the maximum TILE_SIZE.
 #   If the image creation could be delayed until after the first tile is fetched we wouldn't need TILE_SIZE
-new_image = Image.new('RGB', (TILE_SIZE * tile_count_width, TILE_SIZE * tile_count_height))
+new_image = Image.new('RGB', (TILE_SIZE * TILE_WIDTH_RANGE, TILE_SIZE * TILE_HEIGHT_RANGE))
 
 # TODO A smarter algorithm for the actual_width/height would probably be:
 #  Watch for smallest width
@@ -26,13 +26,12 @@ new_image = Image.new('RGB', (TILE_SIZE * tile_count_width, TILE_SIZE * tile_cou
 actual_width = 0
 actual_height = 0
 height_counter = 0
+width_counter = 0
 
 # TODO Parallelize the tile fetch
 
-# for i in range(tile_count_width):
-for i in range(0, 9):
-  #actual_height = 0
-  for j in range(0, 9):
+for i in range(TILE_WIDTH_RANGE):
+  for j in range(TILE_HEIGHT_RANGE):
     try:
       r = requests.get(root_url.format(i, j))
       im = Image.open(BytesIO(r.content))
@@ -43,22 +42,13 @@ for i in range(0, 9):
       print(f"Fetching image {i}_{j}.jpg")
       if r.ok and j == 0:
         height_counter += 1
-        print(height_counter)
+      if r.ok and i == 0:
+        width_counter += 1
     except OSError:
-      if i == 0:
-        tile_count_height -= 1
-        print(f"tile count height: {tile_count_height}")
-      else:
-        # tile_count_width -= 1
-        print(f"tile count width: {tile_count_width}")
-      # print(f"in OSError")
-        pass
+      pass
 
-actual_width /= tile_count_height
+actual_width /= width_counter
 actual_height /=  height_counter
-# print(f"actual width: {actual_width}")
-# print(f"actual height: {actual_height}")print(f"actual width: {actual_width}")
-# print(f"actual height: {actual_height}")
 
 print(f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
 cropped_image = new_image.crop((0, 0, actual_width, actual_height))
