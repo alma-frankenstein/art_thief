@@ -29,9 +29,10 @@ height_counter = 0
 
 # TODO Parallelize the tile fetch
 
-for i in range(tile_count_width):
+# for i in range(tile_count_width):
+for i in range(0, 9):
   #actual_height = 0
-  for j in range(tile_count_height):
+  for j in range(0, 9):
     try:
       r = requests.get(root_url.format(i, j))
       im = Image.open(BytesIO(r.content))
@@ -46,10 +47,12 @@ for i in range(tile_count_width):
     except OSError:
       if i == 0:
         tile_count_height -= 1
-        # print(f"tile count height: {tile_count_height}")
+        print(f"tile count height: {tile_count_height}")
       else:
-        tile_count_width -= 1
-        # print(f"tile count width: {tile_count_width}")
+        # tile_count_width -= 1
+        print(f"tile count width: {tile_count_width}")
+      # print(f"in OSError")
+        pass
 
 actual_width /= tile_count_height
 actual_height /=  height_counter
