@@ -7,8 +7,8 @@ from PIL import Image
 # TODO Automate the tile counts
 # TODO Include Metadata (artist, title, etc)
 
-# root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
-root_url = "https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg"  # Mucha
+root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
+# root_url = "https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg"  # Mucha
 
 # Mucha 3x3
 # Dali 5x8 (final: Fetching image 4_7.jpg)
@@ -31,7 +31,7 @@ width_counter = 0
 # TODO Parallelize the tile fetch
 
 for i in range(TILE_WIDTH_RANGE):
-  for j in range(TILE_HEIGHT_RANGE):
+  for j in range(TILE_HEIGHT_RANGE): 
     try:
       r = requests.get(root_url.format(i, j))
       im = Image.open(BytesIO(r.content))
