@@ -12,8 +12,8 @@ root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles
 
 # Mucha 3x3
 # Dali 5x8 (final: Fetching image 4_7.jpg)
-TILE_COUNT_WIDTH = 5
-TILE_COUNT_HEIGHT = 8
+TILE_COUNT_WIDTH = 11
+TILE_COUNT_HEIGHT = 11
 TILE_SIZE = 512
 
 # TODO It should be safe to assume the first tile is enough to determine the maximum TILE_SIZE.
