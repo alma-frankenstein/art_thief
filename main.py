@@ -12,6 +12,7 @@ root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles
 
 # Mucha 3x3
 # Dali 5x8 (final: Fetching image 4_7.jpg)
+
 TILE_COUNT_WIDTH = 11
 TILE_COUNT_HEIGHT = 11
 TILE_SIZE = 512
@@ -32,11 +33,12 @@ for i in range(TILE_COUNT_WIDTH):
     for j in range(TILE_COUNT_HEIGHT):
         print(f"Fetching image {i}_{j}.jpg")
         r = requests.get(root_url.format(i, j))
-        im = Image.open(BytesIO(r.content))
-        width, height = im.size
-        actual_height += height
-        actual_width += width
-        new_image.paste(im, (TILE_SIZE * i, TILE_SIZE * j))
+        if r.ok:
+            im = Image.open(BytesIO(r.content))
+            width, height = im.size
+            actual_height += height
+            actual_width += width
+            new_image.paste(im, (TILE_SIZE * i, TILE_SIZE * j))
 
 # TODO Currently actual_height and actual_width are computed by summing up the pixel count for each tile
 #   on each of the iterations through.   This causes it to be a multiple of the TILE_COUNT_*   There MUST be a better way
