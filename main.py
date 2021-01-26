@@ -12,8 +12,8 @@ root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles
 
 # Mucha 3x3
 # Dali 5x8 (final: Fetching image 4_7.jpg)
-TILE_WIDTH_RANGE = 10
-TILE_HEIGHT_RANGE = 10
+TILE_WIDTH_RANGE = 20
+TILE_HEIGHT_RANGE = 20
 TILE_SIZE = 512
 
 # TODO It should be safe to assume the first tile is enough to determine the maximum TILE_SIZE.
@@ -29,22 +29,30 @@ width_counter = 0
 height_counter = 0
 
 # count width:
+max_width_found = False
 for i in range(TILE_WIDTH_RANGE):
   r = requests.get(root_url.format(i, 0))
   if r.ok:
     width_counter += 1
   else:
+    max_width_found = True
     break
     
 # count height:
+max_height_found = False
 for j in range(TILE_HEIGHT_RANGE):
   r = requests.get(root_url.format(0, j))
   if r.ok:
     height_counter += 1
   else:
+    max_height_found = True
     break
-    
+
+if not max_width_found or not max_height_found:
+    print("WARNING:  Image boundary not found.  This may only be part of it!")
 # TODO Parallelize the tile fetch
+
+# #TODO Capture Title, Author, Year, etc and put in filename/metadata 
 
 for i in range(width_counter):
   for j in range(height_counter): 
