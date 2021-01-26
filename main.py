@@ -69,7 +69,6 @@ actual_height /=  width_counter
 
 print(f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
 cropped_image = new_image.crop((0, 0, actual_width, actual_height))
-# cropped_image.save("img.png")
 cropped_image.show()
 
 # # TODO Turn the whole thing into a flask app and host it on GH?
