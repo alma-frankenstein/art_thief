@@ -1,3 +1,4 @@
+import time
 from io import BytesIO
 import requests
 from PIL import Image
@@ -6,6 +7,8 @@ from PIL import Image
 # TODO Automate the url grab
 # TODO Automate the tile counts
 # TODO Include Metadata (artist, title, etc)
+
+t1 = time.time()
 
 root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
 # root_url = "https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg"  # Mucha
@@ -73,3 +76,5 @@ cropped_image = new_image.crop((0, 0, actual_width, actual_height))
 cropped_image.show()
 
 # # TODO Turn the whole thing into a flask app and host it on GH?
+t2 = time.time()
+print(f"Time to execute: {t2 -t1:.2f}s")
