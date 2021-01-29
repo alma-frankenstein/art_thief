@@ -1,7 +1,7 @@
 from io import BytesIO
 import requests
 from PIL import Image
-from format_url import dztiles_url
+from format_url import dztiles_url_11
 # https://www.artsy.net/artwork/salvador-dali-madonne
 # https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/10/1_1.jpg
 # TODO Automate the url grab
@@ -11,7 +11,9 @@ from format_url import dztiles_url
 # root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
 # root_url = "https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg"  # Mucha
 # root_url = "https://d32dm0rphc51dk.cloudfront.net/HFgPe_vJgqATQdyClCvyMQ/dztiles/11/{}_{}.jpg"    # Man Ray
-root_url = dztiles_url
+# root_url_11 = dztiles_url_11
+# root_url_12 = dztiles_url_12
+root_url = dztiles_url_11
 
 # Mucha 3x3
 # Dali 5x8 (final: Fetching image 4_7.jpg)
@@ -22,6 +24,17 @@ TILE_SIZE = 512
 #   If the image creation could be delayed until after the first tile is fetched we wouldn't need TILE_SIZE
 new_image = Image.new(
     'RGB', (TILE_SIZE * TILE_MAX_RANGE, TILE_SIZE * TILE_MAX_RANGE))
+
+# def check_dztiles(url_11, url_12):
+#     r = requests.get(url_11.format(0, 0))
+#     if r.ok:
+#         root_url = url_11
+#     else:
+#         root_url = url_12
+#     return root_url
+
+# root_url = check_dztiles(root_url_11, root_url_12)
+# print(root_url)
 
 
 def paste_on_canvas(i, j, image_data):

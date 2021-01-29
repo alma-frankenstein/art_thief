@@ -21,12 +21,15 @@ def get_source(url):
     r = requests.get(url)
     return(r.content)
 
-# madonne = "https://www.artsy.net/artwork/salvador-dali-madonne"
-# source_string = get_source(madonne)
+madonne = "https://www.artsy.net/artwork/salvador-dali-madonne"
+source_string = get_source(madonne)
 
-cadeau = "https://www.artsy.net/artwork/man-ray-cadeau-1926"
-source_string = get_source(cadeau)
+# cadeau = "https://www.artsy.net/artwork/man-ray-cadeau-1926"
+# source_string = get_source(cadeau)
 # https://d32dm0rphc51dk.cloudfront.net/HFgPe_vJgqATQdyClCvyMQ/medium.jpg
+
+# fete = "https://www.artsy.net/artwork/marc-chagall-la-fete-autour-du-nu-rose"
+# source_string = get_source(fete)
 
 f = open('source_code.html', 'wb')
 f.write(source_string)
@@ -45,5 +48,6 @@ for block in soup.find_all('script'):
         bootstrap_json = json.loads(json.loads(bootstrap_string))
         # pprint(bootstrap_json)
         jpeg_url = (bootstrap_json[0][1]["json"]["data"]["artwork"]["images"][0]["url"])
-        dztiles_url = jpeg_url[:-10] + "dztiles/11/{}_{}.jpg"
-        # print(dztiles_url)
+        dztiles_url_11 = jpeg_url[:-10] + "dztiles/11/{}_{}.jpg"
+        # print(dztiles_url_11)
+        # dztiles_url_12 = jpeg_url[:-10] + "dztiles/12/{}_{}.jpg"
