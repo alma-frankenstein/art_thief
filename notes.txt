@@ -10,16 +10,3 @@
 * or, search for '/large.jpg', find the ID that precedes it
 
 
-
-* uncommenting line 57 in main.py:
-
-Traceback (most recent call last):
-  File "main.py", line 81, in <module>
-    get_tiles(width_counter, height_counter)
-  File "main.py", line 79, in get_tiles
-    paste_on_canvas(i, j)
-  File "main.py", line 34, in paste_on_canvas
-    im = Image.open(BytesIO(r.content))
-  File "/home/alma/repos/artscrapr/venv/lib/python3.8/site-packages/PIL/Image.py", line 2958, in open
-    raise UnidentifiedImageError(
-PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7f58b1c7d2c0>

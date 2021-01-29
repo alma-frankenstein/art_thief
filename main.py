@@ -1,6 +1,7 @@
 from io import BytesIO
 import requests
 from PIL import Image
+from format_url import dztiles_url
 # https://www.artsy.net/artwork/salvador-dali-madonne
 # https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/10/1_1.jpg
 # TODO Automate the url grab
@@ -8,11 +9,13 @@ from PIL import Image
 # TODO Include Metadata (artist, title, etc)
 
 # root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
-root_url = "https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg"  # Mucha
+# root_url = "https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg"  # Mucha
+# root_url = "https://d32dm0rphc51dk.cloudfront.net/HFgPe_vJgqATQdyClCvyMQ/dztiles/11/{}_{}.jpg"    # Man Ray
+root_url = dztiles_url
 
 # Mucha 3x3
 # Dali 5x8 (final: Fetching image 4_7.jpg)
-TILE_MAX_RANGE = 9
+TILE_MAX_RANGE = 10
 TILE_SIZE = 512
 
 # TODO It should be safe to assume the first tile is enough to determine the maximum TILE_SIZE.
@@ -41,7 +44,6 @@ def find_max_height() -> int:
 
 
 def _find_max_dimension(max_range, find_width: bool = True) -> int:
-    max_found = False
     actual_size = 0
     for dim in range(TILE_MAX_RANGE):
         x, y = 0, dim
