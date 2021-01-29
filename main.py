@@ -42,7 +42,6 @@ def find_max_height() -> int:
 
 def _find_max_dimension(max_range, find_width: bool = True) -> int:
     max_found = False
-    counter = 0
     actual_size = 0
     for dim in range(TILE_MAX_RANGE):
         x, y = 0, dim
@@ -50,7 +49,6 @@ def _find_max_dimension(max_range, find_width: bool = True) -> int:
             y, x = x, y
         r = requests.get(root_url.format(x, y))
         if r.ok:
-            counter += 1
             im = Image.open(BytesIO(r.content))
             width, height = im.size
             paste_on_canvas(x, y, r.content)
@@ -60,23 +58,16 @@ def _find_max_dimension(max_range, find_width: bool = True) -> int:
                 actual_size += height
             print("in counter")
         else:
-            # max_found = True
-            # print("WARNING:  Image boundary not found.  This may only be part of it!")
             return dim, actual_size
-            # return counter, actual_size
-    # else:
-    #     return dim, actual_size
+    print("WARNING:  Image boundary not found.  This may only be part of it!")
+    return dim + 1, actual_size
 
 
 width_counter, actual_width = find_max_width()
 height_counter, actual_height = find_max_height()
 
-# if not width_counter or not height_counter:
-#     print("WARNING:  Image boundary not found.  This may only be part of it!")
 # TODO Parallelize the tile fetch
-
 # #TODO Capture Title, Author, Year, etc and put in filename/metadata
-
 
 def get_tiles(w_counter, h_counter):
     for i in range(1, w_counter):
