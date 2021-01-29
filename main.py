@@ -55,7 +55,7 @@ def find_max_height() -> int:
     return _find_max_dimension(TILE_MAX_RANGE, find_width=False)
 
 
-def _find_max_dimension(max_range, find_width: bool = True) -> int:
+def _find_max_dimension(max_range, find_width: bool = True) -> (int, int):
     actual_size = 0
     for dim in range(TILE_MAX_RANGE):
         x, y = 0, dim
