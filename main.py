@@ -10,7 +10,6 @@ from format_url import dztiles_url_11
 
 # root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
 # root_url = "https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg"  # Mucha
-# root_url = "https://d32dm0rphc51dk.cloudfront.net/HFgPe_vJgqATQdyClCvyMQ/dztiles/11/{}_{}.jpg"    # Man Ray
 # root_url_11 = dztiles_url_11
 # root_url_12 = dztiles_url_12
 root_url = dztiles_url_11

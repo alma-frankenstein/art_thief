@@ -24,6 +24,9 @@ def get_source(url):
 madonne = "https://www.artsy.net/artwork/salvador-dali-madonne"
 source_string = get_source(madonne)
 
+# job = "https://www.artsy.net/artwork/alphonse-mucha-job-30"
+# source_string = get_source(job)
+
 # cadeau = "https://www.artsy.net/artwork/man-ray-cadeau-1926"
 # source_string = get_source(cadeau)
 # https://d32dm0rphc51dk.cloudfront.net/HFgPe_vJgqATQdyClCvyMQ/medium.jpg
