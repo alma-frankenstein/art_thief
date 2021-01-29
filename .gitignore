@@ -2,3 +2,4 @@ venv/*
 .vscode/*
 .idea/*
 img.png
+settings.json
