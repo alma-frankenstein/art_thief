@@ -18,7 +18,7 @@ from format_url import url_for_image
 # root_url_11 = dztiles_url_11
 # root_url_12 = dztiles_url_12
 # root_url = dztiles_url_11
-root_url = url_for_image
+# root_url = url_for_image
 
 # Mucha 3x3
 # Dali 5x8 (final: Fetching image 4_7.jpg)
@@ -41,12 +41,12 @@ new_image = Image.new(
 # root_url = check_dztiles(root_url_11, root_url_12)
 # print(root_url)
 
-def fabulous_picture():
-    width_counter, actual_width = find_max_width()
-    height_counter, actual_height = find_max_height()
-    get_tiles(width_counter, height_counter)
+def fabulous_picture(dz_url):
+    width_counter, actual_width = find_max_width(dz_url)
+    height_counter, actual_height = find_max_height(dz_url)
+    get_tiles(dz_url, width_counter, height_counter)
     print(f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
-    crop_n_show()
+    crop_n_show(actual_width, actual_height)
     
 
 def paste_on_canvas(i, j, image_data):
@@ -55,20 +55,21 @@ def paste_on_canvas(i, j, image_data):
     print(f"Fetching image {i}_{j}.jpg")
 
 
-def crop_n_show():
-    cropped_image = new_image.crop((0, 0, actual_width, actual_height))
+def crop_n_show(actual_w, actual_h):
+    cropped_image = new_image.crop((0, 0, actual_w, actual_h))
     cropped_image.show()
 
 
-def find_max_width() -> int:
-    return _find_max_dimension(TILE_MAX_RANGE, find_width=True)
+def find_max_width(dz_url) -> int:
+    return _find_max_dimension(dz_url, TILE_MAX_RANGE, find_width=True)
 
 
-def find_max_height() -> int:
-    return _find_max_dimension(TILE_MAX_RANGE, find_width=False)
+def find_max_height(dz_url) -> int:
+    return _find_max_dimension(dz_url, TILE_MAX_RANGE, find_width=False)
 
 
-def _find_max_dimension(max_range, find_width: bool = True) -> (int, int):
+def _find_max_dimension(dz_url, max_range, find_width: bool = True) -> (int, int):
+    root_url = dz_url
     actual_size = 0
     for dim in range(TILE_MAX_RANGE):
         x, y = 0, dim
@@ -96,7 +97,8 @@ def _find_max_dimension(max_range, find_width: bool = True) -> (int, int):
 # TODO Parallelize the tile fetch
 # #TODO Capture Title, Author, Year, etc and put in filename/metadata
 
-def get_tiles(w_counter, h_counter):
+def get_tiles(dz_url, w_counter, h_counter):
+    root_url = dz_url
     for i in range(1, w_counter):
         for j in range(1, h_counter):
             r = requests.get(root_url.format(i, j))
@@ -112,4 +114,4 @@ def get_tiles(w_counter, h_counter):
 
 # # TODO Turn the whole thing into a flask app and host it on GH?
 
-fabulous_picture()
+fabulous_picture("https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg")
