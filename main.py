@@ -2,8 +2,7 @@ from io import BytesIO
 import requests
 from PIL import Image
 # from format_url import dztiles_url_11
-from format_url import url_for_image 
-
+from format_url import image_url
 # https://www.artsy.net/artwork/salvador-dali-madonne
 # https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/10/1_1.jpg
 # TODO Automate the url grab
@@ -22,7 +21,7 @@ from format_url import url_for_image
 
 # Mucha 3x3
 # Dali 5x8 (final: Fetching image 4_7.jpg)
-TILE_MAX_RANGE = 4
+TILE_MAX_RANGE = 5
 TILE_SIZE = 512
 
 # TODO It should be safe to assume the first tile is enough to determine the maximum TILE_SIZE.
@@ -114,4 +113,4 @@ def get_tiles(dz_url, w_counter, h_counter):
 
 # # TODO Turn the whole thing into a flask app and host it on GH?
 
-fabulous_picture("https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg")
+# fabulous_picture("https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg")

@@ -57,7 +57,7 @@ def get_dztiles_url(parsed_html, substring):
         
 # print(get_dztiles_url(the_soup, "RELAY"))
 
-def image_url(artsy_url):
+def image_url(artsy_url):  # Ryan! Both of these work. Is one preferred?
     # source_string = get_source(artsy_url)
     # the_soup = parse_source_code(source_string)
     # print(get_dztiles_url(the_soup, "RELAY"))
@@ -66,7 +66,7 @@ def image_url(artsy_url):
     return(get_dztiles_url(parse_source_code(get_source(artsy_url)), "RELAY"))
     
     
-url_for_image = image_url("https://www.artsy.net/artwork/man-ray-cadeau-1926")
+# url_for_image = image_url("https://www.artsy.net/artwork/man-ray-cadeau-1926")
 
 
     
