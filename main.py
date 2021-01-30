@@ -1,7 +1,9 @@
 from io import BytesIO
 import requests
 from PIL import Image
-from format_url import dztiles_url_11
+# from format_url import dztiles_url_11
+from format_url import url_for_image 
+
 # https://www.artsy.net/artwork/salvador-dali-madonne
 # https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/10/1_1.jpg
 # TODO Automate the url grab
@@ -10,13 +12,17 @@ from format_url import dztiles_url_11
 
 # root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
 # root_url = "https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg"  # Mucha
+# root_url = "https://d32dm0rphc51dk.cloudfront.net/HFgPe_vJgqATQdyClCvyMQ/dztiles/11/{}_{}.jpg"  # Man Ray
+# root_url = "https://d32dm0rphc51dk.cloudfront.net/wslu5vVcYM-CRPQ72I3fEQ/dztiles/12/{}_{}.jpg"  # Picasso
+
 # root_url_11 = dztiles_url_11
 # root_url_12 = dztiles_url_12
-root_url = dztiles_url_11
+# root_url = dztiles_url_11
+root_url = url_for_image
 
 # Mucha 3x3
 # Dali 5x8 (final: Fetching image 4_7.jpg)
-TILE_MAX_RANGE = 10
+TILE_MAX_RANGE = 4
 TILE_SIZE = 512
 
 # TODO It should be safe to assume the first tile is enough to determine the maximum TILE_SIZE.
@@ -35,6 +41,13 @@ new_image = Image.new(
 # root_url = check_dztiles(root_url_11, root_url_12)
 # print(root_url)
 
+def fabulous_picture():
+    width_counter, actual_width = find_max_width()
+    height_counter, actual_height = find_max_height()
+    get_tiles(width_counter, height_counter)
+    print(f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
+    crop_n_show()
+    
 
 def paste_on_canvas(i, j, image_data):
     im = Image.open(BytesIO(image_data))
@@ -66,7 +79,7 @@ def _find_max_dimension(max_range, find_width: bool = True) -> (int, int):
             im = Image.open(BytesIO(r.content))
             width, height = im.size
             paste_on_canvas(x, y, r.content)
-            if find_max_width:
+            if find_width:
                 actual_size += width
             else:
                 actual_size += height
@@ -77,8 +90,8 @@ def _find_max_dimension(max_range, find_width: bool = True) -> (int, int):
     return dim + 1, actual_size
 
 
-width_counter, actual_width = find_max_width()
-height_counter, actual_height = find_max_height()
+# width_counter, actual_width = find_max_width()
+# height_counter, actual_height = find_max_height()
 
 # TODO Parallelize the tile fetch
 # #TODO Capture Title, Author, Year, etc and put in filename/metadata
@@ -90,11 +103,13 @@ def get_tiles(w_counter, h_counter):
             paste_on_canvas(i, j, image_data=r.content)
 
 
-get_tiles(width_counter, height_counter)
+# get_tiles(width_counter, height_counter)
 
-print(
-    f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
+# print(
+#     f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
 
-crop_n_show()
+# crop_n_show()
 
 # # TODO Turn the whole thing into a flask app and host it on GH?
+
+fabulous_picture()
