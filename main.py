@@ -45,7 +45,7 @@ def fabulous_picture(dz_url):
     height_counter, actual_height = find_max_height(dz_url)
     get_tiles(dz_url, width_counter, height_counter)
     print(f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
-    crop_n_show(actual_width, actual_height)
+    crop_n_show(actual_width, actual_height, dz_url)
     
 
 def paste_on_canvas(i, j, image_data):
@@ -54,9 +54,11 @@ def paste_on_canvas(i, j, image_data):
     print(f"Fetching image {i}_{j}.jpg")
 
 
-def crop_n_show(actual_w, actual_h):
+def crop_n_show(actual_w, actual_h, url):
+    temp_id = url[40:46]
     cropped_image = new_image.crop((0, 0, actual_w, actual_h))
-    cropped_image.show()
+    cropped_image.save(f"image{temp_id}.jpg")
+    # cropped_image.show()  ## RyJ! You'll probably want to uncomment this
 
 
 def find_max_width(dz_url) -> int:
@@ -90,8 +92,6 @@ def _find_max_dimension(dz_url, max_range, find_width: bool = True) -> (int, int
     return dim + 1, actual_size
 
 
-# width_counter, actual_width = find_max_width()
-# height_counter, actual_height = find_max_height()
 
 # TODO Parallelize the tile fetch
 # #TODO Capture Title, Author, Year, etc and put in filename/metadata
@@ -104,13 +104,8 @@ def get_tiles(dz_url, w_counter, h_counter):
             paste_on_canvas(i, j, image_data=r.content)
 
 
-# get_tiles(width_counter, height_counter)
-
-# print(
-#     f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
-
-# crop_n_show()
 
 # # TODO Turn the whole thing into a flask app and host it on GH?
 
+# show a single picture:
 # fabulous_picture("https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg")
