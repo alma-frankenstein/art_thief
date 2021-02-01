@@ -2,6 +2,6 @@ venv/*
 .vscode/*
 .idea/*
 settings.json
+output.json
 source_code.html
-notes.txt
 image*
