@@ -77,7 +77,6 @@ def _find_max_dimension(dz_url, max_range, find_width: bool = True) -> (int, int
     return dim + 1, actual_size
 
 
-
 # TODO Parallelize the tile fetch
 # TODO Capture Title, Author, Year, etc and put in filename/metadata
 

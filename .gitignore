@@ -1,6 +1,7 @@
 venv/*
 .vscode/*
 .idea/*
+__pycache__/
 settings.json
 output.json
 source_code.html
