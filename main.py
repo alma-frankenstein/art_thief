@@ -1,7 +1,9 @@
+from format_url import image_url
 from io import BytesIO
 import requests
 from PIL import Image
 from format_url import image_url
+# from piece_info import image_url
 
 # TODO Automate the url grab
 # TODO Automate the tile counts
@@ -24,12 +26,12 @@ new_image = Image.new(
     'RGB', (TILE_SIZE * TILE_MAX_RANGE, TILE_SIZE * TILE_MAX_RANGE))
 
 
-def fabulous_picture(dz_url):
+def fabulous_picture(dz_url, title_artist):
     width_counter, actual_width = find_max_width(dz_url)
     height_counter, actual_height = find_max_height(dz_url)
     get_tiles(dz_url, width_counter, height_counter)
     print(f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
-    crop_n_show(actual_width, actual_height, dz_url)
+    crop_n_show(actual_width, actual_height, title_artist)
     
 
 def paste_on_canvas(i, j, image_data):
@@ -38,10 +40,9 @@ def paste_on_canvas(i, j, image_data):
     print(f"Fetching image {i}_{j}.jpg")
 
 
-def crop_n_show(actual_w, actual_h, url):
-    temp_id = url[40:46]
+def crop_n_show(actual_w, actual_h, title_artist):
     cropped_image = new_image.crop((0, 0, actual_w, actual_h))
-    cropped_image.save(f"image{temp_id}.jpg")
+    cropped_image.save(f"x{title_artist}.jpg")
 
 
 def find_max_width(dz_url) -> (int, int):
@@ -90,6 +91,3 @@ def get_tiles(dz_url, w_counter, h_counter):
 
 
 # # TODO Turn the whole thing into a flask app and host it on GH?
-
-# show a single picture:
-# fabulous_picture("https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg")

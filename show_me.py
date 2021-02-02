@@ -3,6 +3,8 @@ import argparse
 import click
 
 from format_url import image_url
+# from piece_info import image_url
+
 from main import fabulous_picture
 
 #----------argparse---------------
@@ -34,7 +36,7 @@ from main import fabulous_picture
 @click.argument('artsy_urls', nargs=-1)
 def save_pics(artsy_urls):
     for url in artsy_urls:
-        root_url = image_url(url)
-        fabulous_picture(root_url)
+        root_url, title_artist = image_url(url)
+        fabulous_picture(root_url, title_artist)
     
 save_pics()
