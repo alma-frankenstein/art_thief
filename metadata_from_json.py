@@ -1,6 +1,3 @@
-# from main import fabulous_picture
-# from format_url import image_json
-# import pathlib
 from urllib.parse import urljoin
 
 

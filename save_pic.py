@@ -9,5 +9,5 @@ def save_pic(artsy_url):
     root_url = dztiles_url(bootstrap)
     fabulous_picture(root_url, jpeg_label)
     
-save_pic("https://www.artsy.net/artwork/david-wojnarowicz-arthur-rimbaud-in-new-york-diner-2")
+# save_pic("https://www.artsy.net/artwork/david-wojnarowicz-arthur-rimbaud-in-new-york-diner-2")
 

@@ -1,8 +1,9 @@
-# from format_url import image_url
 from io import BytesIO
 import requests
 from PIL import Image
-from format_url import image_json
+import logging
+
+logging.basicConfig(level=logging.INFO)
 
 # TODO Automate the url grab
 # TODO Automate the tile counts
@@ -68,7 +69,8 @@ def _find_max_dimension(dz_url, max_range, find_width: bool = True) -> (int, int
                 actual_size += width
             else:
                 actual_size += height
-            print("in counter")
+            # print("in counter")
+            logging.info('in counter')
         else:
             print(dim)
             return dim, actual_size

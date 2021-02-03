@@ -1,10 +1,4 @@
-import PIL
-import argparse
 import click
-
-from format_url import image_json
-from metadata_from_json import artist_and_title, dztiles_url
-from main import fabulous_picture
 from save_pic import save_pic
 
 #----------argparse---------------
