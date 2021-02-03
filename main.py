@@ -1,75 +1,93 @@
+from format_url import image_url
 from io import BytesIO
 import requests
 from PIL import Image
-# https://www.artsy.net/artwork/salvador-dali-madonne
-# https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/10/1_1.jpg
+from format_url import image_url
+# from piece_info import image_url
+
 # TODO Automate the url grab
 # TODO Automate the tile counts
 # TODO Include Metadata (artist, title, etc)
 
-root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
+# root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
 # root_url = "https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg"  # Mucha
+# root_url = "https://d32dm0rphc51dk.cloudfront.net/HFgPe_vJgqATQdyClCvyMQ/dztiles/11/{}_{}.jpg"  # Man Ray
+# root_url = "https://d32dm0rphc51dk.cloudfront.net/wslu5vVcYM-CRPQ72I3fEQ/dztiles/12/{}_{}.jpg"  # Picasso
+
 
 # Mucha 3x3
 # Dali 5x8 (final: Fetching image 4_7.jpg)
-TILE_WIDTH_RANGE = 20
-TILE_HEIGHT_RANGE = 20
+TILE_MAX_RANGE = 10
 TILE_SIZE = 512
 
 # TODO It should be safe to assume the first tile is enough to determine the maximum TILE_SIZE.
 #   If the image creation could be delayed until after the first tile is fetched we wouldn't need TILE_SIZE
-new_image = Image.new('RGB', (TILE_SIZE * TILE_WIDTH_RANGE, TILE_SIZE * TILE_HEIGHT_RANGE))
+new_image = Image.new(
+    'RGB', (TILE_SIZE * TILE_MAX_RANGE, TILE_SIZE * TILE_MAX_RANGE))
 
-# TODO A smarter algorithm for the actual_width/height would probably be:
-#  Watch for smallest width
-#  actual_width = (tile_count_width - 1) * TILE_SIZE + SMALLEST_WIDTH
-actual_width = 0
-actual_height = 0
-width_counter = 0
-height_counter = 0
 
-# count width:
-max_width_found = False
-for i in range(TILE_WIDTH_RANGE):
-  r = requests.get(root_url.format(i, 0))
-  if r.ok:
-    width_counter += 1
-  else:
-    max_width_found = True
-    break
+def fabulous_picture(dz_url, title_artist):
+    width_counter, actual_width = find_max_width(dz_url)
+    height_counter, actual_height = find_max_height(dz_url)
+    get_tiles(dz_url, width_counter, height_counter)
+    print(f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
+    crop_n_show(actual_width, actual_height, title_artist)
     
-# count height:
-max_height_found = False
-for j in range(TILE_HEIGHT_RANGE):
-  r = requests.get(root_url.format(0, j))
-  if r.ok:
-    height_counter += 1
-  else:
-    max_height_found = True
-    break
 
-if not max_width_found or not max_height_found:
-    print("WARNING:  Image boundary not found.  This may only be part of it!")
-# TODO Parallelize the tile fetch
-
-# #TODO Capture Title, Author, Year, etc and put in filename/metadata 
-
-for i in range(width_counter):
-  for j in range(height_counter): 
-    r = requests.get(root_url.format(i, j))
-    im = Image.open(BytesIO(r.content))
-    width, height = im.size
-    actual_height += height
-    actual_width += width
+def paste_on_canvas(i, j, image_data):
+    im = Image.open(BytesIO(image_data))
     new_image.paste(im, (TILE_SIZE * i, TILE_SIZE * j))
     print(f"Fetching image {i}_{j}.jpg")
 
-actual_width /= height_counter
-actual_height /=  width_counter
 
-print(f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
-cropped_image = new_image.crop((0, 0, actual_width, actual_height))
-# cropped_image.save("img.png")
-cropped_image.show()
+def crop_n_show(actual_w, actual_h, title_artist):
+    cropped_image = new_image.crop((0, 0, actual_w, actual_h))
+    cropped_image.save(f"x{title_artist}.jpg")
+
+
+def find_max_width(dz_url) -> (int, int):
+    return _find_max_dimension(dz_url, TILE_MAX_RANGE, find_width=True)
+
+
+def find_max_height(dz_url) -> (int, int):
+    return _find_max_dimension(dz_url, TILE_MAX_RANGE, find_width=False)
+
+
+def _find_max_dimension(dz_url, max_range, find_width: bool = True) -> (int, int):
+    root_url = dz_url
+    actual_size = 0
+    for dim in range(max_range):
+        x, y = 0, dim
+        if find_width:
+            y, x = x, y
+        r = requests.get(root_url.format(x, y))
+        if r.ok:
+            im = Image.open(BytesIO(r.content))
+            width, height = im.size
+            paste_on_canvas(x, y, r.content)
+            if find_width:
+                actual_size += width
+            else:
+                actual_size += height
+            print("in counter")
+        else:
+            print(dim)
+            return dim, actual_size
+    print("WARNING:  Image boundary not found.  This may only be part of it!")
+    print(f"Max dim found: {dim}")
+    return dim + 1, actual_size
+
+
+# TODO Parallelize the tile fetch
+# TODO Capture Title, Author, Year, etc and put in filename/metadata
+
+def get_tiles(dz_url, w_counter, h_counter):
+    root_url = dz_url
+    for i in range(1, w_counter):
+        for j in range(1, h_counter):
+            r = requests.get(root_url.format(i, j))
+            paste_on_canvas(i, j, image_data=r.content)
+
+
 
 # # TODO Turn the whole thing into a flask app and host it on GH?

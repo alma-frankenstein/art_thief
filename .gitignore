@@ -1,4 +1,8 @@
 venv/*
 .vscode/*
 .idea/*
-img.png
+__pycache__/
+settings.json
+output.json
+source_code.html
+image*
