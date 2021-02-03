@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
+# import pathlib
+
 
 def get_source(url):
     r = requests.get(url)
@@ -19,26 +21,20 @@ def parse_source_code(source_string):
     
 # TODO 11 vs 12 in dztiles
 
-def get_dztiles_url(parsed_html, substring):
+def json_bootstrap(parsed_html, substring):  # was get_dztiles, returned (dz_tiles, title_artist)
     for block in parsed_html.find_all('script'):
         if substring in str(block):
             bootstrap_string = block.string.strip()
             bootstrap_string = bootstrap_string.replace("var __RELAY_BOOTSTRAP__ = ", "")   
             bootstrap_string = bootstrap_string[:-1]
             bootstrap_json = json.loads(json.loads(bootstrap_string))
-            with open('output.json', 'w') as f:
-                f.write(json.dumps(bootstrap_json, indent=4))
-            jpeg_url = (bootstrap_json[0][1]["json"]["data"]["artwork"]["images"][0]["deepZoom"]["Image"]["Url"])
-            dztiles_url_11 = jpeg_url + "11/{}_{}.jpg"
-            piece_info = (bootstrap_json[0][1]["json"]["data"]["artwork"]["meta"]["title"]).split("|")
-            artist_name = piece_info[0].strip().replace(" ", "_")
-            title_and_year = piece_info[1].strip().replace(" ", "_")
-            title_artist =  title_and_year + "_by_" + artist_name
-            return dztiles_url_11, title_artist
-        
-
-def image_url(artsy_url):  
+            # with open('output.json', 'w') as f:
+            #     f.write(json.dumps(bootstrap_json, indent=4))    # only need one of these
+            return bootstrap_json
+            
+            
+def image_json(artsy_url):  
     source_string = get_source(artsy_url)
     the_soup = parse_source_code(source_string)
-    return(get_dztiles_url(the_soup, "RELAY"))
-    
+    return(json_bootstrap(the_soup, "RELAY"))
+

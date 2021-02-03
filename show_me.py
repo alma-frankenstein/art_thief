@@ -2,10 +2,10 @@ import PIL
 import argparse
 import click
 
-from format_url import image_url
-# from piece_info import image_url
-
+from format_url import image_json
+from metadata_from_json import artist_and_title, dztiles_url
 from main import fabulous_picture
+from save_pic import save_pic
 
 #----------argparse---------------
 
@@ -17,7 +17,7 @@ from main import fabulous_picture
 # args = parser.parse_args()
 
 # for url in args.nargs:
-#     root_url = image_url(url)
+#     root_url = image_json(url)
 #     fabulous_picture(root_url)
 
 #-------------input()----------------------
@@ -27,7 +27,7 @@ from main import fabulous_picture
 # urls = urls.split(" ")
 
 # for url in urls:
-#     root_url = image_url(url)
+#     root_url = image_json(url)
 #     fabulous_picture(root_url)
     
 #----------click------------------
@@ -36,7 +36,6 @@ from main import fabulous_picture
 @click.argument('artsy_urls', nargs=-1)
 def save_pics(artsy_urls):
     for url in artsy_urls:
-        root_url, title_artist = image_url(url)
-        fabulous_picture(root_url, title_artist)
-    
+        save_pic(url)
+
 save_pics()

@@ -1,9 +1,8 @@
-from format_url import image_url
+# from format_url import image_url
 from io import BytesIO
 import requests
 from PIL import Image
-from format_url import image_url
-# from piece_info import image_url
+from format_url import image_json
 
 # TODO Automate the url grab
 # TODO Automate the tile counts
@@ -91,3 +90,4 @@ def get_tiles(dz_url, w_counter, h_counter):
 
 
 # # TODO Turn the whole thing into a flask app and host it on GH?
+
