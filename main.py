@@ -28,7 +28,7 @@ new_image = Image.new(
     'RGB', (TILE_SIZE * TILE_MAX_RANGE, TILE_SIZE * TILE_MAX_RANGE))
 
 
-def fabulous_picture(dz_url, title_artist):
+def fabulous_picture(dz_url, title_artist): # build from tiles
     width_counter, actual_width = find_max_width(dz_url)
     height_counter, actual_height = find_max_height(dz_url)
     get_tiles(dz_url, width_counter, height_counter)
