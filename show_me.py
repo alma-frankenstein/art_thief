@@ -50,3 +50,7 @@ save_or_explore.add_command(explore)
 
 if __name__=='__main__':
     save_or_explore()
+
+
+# https://www.artsy.net/artwork/joel-peter-witkin-carrot-cake-number-1
+# https://www.artsy.net/artwork/bert-stern-pirelli-calendar-by-bert-stern  

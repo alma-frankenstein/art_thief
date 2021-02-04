@@ -1,6 +1,7 @@
 from typing import Optional
 from urllib.parse import urljoin
 import logging
+import random
 
 def get_dz_num(width, height):
     if width < height:
@@ -22,10 +23,12 @@ def get_dz_num(width, height):
 def dztiles_url(json_bootstrap: dict) -> Optional[str]:
     """ ex: 'https://d32dm0rphc51dk.cloudfront.net/dFyhynkSypHRoFpJsyj0pg/dztiles/' """
     deep_zoom_data = json_bootstrap[0][1]["json"]["data"]["artwork"]["images"][0]["deepZoom"]
-    width = deep_zoom_data["Image"]["Size"]["Width"]
-    height = deep_zoom_data["Image"]["Size"]["Height"]
+    # width = deep_zoom_data["Image"]["Size"]["Width"]
+    # height = deep_zoom_data["Image"]["Size"]["Height"]
 
     if deep_zoom_data is not None:
+        width = deep_zoom_data["Image"]["Size"]["Width"]
+        height = deep_zoom_data["Image"]["Size"]["Height"]
         jpeg_url = deep_zoom_data["Image"]["Url"]
         dz_num = get_dz_num(width, height)
         dz_url = urljoin(jpeg_url, dz_num)
@@ -47,6 +50,7 @@ def artist_and_title(json_bootstrap):
         
         
 def related_image_url(json_bootstrap):
-    related_image_href = json_bootstrap[0][1]["json"]["data"]["artwork"]["layer"]["artworksConnection"]["edges"][0]["node"]["href"] # [0] after ["edges"] is the first related image
+    image_index = random.randint(0, 7)
+    related_image_href = json_bootstrap[0][1]["json"]["data"]["artwork"]["layer"]["artworksConnection"]["edges"][image_index]["node"]["href"] # [0] after ["edges"] is the first related image
     next_image_url = urljoin("https://www.artsy.net", related_image_href)
     return next_image_url
