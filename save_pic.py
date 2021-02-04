@@ -10,4 +10,4 @@ def save_pic(artsy_url):
     fabulous_picture(root_url, jpeg_label)
     
 # save_pic("https://www.artsy.net/artwork/david-wojnarowicz-arthur-rimbaud-in-new-york-diner-2")
-
+# save_pic("https://www.artsy.net/artwork/doug-and-mike-starn-bbmet-06-slash-03-slash-10-s2257f")

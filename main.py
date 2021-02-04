@@ -2,6 +2,8 @@ from io import BytesIO
 import requests
 from PIL import Image
 import logging
+from pathlib import Path
+import re
 
 logging.basicConfig(level=logging.INFO)
 
@@ -38,11 +40,20 @@ def paste_on_canvas(i, j, image_data):
     im = Image.open(BytesIO(image_data))
     new_image.paste(im, (TILE_SIZE * i, TILE_SIZE * j))
     print(f"Fetching image {i}_{j}.jpg")
+    
+    
+def remove_special(stem):
+    stem = re.sub(r"[^a-zA-Z0-9]+", ' ', stem)
+    return stem
 
 
 def crop_n_show(actual_w, actual_h, title_artist):
     cropped_image = new_image.crop((0, 0, actual_w, actual_h))
-    cropped_image.save(f"x{title_artist}.jpg")
+    title_artist = remove_special(title_artist)
+    p = Path.cwd().joinpath(f"x{title_artist}.jpg")
+    logging.info(p)
+    cropped_image.save(p)
+    # cropped_image.save(f"x{title_artist}.jpg")
 
 
 def find_max_width(dz_url) -> (int, int):
@@ -75,7 +86,8 @@ def _find_max_dimension(dz_url, max_range, find_width: bool = True) -> (int, int
             print(dim)
             return dim, actual_size
     print("WARNING:  Image boundary not found.  This may only be part of it!")
-    print(f"Max dim found: {dim}")
+    # print(f"Max dim found: {dim}")
+    logging.info(f"Max dim found: {dim}")
     return dim + 1, actual_size
 
 
