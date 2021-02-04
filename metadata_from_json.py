@@ -1,14 +1,35 @@
 from typing import Optional
 from urllib.parse import urljoin
+import logging
 
+def get_dz_num(width, height):
+    if width < height:
+        smaller_dim = width
+    else:
+        smaller_dim = height
+    
+    if smaller_dim <= 512:
+        dz_num = "9/{}_{}.jpg"
+    elif smaller_dim <= 1024:
+        dz_num = "10/{}_{}.jpg"  # guessing here
+    elif smaller_dim <= 1536:
+        dz_num = "11/{}_{}.jpg"
+    else:
+        dz_num = "12/{}_{}.jpg"
+    return dz_num
+    
 
 def dztiles_url(json_bootstrap: dict) -> Optional[str]:
     """ ex: 'https://d32dm0rphc51dk.cloudfront.net/dFyhynkSypHRoFpJsyj0pg/dztiles/' """
     deep_zoom_data = json_bootstrap[0][1]["json"]["data"]["artwork"]["images"][0]["deepZoom"]
-    # jpeg_url = json_bootstrap[0][1]["json"]["data"]["artwork"]["images"][0]["deepZoom"]["Image"]["Url"] 
+    width = deep_zoom_data["Image"]["Size"]["Width"]
+    height = deep_zoom_data["Image"]["Size"]["Height"]
+
     if deep_zoom_data is not None:
         jpeg_url = deep_zoom_data["Image"]["Url"]
-        dz_url = urljoin(jpeg_url, "11/{}_{}.jpg")
+        dz_num = get_dz_num(width, height)
+        dz_url = urljoin(jpeg_url, dz_num)
+        logging.info(f"high resolution url: {dz_url}")
         return dz_url
 
 

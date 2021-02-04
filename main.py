@@ -80,10 +80,8 @@ def _find_max_dimension(dz_url, max_range, find_width: bool = True) -> (int, int
                 actual_size += width
             else:
                 actual_size += height
-            # print("in counter")
-            logging.info('in counter')
         else:
-            print(dim)
+            # print(dim)
             return dim, actual_size
     print("WARNING:  Image boundary not found.  This may only be part of it!")
     # print(f"Max dim found: {dim}")

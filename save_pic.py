@@ -20,4 +20,7 @@ def save_pic(artsy_url):
         
     
 # save_pic("https://www.artsy.net/artwork/david-wojnarowicz-arthur-rimbaud-in-new-york-diner-2")
-save_pic("https://www.artsy.net/artwork/bert-stern-pirelli-calendar-by-bert-stern")
+# save_pic("https://www.artsy.net/artwork/bert-stern-pirelli-calendar-by-bert-stern")
+# save_pic("https://www.artsy.net/artwork/salvador-dali-madonne")
+# save_pic("https://www.artsy.net/artwork/joel-peter-witkin-carrot-cake-number-1")
+
