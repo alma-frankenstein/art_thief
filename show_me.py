@@ -1,5 +1,6 @@
 import click
 from save_pic import save_pic
+from related_images import rabbit_hole
 
 #----------argparse---------------
 
@@ -26,10 +27,26 @@ from save_pic import save_pic
     
 #----------click------------------
 # example: python3 show_me.py https://www.artsy.net/artwork/ndidi-emefiele-play-station-2-1 https://www.artsy.net/artwork/cindy-sherman-untitled-293
-@click.command()
+@click.group()
+def save_or_explore():
+    pass
+
+# example: python3 show_me.py save_pics https://www.artsy.net/artwork/ndidi-emefiele-play-station-2-1
+@click.command(name='save_pics')
 @click.argument('artsy_urls', nargs=-1)
 def save_pics(artsy_urls):
     for url in artsy_urls:
         save_pic(url)
 
-save_pics()
+# example: python3 show_me.py explore 4 https://www.artsy.net/artwork/gerhard-richter-abstract-painting-abstraktes-bild-1
+@click.command(name='explore')
+@click.argument('num_of_images', type=int)
+@click.argument('artsy_url')
+def explore(num_of_images, artsy_url):
+    rabbit_hole(num_of_images, artsy_url)
+
+save_or_explore.add_command(save_pics)
+save_or_explore.add_command(explore)
+
+if __name__=='__main__':
+    save_or_explore()
