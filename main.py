@@ -4,6 +4,7 @@ from PIL import Image
 import logging
 from pathlib import Path
 import re
+from typing import Tuple
 
 logging.basicConfig(level=logging.INFO)
 
@@ -39,7 +40,7 @@ def fabulous_picture(dz_url, title_artist): # build from tiles
 def paste_on_canvas(i, j, image_data):
     im = Image.open(BytesIO(image_data))
     new_image.paste(im, (TILE_SIZE * i, TILE_SIZE * j))
-    print(f"Fetching image {i}_{j}.jpg")
+    # print(f"Fetching image {i}_{j}.jpg")
     
     
 def remove_special(stem):
@@ -50,21 +51,22 @@ def remove_special(stem):
 def crop_n_show(actual_w, actual_h, title_artist):
     cropped_image = new_image.crop((0, 0, actual_w, actual_h))
     title_artist = remove_special(title_artist)
-    p = Path.cwd().joinpath(f"x{title_artist}.jpg")
+    # p = Path.cwd().joinpath(f"x{title_artist}.jpg")
+    p = Path.cwd().joinpath("saved_images", f"x{title_artist}.jpg")
     logging.info(p)
     cropped_image.save(p)
     # cropped_image.save(f"x{title_artist}.jpg")
 
 
-def find_max_width(dz_url) -> (int, int):
+def find_max_width(dz_url) -> Tuple[int, int]:
     return _find_max_dimension(dz_url, TILE_MAX_RANGE, find_width=True)
 
 
-def find_max_height(dz_url) -> (int, int):
+def find_max_height(dz_url) -> Tuple[int, int]:
     return _find_max_dimension(dz_url, TILE_MAX_RANGE, find_width=False)
 
 
-def _find_max_dimension(dz_url, max_range, find_width: bool = True) -> (int, int):
+def _find_max_dimension(dz_url, max_range, find_width: bool = True) -> Tuple[int, int]:
     root_url = dz_url
     actual_size = 0
     for dim in range(max_range):

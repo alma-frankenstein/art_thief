@@ -47,7 +47,11 @@ def artist_and_title(json_bootstrap):
         
         
 def related_image_url(json_bootstrap):
-    image_index = random.randint(0, 7)  # make range num of possible images
-    related_image_href = json_bootstrap[0][1]["json"]["data"]["artwork"]["layer"]["artworksConnection"]["edges"][image_index]["node"]["href"] # [0] after ["edges"] is the first related image
+    # image_index = random.randint(0, 7)  # make range num of possible images
+    # related_image_href = json_bootstrap[0][1]["json"]["data"]["artwork"]["layer"]["artworksConnection"]["edges"][image_index]["node"]["href"]
+    related_images = json_bootstrap[0][1]["json"]["data"]["artwork"]["layer"]["artworksConnection"]["edges"]
+    num_possible_related = len(related_images)  
+    image_index = random.randint(0, num_possible_related - 1)   # -1 because randint is inclusive
+    related_image_href = related_images[image_index]["node"]["href"]
     next_image_url = urljoin("https://www.artsy.net", related_image_href)
     return next_image_url

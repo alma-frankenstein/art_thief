@@ -46,6 +46,7 @@ def save_pics(artsy_urls):
 def explore(num_of_images, artsy_url):
     rabbit_hole(num_of_images, artsy_url)
     
+# example: python3 clicks.py surprise 3
 @click.command(name='surprise')
 @click.argument('num_of_surprises', type=int)
 def surprise(num_of_surprises):
