@@ -52,7 +52,7 @@ def crop_n_show(actual_w, actual_h, title_artist):
     cropped_image = new_image.crop((0, 0, actual_w, actual_h))
     title_artist = remove_special(title_artist)
     # p = Path.cwd().joinpath(f"x{title_artist}.jpg")
-    p = Path.cwd().joinpath("saved_images", f"x{title_artist}.jpg")
+    p = Path.cwd().joinpath("saved_images", f"{title_artist}.jpg")
     logging.info(p)
     cropped_image.save(p)
     # cropped_image.save(f"x{title_artist}.jpg")

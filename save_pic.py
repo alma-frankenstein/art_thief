@@ -20,7 +20,11 @@ def save_pic(artsy_url):
         
     
 # save_pic("https://www.artsy.net/artwork/david-wojnarowicz-arthur-rimbaud-in-new-york-diner-2")
-# save_pic("https://www.artsy.net/artwork/bert-stern-pirelli-calendar-by-bert-stern")
+# save_pic("https://www.artsy.net/artwork/bert-stern-pirelli-calendar-by-bert-stern")  # no dztiles
 # save_pic("https://www.artsy.net/artwork/salvador-dali-madonne")
+
+# these 3 have aspect ratios of 0.99 or 1, and dztiles/9
 # save_pic("https://www.artsy.net/artwork/joel-peter-witkin-carrot-cake-number-1")
+# save_pic("https://www.artsy.net/artwork/stanley-whitney-untitled-449")
+# save_pic("https://www.artsy.net/artwork/georges-mazilu-portrait-de-femme")
 
