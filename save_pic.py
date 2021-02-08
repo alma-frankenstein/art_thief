@@ -5,11 +5,16 @@ from main import fabulous_picture
 from urllib.parse import urljoin
 
 
-def amend_dz_url(root_url):
-    stem = root_url[:-12]
-    new_dz_num = "9/{}_{}.jpg"
-    new_dz_url = urljoin(stem, new_dz_num)
-    return new_dz_url
+# def amend_dz_url(root_url):
+#     stem = root_url[:-12]
+#     new_dz_num = "9/{}_{}.jpg"
+#     new_dz_url = urljoin(stem, new_dz_num)
+#     return new_dz_url
+
+def amend_dz_url(root_url:str, dz_num:str="9") -> str:
+    stem = root_url.rsplit("/", 2)
+    stem[-2] = dz_num # TODO Why???????
+    return "/".join(stem)  
     
 
 def save_pic(artsy_url):
