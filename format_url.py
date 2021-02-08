@@ -20,15 +20,15 @@ def parse_source_code(source_string):
     
 # TODO 11 vs 12 in dztiles
 
-def json_bootstrap(parsed_html, substring):  # was get_dztiles, returned (dz_tiles, title_artist)
+def json_bootstrap(parsed_html, substring):  
     for block in parsed_html.find_all('script'):
         if substring in str(block):
             bootstrap_string = block.string.strip()
             bootstrap_string = bootstrap_string.replace("var __RELAY_BOOTSTRAP__ = ", "")   
             bootstrap_string = bootstrap_string[:-1]
             bootstrap_json = json.loads(json.loads(bootstrap_string))
-            with open('output.json', 'w') as f:
-                f.write(json.dumps(bootstrap_json, indent=4))    # only need one of these
+            # with open('output.json', 'w') as f:
+            #     f.write(json.dumps(bootstrap_json, indent=4))    # only need one of these
             return bootstrap_json
             
             

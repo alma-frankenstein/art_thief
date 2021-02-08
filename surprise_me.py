@@ -31,15 +31,11 @@ def rand_collection_href(collections):
 def random_picture_in_collection(collection_href):    
     collection_url = urljoin("https://www.artsy.net", collection_href) 
     collection_json = image_json(collection_url)
-    # image_index = random.randint(0, 9)   # TODO make range num of possible images
     artist_images = collection_json[0][1]["json"]["data"]["collection"]["artworksConnection"]["edges"]
     possible_images = len(artist_images)   
-    logging.info(f"possible images: {possible_images}")
     image_index = random.randint(0, possible_images - 1)   # -1 because randint is inclusive
-    logging.info(f"random image index: {image_index}")
-    # rando_pic_href = (collection_json[0][1]["json"]["data"]["collection"]["artworksConnection"]["edges"][image_index]["node"]["href"])  # ex. /artwork/mindy-cherri-wwjd
-    rando_pic_href = artist_images[image_index]["node"]["href"]
-    logging.info(f"random picture href: {rando_pic_href}")
+    rando_pic_href = artist_images[image_index]["node"]["href"]   # ex. /artwork/mindy-cherri-wwjd
+    # logging.info(f"random picture href: {rando_pic_href}")
     rando_url = urljoin("https://www.artsy.net", rando_pic_href)
     logging.info(f"random url: {rando_url}")
     save_pic(rando_url)

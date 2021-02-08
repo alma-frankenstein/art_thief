@@ -83,10 +83,8 @@ def _find_max_dimension(dz_url, max_range, find_width: bool = True) -> Tuple[int
             else:
                 actual_size += height
         else:
-            # print(dim)
             return dim, actual_size
     print("WARNING:  Image boundary not found.  This may only be part of it!")
-    # print(f"Max dim found: {dim}")
     logging.info(f"Max dim found: {dim}")
     return dim + 1, actual_size
 

@@ -3,13 +3,13 @@ from urllib.parse import urljoin
 import logging
 import random
 
-def get_dz_num(width, height, aspect_ratio):
+def get_dz_num(width, height):    # aspect_ratio as param?
     if width < height:
         smaller_dim = width
     else:
         smaller_dim = height
     
-    if smaller_dim <= 512 or 0.98 <= aspect_ratio <= 1.02:
+    if smaller_dim <= 512:               # or 0.94 <= aspect_ratio <= 1.06:
         dz_num = "9/{}_{}.jpg"
     elif smaller_dim <= 1024:
         dz_num = "10/{}_{}.jpg"  # guessing here
@@ -24,12 +24,13 @@ def dztiles_url(json_bootstrap: dict) -> Optional[str]:
     """ ex: 'https://d32dm0rphc51dk.cloudfront.net/dFyhynkSypHRoFpJsyj0pg/dztiles/' """
     deep_zoom_data = json_bootstrap[0][1]["json"]["data"]["artwork"]["images"][0]["deepZoom"]
     if deep_zoom_data is not None:
-        aspect_ratio = json_bootstrap[0][1]["json"]["data"]["artwork"]["images"][0]["aspectRatio"]
-        logging.info(f"aspect ratio: {aspect_ratio}")
+        # aspect_ratio = json_bootstrap[0][1]["json"]["data"]["artwork"]["images"][0]["aspectRatio"]
+        # logging.info(f"aspect ratio: {aspect_ratio}")
         width = deep_zoom_data["Image"]["Size"]["Width"]
         height = deep_zoom_data["Image"]["Size"]["Height"]
         jpeg_url = deep_zoom_data["Image"]["Url"]
-        dz_num = get_dz_num(width, height, aspect_ratio)
+        # dz_num = get_dz_num(width, height, aspect_ratio)
+        dz_num = get_dz_num(width, height)
         dz_url = urljoin(jpeg_url, dz_num)
         logging.info(f"high resolution url: {dz_url}")
         return dz_url
