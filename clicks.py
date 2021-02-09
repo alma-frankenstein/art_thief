@@ -14,7 +14,7 @@ from surprise_me import get_random_picture
 
 # for url in args.nargs:
 #     root_url = image_json(url)
-#     fabulous_picture(root_url)
+#     get_tiles_and_save(root_url)
 
 #-------------input()----------------------
 # print("Hey, kids! Enter some Artsy urls!")
@@ -24,7 +24,7 @@ from surprise_me import get_random_picture
 
 # for url in urls:
 #     root_url = image_json(url)
-#     fabulous_picture(root_url)
+#     get_tiles_and_save(root_url)
     
 #----------click------------------
 # example: python3 clicks.py https://www.artsy.net/artwork/ndidi-emefiele-play-station-2-1 https://www.artsy.net/artwork/cindy-sherman-untitled-293

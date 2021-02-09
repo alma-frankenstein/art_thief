@@ -1,7 +1,7 @@
 import logging
 from metadata_from_json import dztiles_url, artist_and_title
 from format_url import image_json
-from main import fabulous_picture
+from main import get_tiles_and_save
 from urllib.parse import urljoin
 
 
@@ -11,9 +11,14 @@ from urllib.parse import urljoin
 #     new_dz_url = urljoin(stem, new_dz_num)
 #     return new_dz_url
 
-def amend_dz_url(root_url:str, dz_num:str="9") -> str:
+# def amend_dz_url(root_url:str, dz_num:str="9") -> str:
+#     stem = root_url.rsplit("/", 2)
+#     stem[-2] = dz_num # TODO Why???????
+#     return "/".join(stem)  
+
+def amend_dz_url(root_url:str, dz_num) -> str:
     stem = root_url.rsplit("/", 2)
-    stem[-2] = dz_num # TODO Why???????
+    stem[-2] = str(dz_num) # TODO Why???????
     return "/".join(stem)  
     
 
@@ -23,13 +28,19 @@ def save_pic(artsy_url):
     root_url = dztiles_url(bootstrap)
     if root_url:
         try:
-            fabulous_picture(root_url, jpeg_label)
+            get_tiles_and_save(root_url, jpeg_label)
         except SystemError as e:
+            dz_num_counter = 11
             logging.error(f"attempting to fetch: {artsy_url}")
             logging.error(f"artwork name: {jpeg_label}")
             try:
-                amended_dz_url = amend_dz_url(root_url)
-                fabulous_picture(amended_dz_url, jpeg_label)
+                while dz_num_counter > 8:
+                    amended_dz_url = amend_dz_url(root_url, dz_num_counter)
+                    logging.info(f"dztiles number was too large. trying {dz_num_counter} as {amend_dz_url(root_url, dz_num_counter)}")
+                    if get_tiles_and_save(amended_dz_url, jpeg_label):
+                        logging.info(f"Success at {dz_num_counter} with url {amended_dz_url}")
+                        break
+                    dz_num_counter -= 1
             except:
                 raise e
     else:
@@ -40,10 +51,12 @@ def save_pic(artsy_url):
 # save_pic("https://www.artsy.net/artwork/bert-stern-pirelli-calendar-by-bert-stern")  # no dztiles
 # save_pic("https://www.artsy.net/artwork/salvador-dali-madonne")
 
-# these 3 have aspect ratios of 0.99 or 1, and dztiles/9
-# save_pic("https://www.artsy.net/artwork/joel-peter-witkin-carrot-cake-number-1")
-# save_pic("https://www.artsy.net/artwork/stanley-whitney-untitled-449")
+# large enough to be dztiles/12, actually need to be a smaller number
 # save_pic("https://www.artsy.net/artwork/georges-mazilu-portrait-de-femme")
+# save_pic("https://www.artsy.net/artwork/stanley-whitney-untitled-449")
+# save_pic("https://www.artsy.net/artwork/andy-warhol-camouflage-set-of-5-skateboard-decks")  # 10
+# save_pic("https://www.artsy.net/artwork/greg-gong-untitled-7")   # 10
+# save_pic("https://www.artsy.net/artwork/vik-muniz-handmade-noise") # 10
 
 
 # print(amend_dz_url("https://d32dm0rphc51dk.cloudfront.net/naV_9uqzYITVYviI1V2iHA/dztiles/10/{}_{}.jpg"))
