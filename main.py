@@ -29,13 +29,13 @@ new_image = Image.new(
     'RGB', (TILE_SIZE * TILE_MAX_RANGE, TILE_SIZE * TILE_MAX_RANGE))
 
 
-def fabulous_picture(dz_url, title_artist): # build from tiles
+def get_tiles_and_save(dz_url, title_artist): # build from tiles
     width_counter, actual_width = find_max_width(dz_url)
     height_counter, actual_height = find_max_height(dz_url)
     get_tiles(dz_url, width_counter, height_counter)
     print(f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
-    crop_n_show(actual_width, actual_height, title_artist)
-    
+    crop_and_save(actual_width, actual_height, title_artist)
+    return True
 
 def paste_on_canvas(i, j, image_data):
     im = Image.open(BytesIO(image_data))
@@ -48,7 +48,7 @@ def remove_special(stem):
     return stem
 
 
-def crop_n_show(actual_w, actual_h, title_artist):
+def crop_and_save(actual_w, actual_h, title_artist):
     cropped_image = new_image.crop((0, 0, actual_w, actual_h))
     title_artist = remove_special(title_artist)
     # p = Path.cwd().joinpath(f"x{title_artist}.jpg")
@@ -56,6 +56,8 @@ def crop_n_show(actual_w, actual_h, title_artist):
     logging.info(p)
     cropped_image.save(p)
     # cropped_image.save(f"x{title_artist}.jpg")
+    # print("image saved")
+    return("image saved")
 
 
 def find_max_width(dz_url) -> Tuple[int, int]:
