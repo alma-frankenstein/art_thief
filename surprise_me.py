@@ -46,4 +46,4 @@ def get_random_picture():
     collection_href = rand_collection_href(filtered_collections)
     random_picture_in_collection(collection_href)
     
-get_random_picture()
+# get_random_picture()

@@ -18,6 +18,7 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 high_alert_logger = logging.getLogger("We found a BIG ONE!")
 
@@ -28,8 +29,10 @@ handler.setFormatter(hq_formatter)
 high_alert_logger.addHandler(handler)  # add handler to logger
 
 
-logger.setLevel(logging.DEBUG)
-high_alert_logger.setLevel(logging.DEBUG)
+# logger.setLevel(logging.DEBUG)
+# high_alert_logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
+high_alert_logger.setLevel(logging.INFO)
 
 
 
@@ -76,13 +79,9 @@ def remove_special(stem):
 def crop_and_save(actual_w, actual_h, title_artist):
     cropped_image = new_image.crop((0, 0, actual_w, actual_h))
     title_artist = remove_special(title_artist)
-    # p = Path.cwd().joinpath(f"x{title_artist}.jpg")
     p = Path.cwd().joinpath("saved_images", f"{title_artist}.jpg")
     logger.info(p)
     cropped_image.save(p)
-    # cropped_image.save(f"x{title_artist}.jpg")
-    # print("image saved")
-    return("image saved")
 
 
 def find_max_width(dz_url) -> Tuple[int, int]:
@@ -124,10 +123,10 @@ def get_tiles(dz_url, w_counter, h_counter):
     for i in range(1, w_counter):
         for j in range(1, h_counter):
             logger.debug(f"fetching {root_url.format(i, j)} ...")
-            high_alert_logger.info("HHEH")
-            if j == 2:
-                logger.info("BLAH")
-                high_alert_logger.info("Pretend this is a 13")
+            # high_alert_logger.info("HHEH")
+            # if j == 2:
+                # logger.info("BLAH")
+                # high_alert_logger.info("Pretend this is a 13")
             r = requests.get(root_url.format(i, j))
             paste_on_canvas(i, j, image_data=r.content)
 
