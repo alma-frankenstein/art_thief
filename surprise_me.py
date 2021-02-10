@@ -3,14 +3,12 @@ import logging
 from save_pic import save_pic
 from urllib.parse import urljoin
 from format_url import get_source, parse_source_code, image_json
-from pprint import pprint
 
 def get_collections(parsed_html, substring):
     collection_hrefs = []
     for link in parsed_html.find_all('a'):
         if substring in str(link):
             collection_hrefs.append(link.get('href'))
-    # pprint(collection_hrefs)
     return collection_hrefs
 
 

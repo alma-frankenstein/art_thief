@@ -3,6 +3,8 @@ from urllib.parse import urljoin
 import logging
 import random
 
+# Replacing this with just assigning 13 to all pictures, then counting down:
+
 # def get_dz_num(width, height):    # aspect_ratio as param?
 #     if width < height:
 #         smaller_dim = width
@@ -20,7 +22,6 @@ import random
 #     return dz_num
 
 
-    
 
 def dztiles_url(json_bootstrap: dict) -> Optional[str]:
     """ ex: 'https://d32dm0rphc51dk.cloudfront.net/dFyhynkSypHRoFpJsyj0pg/dztiles/' """

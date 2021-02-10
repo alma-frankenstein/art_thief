@@ -18,27 +18,20 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
-logging.basicConfig(level=logging.INFO)
+# logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-high_alert_logger = logging.getLogger("We found a BIG ONE!")
+get_tiles_logger = logging.getLogger("Success!")
 
 handler = logging.StreamHandler(sys.stdout)  # to console 
 hq_formatter = logging.Formatter(bcolors.OKGREEN + '%(name)-12s: %(levelname)-8s %(message)s' + bcolors.ENDC)  # custom format to add to handler
 handler.setFormatter(hq_formatter)
 
-high_alert_logger.addHandler(handler)  # add handler to logger
+get_tiles_logger.addHandler(handler)  # add handler to logger
 
 
-# logger.setLevel(logging.DEBUG)
-# high_alert_logger.setLevel(logging.DEBUG)
 logger.setLevel(logging.INFO)
-high_alert_logger.setLevel(logging.INFO)
+get_tiles_logger.setLevel(logging.INFO)
 
-
-
-# TODO Automate the url grab
-# TODO Automate the tile counts
-# TODO Include Metadata (artist, title, etc)
 
 # root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
 # root_url = "https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg"  # Mucha
@@ -123,10 +116,6 @@ def get_tiles(dz_url, w_counter, h_counter):
     for i in range(1, w_counter):
         for j in range(1, h_counter):
             logger.debug(f"fetching {root_url.format(i, j)} ...")
-            # high_alert_logger.info("HHEH")
-            # if j == 2:
-                # logger.info("BLAH")
-                # high_alert_logger.info("Pretend this is a 13")
             r = requests.get(root_url.format(i, j))
             paste_on_canvas(i, j, image_data=r.content)
 
