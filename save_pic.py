@@ -36,7 +36,7 @@ def save_pic(artsy_url):
             try:
                 while dz_num_counter > 8:
                     amended_dz_url = amend_dz_url(root_url, dz_num_counter)
-                    logging.info(f"dztiles number was too large. trying {dz_num_counter} as {amend_dz_url(root_url, dz_num_counter)}")
+                    logging.info(f"dztiles number was too large. trying {dz_num_counter} as {amended_dz_url}")
                     if get_tiles_and_save(amended_dz_url, jpeg_label):
                         logging.info(f"Success at {dz_num_counter} with url {amended_dz_url}")
                         break
@@ -55,7 +55,7 @@ def save_pic(artsy_url):
 # save_pic("https://www.artsy.net/artwork/georges-mazilu-portrait-de-femme")
 # save_pic("https://www.artsy.net/artwork/stanley-whitney-untitled-449")
 # save_pic("https://www.artsy.net/artwork/andy-warhol-camouflage-set-of-5-skateboard-decks")  # 10
-# save_pic("https://www.artsy.net/artwork/greg-gong-untitled-7")   # 10
+save_pic("https://www.artsy.net/artwork/greg-gong-untitled-7")   # 10
 # save_pic("https://www.artsy.net/artwork/vik-muniz-handmade-noise") # 10
 
 
