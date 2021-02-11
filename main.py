@@ -5,32 +5,33 @@ import logging
 from pathlib import Path
 import re
 from typing import Tuple
+from loggers import get_tiles_logger
 import sys
 
-class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    OKCYAN = '\033[96m'
-    OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
+# class bcolors:
+#     HEADER = '\033[95m'
+#     OKBLUE = '\033[94m'
+#     OKCYAN = '\033[96m'
+#     OKGREEN = '\033[92m'
+#     WARNING = '\033[93m'
+#     FAIL = '\033[91m'
+#     ENDC = '\033[0m'
+#     BOLD = '\033[1m'
+#     UNDERLINE = '\033[4m'
 
-# logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-get_tiles_logger = logging.getLogger("Success!")
+# # logging.basicConfig(level=logging.INFO)
+# logger = logging.getLogger(__name__)
+# get_tiles_logger = logging.getLogger("Success!")
 
-handler = logging.StreamHandler(sys.stdout)  # to console 
-hq_formatter = logging.Formatter(bcolors.OKGREEN + '%(name)-12s: %(levelname)-8s %(message)s' + bcolors.ENDC)  # custom format to add to handler
-handler.setFormatter(hq_formatter)
+# handler = logging.StreamHandler(sys.stdout)  # to console 
+# hq_formatter = logging.Formatter(bcolors.OKGREEN + '%(name)-12s: %(levelname)-8s %(message)s' + bcolors.ENDC)  # custom format to add to handler
+# handler.setFormatter(hq_formatter)
 
-get_tiles_logger.addHandler(handler)  # add handler to logger
+# get_tiles_logger.addHandler(handler)  # add handler to logger
 
 
-logger.setLevel(logging.INFO)
-get_tiles_logger.setLevel(logging.INFO)
+# logger.setLevel(logging.INFO)
+# get_tiles_logger.setLevel(logging.INFO)
 
 
 # root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
@@ -50,12 +51,16 @@ new_image = Image.new(
     'RGB', (TILE_SIZE * TILE_MAX_RANGE, TILE_SIZE * TILE_MAX_RANGE))
 
 
-def get_tiles_and_save(dz_url, title_artist): # build from tiles
+def get_tiles_and_save(dz_url, title_artist):
     width_counter, actual_width = find_max_width(dz_url)
     height_counter, actual_height = find_max_height(dz_url)
     get_tiles(dz_url, width_counter, height_counter)
-    print(f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
-    crop_and_save(actual_width, actual_height, title_artist)
+    # print(f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
+    try:
+        crop_and_save(actual_width, actual_height, title_artist)
+    except SystemError:
+        get_tiles_logger.error("Wrong dztile number, unable to save image!")
+        return False
     return True
 
 def paste_on_canvas(i, j, image_data):
@@ -73,7 +78,7 @@ def crop_and_save(actual_w, actual_h, title_artist):
     cropped_image = new_image.crop((0, 0, actual_w, actual_h))
     title_artist = remove_special(title_artist)
     p = Path.cwd().joinpath("saved_images", f"{title_artist}.jpg")
-    logger.info(p)
+    # logger.info(p)
     cropped_image.save(p)
 
 
@@ -104,7 +109,7 @@ def _find_max_dimension(dz_url, max_range, find_width: bool = True) -> Tuple[int
         else:
             return dim, actual_size
     print("WARNING:  Image boundary not found.  This may only be part of it!")
-    logger.info(f"Max dim found: {dim}")
+    get_tiles_logger.info(f"Max dim found: {dim}")
     return dim + 1, actual_size
 
 
@@ -115,7 +120,7 @@ def get_tiles(dz_url, w_counter, h_counter):
     root_url = dz_url
     for i in range(1, w_counter):
         for j in range(1, h_counter):
-            logger.debug(f"fetching {root_url.format(i, j)} ...")
+            get_tiles_logger.debug(f"fetching {root_url.format(i, j)} ...")
             r = requests.get(root_url.format(i, j))
             paste_on_canvas(i, j, image_data=r.content)
 
