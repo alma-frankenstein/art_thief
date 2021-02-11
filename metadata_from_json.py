@@ -27,12 +27,12 @@ def dztiles_url(json_bootstrap: dict) -> Optional[str]:
     """ ex: 'https://d32dm0rphc51dk.cloudfront.net/dFyhynkSypHRoFpJsyj0pg/dztiles/' """
     deep_zoom_data = json_bootstrap[0][1]["json"]["data"]["artwork"]["images"][0]["deepZoom"]
     if deep_zoom_data is not None:
-        width = deep_zoom_data["Image"]["Size"]["Width"]
-        height = deep_zoom_data["Image"]["Size"]["Height"]
+        # width = deep_zoom_data["Image"]["Size"]["Width"]
+        # height = deep_zoom_data["Image"]["Size"]["Height"]
         jpeg_url = deep_zoom_data["Image"]["Url"]
         # dz_num = get_dz_num(width, height)
         # dz_url = urljoin(jpeg_url, dz_num)
-        dz_url = urljoin(jpeg_url, "13/{}_{}.jpg")  # start with 13 and count down every time
+        dz_url = urljoin(jpeg_url, "14/{}_{}.jpg")  # start with 14 and count down every time
         logging.info(f"high resolution url: {dz_url}")
         return dz_url
 
