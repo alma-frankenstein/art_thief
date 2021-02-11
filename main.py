@@ -6,42 +6,8 @@ from pathlib import Path
 import re
 from typing import Tuple
 from loggers import get_tiles_logger
-import sys
-
-# class bcolors:
-#     HEADER = '\033[95m'
-#     OKBLUE = '\033[94m'
-#     OKCYAN = '\033[96m'
-#     OKGREEN = '\033[92m'
-#     WARNING = '\033[93m'
-#     FAIL = '\033[91m'
-#     ENDC = '\033[0m'
-#     BOLD = '\033[1m'
-#     UNDERLINE = '\033[4m'
-
-# # logging.basicConfig(level=logging.INFO)
-# logger = logging.getLogger(__name__)
-# get_tiles_logger = logging.getLogger("Success!")
-
-# handler = logging.StreamHandler(sys.stdout)  # to console 
-# hq_formatter = logging.Formatter(bcolors.OKGREEN + '%(name)-12s: %(levelname)-8s %(message)s' + bcolors.ENDC)  # custom format to add to handler
-# handler.setFormatter(hq_formatter)
-
-# get_tiles_logger.addHandler(handler)  # add handler to logger
 
 
-# logger.setLevel(logging.INFO)
-# get_tiles_logger.setLevel(logging.INFO)
-
-
-# root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
-# root_url = "https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg"  # Mucha
-# root_url = "https://d32dm0rphc51dk.cloudfront.net/HFgPe_vJgqATQdyClCvyMQ/dztiles/11/{}_{}.jpg"  # Man Ray
-# root_url = "https://d32dm0rphc51dk.cloudfront.net/wslu5vVcYM-CRPQ72I3fEQ/dztiles/12/{}_{}.jpg"  # Picasso
-
-
-# Mucha 3x3
-# Dali 5x8 (final: Fetching image 4_7.jpg)
 TILE_MAX_RANGE = 10
 TILE_SIZE = 512
 
@@ -59,7 +25,7 @@ def get_tiles_and_save(dz_url, title_artist):
     try:
         crop_and_save(actual_width, actual_height, title_artist)
     except SystemError:
-        get_tiles_logger.error("Wrong dztile number, unable to save image!")
+        get_tiles_logger.info("Wrong dztile number, unable to save image!")
         return False
     return True
 
@@ -78,7 +44,6 @@ def crop_and_save(actual_w, actual_h, title_artist):
     cropped_image = new_image.crop((0, 0, actual_w, actual_h))
     title_artist = remove_special(title_artist)
     p = Path.cwd().joinpath("saved_images", f"{title_artist}.jpg")
-    # logger.info(p)
     cropped_image.save(p)
 
 
@@ -112,9 +77,6 @@ def _find_max_dimension(dz_url, max_range, find_width: bool = True) -> Tuple[int
     get_tiles_logger.info(f"Max dim found: {dim}")
     return dim + 1, actual_size
 
-
-# TODO Parallelize the tile fetch
-# TODO Capture Title, Author, Year, etc and put in filename/metadata
 
 def get_tiles(dz_url, w_counter, h_counter):
     root_url = dz_url
