@@ -1,27 +1,8 @@
 import random
-import logging
-import sys
 from save_pic import save_pic
 from urllib.parse import urljoin
 from format_url import get_source, parse_source_code, image_json
-# from main import bcolors
 from loggers import surprise_me_logger
-
-# # logging.basicConfig(level=logging.INFO)
-
-# surprise_me_logger = logging.getLogger(__name__)
-# # high_alert_logger = logging.getLogger("We found a BIG ONE!")
-
-# surprise_handler = logging.StreamHandler(sys.stdout)  # to console 
-# hq_formatter = logging.Formatter(bcolors.OKBLUE + '%(name)-12s: %(levelname)-8s %(message)s' + bcolors.ENDC)  # custom format to add to handler
-# surprise_handler.setFormatter(hq_formatter)
-
-# surprise_me_logger.addHandler(surprise_handler)  # add handler to logger
-# surprise_me_logger.propagate = False
-
-
-# surprise_me_logger.setLevel(logging.DEBUG)
-# # high_alert_logger.setLevel(logging.DEBUG)
 
 
 def get_collections(parsed_html, substring):
@@ -72,4 +53,4 @@ for _ in range(40):
 
 # random_picture_in_collection('collection/post-war')
 
-get_random_picture()
+# get_random_picture()

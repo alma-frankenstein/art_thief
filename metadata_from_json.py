@@ -3,36 +3,14 @@ from urllib.parse import urljoin
 import logging
 import random
 
-# Replacing this with just assigning 13 to all pictures, then counting down:
-
-# def get_dz_num(width, height):    # aspect_ratio as param?
-#     if width < height:
-#         smaller_dim = width
-#     else:
-#         smaller_dim = height
-    
-#     if smaller_dim <= 512:               # or 0.94 <= aspect_ratio <= 1.06:
-#         dz_num = "9/{}_{}.jpg"
-#     elif smaller_dim <= 1024:
-#         dz_num = "10/{}_{}.jpg"  # guessing here
-#     elif smaller_dim <= 1536:
-#         dz_num = "11/{}_{}.jpg"
-#     else:
-#         dz_num = "12/{}_{}.jpg"
-#     return dz_num
-
 
 
 def dztiles_url(json_bootstrap: dict) -> Optional[str]:
     """ ex: 'https://d32dm0rphc51dk.cloudfront.net/dFyhynkSypHRoFpJsyj0pg/dztiles/' """
     deep_zoom_data = json_bootstrap[0][1]["json"]["data"]["artwork"]["images"][0]["deepZoom"]
     if deep_zoom_data is not None:
-        # width = deep_zoom_data["Image"]["Size"]["Width"]
-        # height = deep_zoom_data["Image"]["Size"]["Height"]
         jpeg_url = deep_zoom_data["Image"]["Url"]
-        # dz_num = get_dz_num(width, height)
-        # dz_url = urljoin(jpeg_url, dz_num)
-        dz_url = urljoin(jpeg_url, "14/{}_{}.jpg")  # start with 14 and count down every time
+        dz_url = urljoin(jpeg_url, "14/{}_{}.jpg")  # reassigned before calling in save_pic()
         logging.info(f"high resolution url: {dz_url}")
         return dz_url
 
