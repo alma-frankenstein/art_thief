@@ -35,7 +35,7 @@ class ALogger:
         self.logger.debug("{}".format(message))
         
     def warning(self, message):
-        self.logger.debug("{}".format(message))
+        self.logger.warning("{}".format(message))
         
         
     
