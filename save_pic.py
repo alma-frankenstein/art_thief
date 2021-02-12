@@ -20,7 +20,7 @@ def save_pic(artsy_url):
     root_url = dztiles_url(bootstrap)
     if root_url:
         save_pic_logger.info(f"attempting to fetch: {artsy_url} ...")
-        save_pic_logger.info(f"artwork name: {jpeg_label} ...")
+        save_pic_logger.info(f"artwork name: {jpeg_label}")
         dz_num_counter = MAX_DZNUM
         while dz_num_counter > 8:
             amended_dz_url = amend_dz_url(root_url, dz_num_counter)
@@ -30,7 +30,7 @@ def save_pic(artsy_url):
                     high_alert_logger.debug(f"picture bigger than MAX_DZNUM {MAX_DZNUM}!")
                 save_pic_logger.info("successfully saved picture.")
                 return("successfully saved")
-                break
+                # break
             dz_num_counter -= 1
     else:
         save_pic_logger.info(f"{jpeg_label} has no high resolution version. Skipping.")

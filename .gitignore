@@ -3,6 +3,7 @@ venv/
 .idea/*
 __pycache__/
 .mypy_cache
+.pytest_cache/
 settings.json
 output.json
 source_code.html
