@@ -10,8 +10,12 @@ with open('example_bootstrap.json', 'r') as f:
 
 
 def test_get_deep_zoom_data():
-    expected_data = {'Image': {'xmlns': 'http://schemas.microsoft.com/deepzoom/2008', 'Url': 'https://d32dm0rphc51dk.cloudfront.net/9JBWR-XxkbcyOLUxbCKeOw/dztiles/',
-                               'Format': 'jpg', 'TileSize': 512, 'Overlap': 0, 'Size': {'Width': 961, 'Height': 1200}}}
+    expected_data = {'Image': {'xmlns': 'http://schemas.microsoft.com/deepzoom/2008', 
+                               'Url': 'https://d32dm0rphc51dk.cloudfront.net/9JBWR-XxkbcyOLUxbCKeOw/dztiles/',
+                               'Format': 'jpg', 
+                               'TileSize': 512, 
+                               'Overlap': 0, 
+                               'Size': {'Width': 961, 'Height': 1200}}}
     assert okai_example_bootstrap[0][1]["json"]["data"]["artwork"]["images"][0]["deepZoom"] == expected_data
 
 
