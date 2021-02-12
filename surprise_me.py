@@ -48,8 +48,8 @@ def get_random_picture():
     random_picture_in_collection(collection_href)
     
 
-for _ in range(40):
-    get_random_picture()
+# for _ in range(40):
+#     get_random_picture()
 
 # random_picture_in_collection('collection/post-war')
 

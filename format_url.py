@@ -18,8 +18,6 @@ def parse_source_code(source_string):
     return soup
     
     
-# TODO 11 vs 12 in dztiles
-
 def json_bootstrap(parsed_html, substring):  
     for block in parsed_html.find_all('script'):
         if substring in str(block):
