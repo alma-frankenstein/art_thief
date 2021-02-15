@@ -1,8 +1,8 @@
 import random
-from save_pic import save_pic
+from core.save_pic import save_pic
 from urllib.parse import urljoin
-from format_url import get_source, parse_source_code, image_json
-from loggers import surprise_me_logger
+from core.format_url import get_source, parse_source_code, image_json
+from core.loggers import surprise_me_logger
 
 
 def get_collections(parsed_html, substring):
@@ -16,12 +16,10 @@ def get_collections(parsed_html, substring):
 def filter_collections() -> list:
     source_string = get_source("https://www.artsy.net/")
     the_soup = parse_source_code(source_string)
-
-
-all_collections = get_collections(the_soup, "collection")
-# remove https://www.artsy.net/collection/textured-histories', 'https://www.artsy.net/collections'
-filtered_collections = list(set(x for x in all_collections if "http" not in x))
-return filtered_collections
+    all_collections = get_collections(the_soup, "collection")
+    # remove https://www.artsy.net/collection/textured-histories', 'https://www.artsy.net/collections'
+    filtered_collections = list(set(x for x in all_collections if "http" not in x))
+    return filtered_collections
 
 
 def rand_collection_href(collections):
