@@ -1,0 +1,2509 @@
+[
+    [
+        "{\"queryID\":\"artworkRoutes_ArtworkQuery\",\"variables\":{\"artworkID\":\"jeremy-okai-davis-fix\"}}",
+        {
+            "ok": true,
+            "status": 200,
+            "url": "https://metaphysics-production.artsy.net/v2",
+            "headers": {
+                "_headers": {
+                    "server": [
+                        "nginx/1.17.10"
+                    ],
+                    "date": [
+                        "Mon, 15 Feb 2021 17:45:08 GMT"
+                    ],
+                    "content-type": [
+                        "application/json; charset=utf-8"
+                    ],
+                    "transfer-encoding": [
+                        "chunked"
+                    ],
+                    "connection": [
+                        "close"
+                    ],
+                    "x-powered-by": [
+                        "Express"
+                    ],
+                    "access-control-allow-origin": [
+                        "*"
+                    ],
+                    "etag": [
+                        "W/\"7248-OMO8LLwbXepcrclOKB7J5eK0I6I\""
+                    ],
+                    "vary": [
+                        "Accept-Encoding"
+                    ],
+                    "content-encoding": [
+                        "gzip"
+                    ],
+                    "strict-transport-security": [
+                        "max-age=15724800; includeSubDomains"
+                    ]
+                }
+            },
+            "json": {
+                "data": {
+                    "artwork": {
+                        "slug": "jeremy-okai-davis-fix",
+                        "internalID": "5dec1795b7cd57000efe40da",
+                        "is_acquireable": false,
+                        "is_offerable": false,
+                        "availability": "for sale",
+                        "listPrice": {
+                            "__typename": "Money",
+                            "display": "$4,500",
+                            "major": 4500,
+                            "currencyCode": "USD",
+                            "minor": 450000
+                        },
+                        "is_in_auction": false,
+                        "sale": null,
+                        "artists": [
+                            {
+                                "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                "slug": "jeremy-okai-davis",
+                                "internalID": "56fd5b6f275b243a460003d0",
+                                "name": "Jeremy Okai Davis",
+                                "href": "/artist/jeremy-okai-davis",
+                                "image": {
+                                    "cropped": {
+                                        "url": "https://d7hftxdivxxvm.cloudfront.net?resize_to=fill&width=100&height=100&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLHBLA65o4c9LXj_Skv0oGg%2Flarge.jpg"
+                                    }
+                                },
+                                "formatted_nationality_and_birthday": "American, b. 1979",
+                                "counts": {
+                                    "partner_shows": 2,
+                                    "follows": 20
+                                },
+                                "exhibition_highlights": [
+                                    {
+                                        "partner": {
+                                            "__typename": "Partner",
+                                            "name": "Elizabeth Leach Gallery",
+                                            "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA="
+                                        },
+                                        "name": "Jeremy Okai Davis: Black Wood",
+                                        "start_at": "2020",
+                                        "cover_image": {
+                                            "cropped": {
+                                                "url": "https://d7hftxdivxxvm.cloudfront.net?resize_to=fill&width=800&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F9wUzYLi7RiYC_z3xIrweiw%2Flarge.jpg"
+                                            }
+                                        },
+                                        "city": "Portland",
+                                        "id": "U2hvdzo1Zjc1MGYwNTAyZGNkODAwMGViZWU1OTI="
+                                    }
+                                ],
+                                "collections": null,
+                                "highlights": {
+                                    "partnersConnection": {
+                                        "edges": []
+                                    }
+                                },
+                                "auctionResultsConnection": null,
+                                "biographyBlurb": {
+                                    "text": ""
+                                },
+                                "is_followed": false,
+                                "related": {
+                                    "suggestedConnection": null
+                                },
+                                "is_consignable": false
+                            }
+                        ],
+                        "artist": {
+                            "internalID": "56fd5b6f275b243a460003d0",
+                            "slug": "jeremy-okai-davis",
+                            "name": "Jeremy Okai Davis",
+                            "href": "/artist/jeremy-okai-davis",
+                            "image": {
+                                "cropped": {
+                                    "url": "https://d7hftxdivxxvm.cloudfront.net?resize_to=fill&width=100&height=100&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLHBLA65o4c9LXj_Skv0oGg%2Flarge.jpg"
+                                }
+                            },
+                            "formatted_nationality_and_birthday": "American, b. 1979",
+                            "counts": {
+                                "partner_shows": 2,
+                                "follows": 20
+                            },
+                            "exhibition_highlights": [
+                                {
+                                    "partner": {
+                                        "__typename": "Partner",
+                                        "name": "Elizabeth Leach Gallery",
+                                        "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA="
+                                    },
+                                    "name": "Jeremy Okai Davis: Black Wood",
+                                    "start_at": "2020",
+                                    "cover_image": {
+                                        "cropped": {
+                                            "url": "https://d7hftxdivxxvm.cloudfront.net?resize_to=fill&width=800&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F9wUzYLi7RiYC_z3xIrweiw%2Flarge.jpg"
+                                        }
+                                    },
+                                    "city": "Portland",
+                                    "id": "U2hvdzo1Zjc1MGYwNTAyZGNkODAwMGViZWU1OTI="
+                                }
+                            ],
+                            "collections": null,
+                            "highlights": {
+                                "partnersConnection": {
+                                    "edges": []
+                                }
+                            },
+                            "auctionResultsConnection": null,
+                            "biographyBlurb": {
+                                "text": ""
+                            },
+                            "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                            "is_followed": false,
+                            "related": {
+                                "artistsConnection": {
+                                    "pageInfo": {
+                                        "hasNextPage": false,
+                                        "endCursor": null
+                                    },
+                                    "edges": []
+                                }
+                            }
+                        },
+                        "href": "/artwork/jeremy-okai-davis-fix",
+                        "date": "2019",
+                        "artist_names": "Jeremy Okai Davis",
+                        "sale_message": "$4,500",
+                        "partner": {
+                            "name": "Elizabeth Leach Gallery",
+                            "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                            "type": "Gallery",
+                            "profile": {
+                                "image": {
+                                    "resized": {
+                                        "url": "https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=320&height=213&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2Ff5ThuMXEFfMNdZ9uYgm-JA%2Fmedium.jpg"
+                                    }
+                                },
+                                "id": "UHJvZmlsZTo1NDUxMDI2MDc3NmY3MjIzMWViYjAwMDA=",
+                                "slug": "elizabeth-leach-gallery",
+                                "name": "Elizabeth Leach Gallery",
+                                "internalID": "54510260776f72231ebb0000",
+                                "is_followed": false,
+                                "icon": {
+                                    "url": "https://d32dm0rphc51dk.cloudfront.net/blKYBQ7933N6Iqg7-s4t1g/square140.png"
+                                }
+                            },
+                            "initials": "ELG",
+                            "href": "/elizabeth-leach-gallery",
+                            "locations": [
+                                {
+                                    "city": "Portland",
+                                    "id": "TG9jYXRpb246NTQ2MTU5YmM3MjYxNjkyZDU0NTkwNzAw"
+                                }
+                            ],
+                            "isVerifiedSeller": false,
+                            "internalID": "54510260776f72231eb90000",
+                            "slug": "elizabeth-leach-gallery",
+                            "is_default_profile_public": true
+                        },
+                        "image_rights": "",
+                        "is_shareable": true,
+                        "meta_image": {
+                            "resized": {
+                                "width": 640,
+                                "height": 799,
+                                "url": "https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=640&height=799&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F9JBWR-XxkbcyOLUxbCKeOw%2Flarge.jpg"
+                            }
+                        },
+                        "meta": {
+                            "title": "Jeremy Okai Davis | Fix (2019) | Available for Sale | Artsy",
+                            "description": "Available for sale from Elizabeth Leach Gallery, Jeremy Okai Davis, Fix (2019), Acrylic and oil on canvas, 48 \u00d7 60 in",
+                            "long_description": "Available for sale from Elizabeth Leach Gallery, Jeremy Okai Davis, Fix (2019), Acrylic and oil on canvas, 48 \u00d7 60 in"
+                        },
+                        "context": null,
+                        "is_price_hidden": false,
+                        "is_price_range": false,
+                        "category": "Painting",
+                        "dimensions": {
+                            "in": "48 \u00d7 60 in",
+                            "cm": "121.9 \u00d7 152.4 cm"
+                        },
+                        "cultural_maker": null,
+                        "is_biddable": false,
+                        "edition_sets": [],
+                        "sale_artwork": null,
+                        "title": "Fix",
+                        "medium": "Acrylic and oil on canvas",
+                        "edition_of": null,
+                        "attributionClass": {
+                            "shortDescription": "This is a unique work",
+                            "id": "QXR0cmlidXRpb25DbGFzczp1bmlxdWU="
+                        },
+                        "myLotStanding": null,
+                        "is_for_sale": true,
+                        "is_inquireable": true,
+                        "priceIncludesTaxDisplay": null,
+                        "shippingInfo": "Shipping, tax, and additional fees quoted by seller",
+                        "shippingOrigin": null,
+                        "hasCertificateOfAuthenticity": false,
+                        "description": null,
+                        "additional_information": null,
+                        "series": null,
+                        "publisher": null,
+                        "manufacturer": null,
+                        "canRequestLotConditionsReport": false,
+                        "framed": null,
+                        "signatureInfo": null,
+                        "conditionDescription": null,
+                        "certificateOfAuthenticity": null,
+                        "mediumType": {
+                            "__typename": "ArtworkMedium",
+                            "name": "Painting",
+                            "longDescription": "Includes gouache; fresco; ink and wash; oil painting; screen painting; scroll painting; tempera; watercolor."
+                        },
+                        "articles": [],
+                        "literature": null,
+                        "exhibition_history": null,
+                        "provenance": null,
+                        "image_alt": "Jeremy Okai Davis, \u2018Fix\u2019, 2019, Painting, Acrylic and oil on canvas, Elizabeth Leach Gallery",
+                        "id": "QXJ0d29yazo1ZGVjMTc5NWI3Y2Q1NzAwMGVmZTQwZGE=",
+                        "is_saved": false,
+                        "images": [
+                            {
+                                "url": "https://d32dm0rphc51dk.cloudfront.net/9JBWR-XxkbcyOLUxbCKeOw/medium.jpg",
+                                "internalID": "5dec17960f04a20011385acf",
+                                "uri": "https://d32dm0rphc51dk.cloudfront.net/9JBWR-XxkbcyOLUxbCKeOw/large.jpg",
+                                "placeholder": {
+                                    "url": "https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=30&height=37&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F9JBWR-XxkbcyOLUxbCKeOw%2Fsmall.jpg"
+                                },
+                                "aspectRatio": 0.8,
+                                "is_zoomable": true,
+                                "is_default": true,
+                                "deepZoom": {
+                                    "Image": {
+                                        "xmlns": "http://schemas.microsoft.com/deepzoom/2008",
+                                        "Url": "https://d32dm0rphc51dk.cloudfront.net/9JBWR-XxkbcyOLUxbCKeOw/dztiles/",
+                                        "Format": "jpg",
+                                        "TileSize": 512,
+                                        "Overlap": 0,
+                                        "Size": {
+                                            "Width": 961,
+                                            "Height": 1200
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "artworkMeta": {
+                            "share": "Check out Jeremy Okai Davis, Fix (2019), From Elizabeth Leach Gallery"
+                        },
+                        "image": {
+                            "internalID": "5dec17960f04a20011385acf",
+                            "url": "https://d32dm0rphc51dk.cloudfront.net/9JBWR-XxkbcyOLUxbCKeOw/larger.jpg",
+                            "height": 1200,
+                            "width": 961
+                        },
+                        "is_downloadable": false,
+                        "is_hangable": true,
+                        "contextGrids": [
+                            {
+                                "__typename": "ArtistArtworkGrid",
+                                "title": "Other works by Jeremy Okai Davis",
+                                "ctaTitle": "View all works by Jeremy Okai Davis",
+                                "ctaHref": "/artist/jeremy-okai-davis",
+                                "artworksConnection": {
+                                    "edges": [
+                                        {
+                                            "__typename": "ArtworkEdge",
+                                            "node": {
+                                                "id": "QXJ0d29yazo1Zjc0ZTJmZDc5ZmJjOTAwMGU0MGRmMjQ=",
+                                                "slug": "jeremy-okai-davis-model-and-charm",
+                                                "href": "/artwork/jeremy-okai-davis-model-and-charm",
+                                                "internalID": "5f74e2fd79fbc9000e40df24",
+                                                "image": {
+                                                    "aspect_ratio": 0.89,
+                                                    "placeholder": "112.38207547169812%",
+                                                    "url": "https://d32dm0rphc51dk.cloudfront.net/iTpymWjbHlZ3ayg-yfsx0A/large.jpg"
+                                                },
+                                                "title": "Model & Charm",
+                                                "image_title": "Jeremy Okai Davis, \u2018Model & Charm\u2019, 2020",
+                                                "date": "2020",
+                                                "sale_message": "$4,500",
+                                                "cultural_maker": null,
+                                                "artists": [
+                                                    {
+                                                        "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                                        "href": "/artist/jeremy-okai-davis",
+                                                        "name": "Jeremy Okai Davis"
+                                                    }
+                                                ],
+                                                "collecting_institution": null,
+                                                "partner": {
+                                                    "name": "Elizabeth Leach Gallery",
+                                                    "href": "/elizabeth-leach-gallery",
+                                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                    "type": "Gallery"
+                                                },
+                                                "sale": null,
+                                                "sale_artwork": null,
+                                                "is_inquireable": true,
+                                                "is_saved": false,
+                                                "is_biddable": false
+                                            }
+                                        },
+                                        {
+                                            "__typename": "ArtworkEdge",
+                                            "node": {
+                                                "id": "QXJ0d29yazo1Zjk0YWUxODk2ZTYyZDAwMGRjM2UxZmE=",
+                                                "slug": "jeremy-okai-davis-untitled-harry-t-moore",
+                                                "href": "/artwork/jeremy-okai-davis-untitled-harry-t-moore",
+                                                "internalID": "5f94ae1896e62d000dc3e1fa",
+                                                "image": {
+                                                    "aspect_ratio": 0.67,
+                                                    "placeholder": "148.71194379391102%",
+                                                    "url": "https://d32dm0rphc51dk.cloudfront.net/Y1so8myQPBB8O6JfTBY5XQ/large.jpg"
+                                                },
+                                                "title": "Untitled (Harry T. Moore)",
+                                                "image_title": "Jeremy Okai Davis, \u2018Untitled (Harry T. Moore)\u2019, 2020",
+                                                "date": "2020",
+                                                "sale_message": "$2,200",
+                                                "cultural_maker": null,
+                                                "artists": [
+                                                    {
+                                                        "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                                        "href": "/artist/jeremy-okai-davis",
+                                                        "name": "Jeremy Okai Davis"
+                                                    }
+                                                ],
+                                                "collecting_institution": null,
+                                                "partner": {
+                                                    "name": "Elizabeth Leach Gallery",
+                                                    "href": "/elizabeth-leach-gallery",
+                                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                    "type": "Gallery"
+                                                },
+                                                "sale": null,
+                                                "sale_artwork": null,
+                                                "is_inquireable": true,
+                                                "is_saved": false,
+                                                "is_biddable": false
+                                            }
+                                        },
+                                        {
+                                            "__typename": "ArtworkEdge",
+                                            "node": {
+                                                "id": "QXJ0d29yazo1Zjc0ZTJkNTExZjBjZjAwMGU1NGRmOTM=",
+                                                "slug": "jeremy-okai-davis-sepia",
+                                                "href": "/artwork/jeremy-okai-davis-sepia",
+                                                "internalID": "5f74e2d511f0cf000e54df93",
+                                                "image": {
+                                                    "aspect_ratio": 0.89,
+                                                    "placeholder": "112.41007194244604%",
+                                                    "url": "https://d32dm0rphc51dk.cloudfront.net/eNpXtbnvR8EhYGDYYjDkxQ/large.jpg"
+                                                },
+                                                "title": "Sepia",
+                                                "image_title": "Jeremy Okai Davis, \u2018Sepia\u2019, 2020",
+                                                "date": "2020",
+                                                "sale_message": "Sold",
+                                                "cultural_maker": null,
+                                                "artists": [
+                                                    {
+                                                        "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                                        "href": "/artist/jeremy-okai-davis",
+                                                        "name": "Jeremy Okai Davis"
+                                                    }
+                                                ],
+                                                "collecting_institution": null,
+                                                "partner": {
+                                                    "name": "Elizabeth Leach Gallery",
+                                                    "href": "/elizabeth-leach-gallery",
+                                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                    "type": "Gallery"
+                                                },
+                                                "sale": null,
+                                                "sale_artwork": null,
+                                                "is_inquireable": true,
+                                                "is_saved": false,
+                                                "is_biddable": false
+                                            }
+                                        },
+                                        {
+                                            "__typename": "ArtworkEdge",
+                                            "node": {
+                                                "id": "QXJ0d29yazo1Zjc0ZTJlMWEyMzEyNDAwMTI0NzAzZTE=",
+                                                "slug": "jeremy-okai-davis-aicha",
+                                                "href": "/artwork/jeremy-okai-davis-aicha",
+                                                "internalID": "5f74e2e1a2312400124703e1",
+                                                "image": {
+                                                    "aspect_ratio": 0.89,
+                                                    "placeholder": "112.20825852782765%",
+                                                    "url": "https://d32dm0rphc51dk.cloudfront.net/3cqpkTnj198hmR4_j-HMDA/large.jpg"
+                                                },
+                                                "title": "Aicha",
+                                                "image_title": "Jeremy Okai Davis, \u2018Aicha\u2019, 2020",
+                                                "date": "2020",
+                                                "sale_message": "Sold",
+                                                "cultural_maker": null,
+                                                "artists": [
+                                                    {
+                                                        "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                                        "href": "/artist/jeremy-okai-davis",
+                                                        "name": "Jeremy Okai Davis"
+                                                    }
+                                                ],
+                                                "collecting_institution": null,
+                                                "partner": {
+                                                    "name": "Elizabeth Leach Gallery",
+                                                    "href": "/elizabeth-leach-gallery",
+                                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                    "type": "Gallery"
+                                                },
+                                                "sale": null,
+                                                "sale_artwork": null,
+                                                "is_inquireable": true,
+                                                "is_saved": false,
+                                                "is_biddable": false
+                                            }
+                                        },
+                                        {
+                                            "__typename": "ArtworkEdge",
+                                            "node": {
+                                                "id": "QXJ0d29yazo1Zjc1MTE2NTM1YWJmZDAwMGU5Zjk0NmQ=",
+                                                "slug": "jeremy-okai-davis-toulouse",
+                                                "href": "/artwork/jeremy-okai-davis-toulouse",
+                                                "internalID": "5f75116535abfd000e9f946d",
+                                                "image": {
+                                                    "aspect_ratio": 0.89,
+                                                    "placeholder": "112.38151658767772%",
+                                                    "url": "https://d32dm0rphc51dk.cloudfront.net/NEm0ShdRN3mlFmX_CeMcAQ/large.jpg"
+                                                },
+                                                "title": "Toulouse",
+                                                "image_title": "Jeremy Okai Davis, \u2018Toulouse\u2019, 2020",
+                                                "date": "2020",
+                                                "sale_message": "Sold",
+                                                "cultural_maker": null,
+                                                "artists": [
+                                                    {
+                                                        "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                                        "href": "/artist/jeremy-okai-davis",
+                                                        "name": "Jeremy Okai Davis"
+                                                    }
+                                                ],
+                                                "collecting_institution": null,
+                                                "partner": {
+                                                    "name": "Elizabeth Leach Gallery",
+                                                    "href": "/elizabeth-leach-gallery",
+                                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                    "type": "Gallery"
+                                                },
+                                                "sale": null,
+                                                "sale_artwork": null,
+                                                "is_inquireable": true,
+                                                "is_saved": false,
+                                                "is_biddable": false
+                                            }
+                                        },
+                                        {
+                                            "__typename": "ArtworkEdge",
+                                            "node": {
+                                                "id": "QXJ0d29yazo1Zjc0ZTJkMmI0YTk4ZDAwMGViMjU5MWU=",
+                                                "slug": "jeremy-okai-davis-acrylic-on-canvas-wrapped-panel",
+                                                "href": "/artwork/jeremy-okai-davis-acrylic-on-canvas-wrapped-panel",
+                                                "internalID": "5f74e2d2b4a98d000eb2591e",
+                                                "image": {
+                                                    "aspect_ratio": 1,
+                                                    "placeholder": "99.92%",
+                                                    "url": "https://d32dm0rphc51dk.cloudfront.net/2hFSWLitoed1cF35R7F8ng/large.jpg"
+                                                },
+                                                "title": "acrylic on canvas wrapped panel",
+                                                "image_title": "Jeremy Okai Davis, \u2018acrylic on canvas wrapped panel\u2019, 2020",
+                                                "date": "2020",
+                                                "sale_message": "Sold",
+                                                "cultural_maker": null,
+                                                "artists": [
+                                                    {
+                                                        "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                                        "href": "/artist/jeremy-okai-davis",
+                                                        "name": "Jeremy Okai Davis"
+                                                    }
+                                                ],
+                                                "collecting_institution": null,
+                                                "partner": {
+                                                    "name": "Elizabeth Leach Gallery",
+                                                    "href": "/elizabeth-leach-gallery",
+                                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                    "type": "Gallery"
+                                                },
+                                                "sale": null,
+                                                "sale_artwork": null,
+                                                "is_inquireable": false,
+                                                "is_saved": false,
+                                                "is_biddable": false
+                                            }
+                                        },
+                                        {
+                                            "__typename": "ArtworkEdge",
+                                            "node": {
+                                                "id": "QXJ0d29yazo1Zjc0ZTJiZDhlZGVlMjAwMGVlZWNiNDU=",
+                                                "slug": "jeremy-okai-davis-bounce-a-dark-course",
+                                                "href": "/artwork/jeremy-okai-davis-bounce-a-dark-course",
+                                                "internalID": "5f74e2bd8edee2000eeecb45",
+                                                "image": {
+                                                    "aspect_ratio": 0.52,
+                                                    "placeholder": "191.54030327214684%",
+                                                    "url": "https://d32dm0rphc51dk.cloudfront.net/J3HBwgzeQ4TWKxTR2I1GYA/large.jpg"
+                                                },
+                                                "title": "Bounce (A Dark Course)",
+                                                "image_title": "Jeremy Okai Davis, \u2018Bounce (A Dark Course)\u2019, 2020",
+                                                "date": "2020",
+                                                "sale_message": "$2,500",
+                                                "cultural_maker": null,
+                                                "artists": [
+                                                    {
+                                                        "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                                        "href": "/artist/jeremy-okai-davis",
+                                                        "name": "Jeremy Okai Davis"
+                                                    }
+                                                ],
+                                                "collecting_institution": null,
+                                                "partner": {
+                                                    "name": "Elizabeth Leach Gallery",
+                                                    "href": "/elizabeth-leach-gallery",
+                                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                    "type": "Gallery"
+                                                },
+                                                "sale": null,
+                                                "sale_artwork": null,
+                                                "is_inquireable": false,
+                                                "is_saved": false,
+                                                "is_biddable": false
+                                            }
+                                        },
+                                        {
+                                            "__typename": "ArtworkEdge",
+                                            "node": {
+                                                "id": "QXJ0d29yazo1ZjQxNzk2NGY4YzdiMzAwMGQ2ZjM1MmM=",
+                                                "slug": "jeremy-okai-davis-a-dark-course",
+                                                "href": "/artwork/jeremy-okai-davis-a-dark-course",
+                                                "internalID": "5f417964f8c7b3000d6f352c",
+                                                "image": {
+                                                    "aspect_ratio": 0.99,
+                                                    "placeholder": "101.21457489878543%",
+                                                    "url": "https://d32dm0rphc51dk.cloudfront.net/gsly3UQzBD6-lB_ca5JhlA/large.jpg"
+                                                },
+                                                "title": "A Dark Course",
+                                                "image_title": "Jeremy Okai Davis, \u2018A Dark Course\u2019, 2020",
+                                                "date": "2020",
+                                                "sale_message": "$600",
+                                                "cultural_maker": null,
+                                                "artists": [
+                                                    {
+                                                        "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                                        "href": "/artist/jeremy-okai-davis",
+                                                        "name": "Jeremy Okai Davis"
+                                                    }
+                                                ],
+                                                "collecting_institution": null,
+                                                "partner": {
+                                                    "name": "Elizabeth Leach Gallery",
+                                                    "href": "/elizabeth-leach-gallery",
+                                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                    "type": "Gallery"
+                                                },
+                                                "sale": null,
+                                                "sale_artwork": null,
+                                                "is_inquireable": false,
+                                                "is_saved": false,
+                                                "is_biddable": false
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "__typename": "PartnerArtworkGrid",
+                                "title": "Other works from Elizabeth Leach Gallery",
+                                "ctaTitle": "View all works from Elizabeth Leach Gallery",
+                                "ctaHref": "/elizabeth-leach-gallery",
+                                "artworksConnection": {
+                                    "edges": [
+                                        {
+                                            "__typename": "ArtworkEdge",
+                                            "node": {
+                                                "id": "QXJ0d29yazo2MDFmMzMwN2ZlOTJhMzAwMGQ3YjllMWI=",
+                                                "slug": "michelle-ross-scribed",
+                                                "href": "/artwork/michelle-ross-scribed",
+                                                "internalID": "601f3307fe92a3000d7b9e1b",
+                                                "image": {
+                                                    "aspect_ratio": 1.26,
+                                                    "placeholder": "79.13333333333334%",
+                                                    "url": "https://d32dm0rphc51dk.cloudfront.net/_PaVVWmb-Oko32umCJAung/large.jpg"
+                                                },
+                                                "title": "Scribed",
+                                                "image_title": "Michelle Ross, \u2018Scribed\u2019, 2021",
+                                                "date": "2021",
+                                                "sale_message": "$4,000",
+                                                "cultural_maker": null,
+                                                "artists": [
+                                                    {
+                                                        "id": "QXJ0aXN0OjU2NDdiOGY4MmE4OTNhN2MyMjAwMDJhZg==",
+                                                        "href": "/artist/michelle-ross",
+                                                        "name": "Michelle Ross"
+                                                    }
+                                                ],
+                                                "collecting_institution": null,
+                                                "partner": {
+                                                    "name": "Elizabeth Leach Gallery",
+                                                    "href": "/elizabeth-leach-gallery",
+                                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                    "type": "Gallery"
+                                                },
+                                                "sale": null,
+                                                "sale_artwork": null,
+                                                "is_inquireable": true,
+                                                "is_saved": false,
+                                                "is_biddable": false
+                                            }
+                                        },
+                                        {
+                                            "__typename": "ArtworkEdge",
+                                            "node": {
+                                                "id": "QXJ0d29yazo2MDFkOTZhMzIxOTk3MTNkNDc1NmZhMzc=",
+                                                "slug": "michelle-ross-false-flag",
+                                                "href": "/artwork/michelle-ross-false-flag",
+                                                "internalID": "601d96a32199713d4756fa37",
+                                                "image": {
+                                                    "aspect_ratio": 1.3,
+                                                    "placeholder": "77.13333333333333%",
+                                                    "url": "https://d32dm0rphc51dk.cloudfront.net/K89ZerPdgUFu3jbr3qe26w/large.jpg"
+                                                },
+                                                "title": "False Flag",
+                                                "image_title": "Michelle Ross, \u2018False Flag\u2019, 2021",
+                                                "date": "2021",
+                                                "sale_message": "$6,000",
+                                                "cultural_maker": null,
+                                                "artists": [
+                                                    {
+                                                        "id": "QXJ0aXN0OjU2NDdiOGY4MmE4OTNhN2MyMjAwMDJhZg==",
+                                                        "href": "/artist/michelle-ross",
+                                                        "name": "Michelle Ross"
+                                                    }
+                                                ],
+                                                "collecting_institution": null,
+                                                "partner": {
+                                                    "name": "Elizabeth Leach Gallery",
+                                                    "href": "/elizabeth-leach-gallery",
+                                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                    "type": "Gallery"
+                                                },
+                                                "sale": null,
+                                                "sale_artwork": null,
+                                                "is_inquireable": true,
+                                                "is_saved": false,
+                                                "is_biddable": false
+                                            }
+                                        },
+                                        {
+                                            "__typename": "ArtworkEdge",
+                                            "node": {
+                                                "id": "QXJ0d29yazo2MDFkOTZhMzY2N2UzMDBmZDA1NWJkYjM=",
+                                                "slug": "michelle-ross-infinitely-divisible",
+                                                "href": "/artwork/michelle-ross-infinitely-divisible",
+                                                "internalID": "601d96a3667e300fd055bdb3",
+                                                "image": {
+                                                    "aspect_ratio": 1.27,
+                                                    "placeholder": "78.53333333333333%",
+                                                    "url": "https://d32dm0rphc51dk.cloudfront.net/k_TLxYfuJrzI7f_GuO2cOw/large.jpg"
+                                                },
+                                                "title": "Infinitely Divisible ",
+                                                "image_title": "Michelle Ross, \u2018Infinitely Divisible \u2019, 2021",
+                                                "date": "2021",
+                                                "sale_message": "$15,000",
+                                                "cultural_maker": null,
+                                                "artists": [
+                                                    {
+                                                        "id": "QXJ0aXN0OjU2NDdiOGY4MmE4OTNhN2MyMjAwMDJhZg==",
+                                                        "href": "/artist/michelle-ross",
+                                                        "name": "Michelle Ross"
+                                                    }
+                                                ],
+                                                "collecting_institution": null,
+                                                "partner": {
+                                                    "name": "Elizabeth Leach Gallery",
+                                                    "href": "/elizabeth-leach-gallery",
+                                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                    "type": "Gallery"
+                                                },
+                                                "sale": null,
+                                                "sale_artwork": null,
+                                                "is_inquireable": true,
+                                                "is_saved": false,
+                                                "is_biddable": false
+                                            }
+                                        },
+                                        {
+                                            "__typename": "ArtworkEdge",
+                                            "node": {
+                                                "id": "QXJ0d29yazo2MDFkOTZhNDY2N2UzMDBmZDA1NWJkYmI=",
+                                                "slug": "michelle-ross-tempest",
+                                                "href": "/artwork/michelle-ross-tempest",
+                                                "internalID": "601d96a4667e300fd055bdbb",
+                                                "image": {
+                                                    "aspect_ratio": 1.28,
+                                                    "placeholder": "78.26666666666667%",
+                                                    "url": "https://d32dm0rphc51dk.cloudfront.net/1UVFml0DhJxt0CU5FJHt8A/large.jpg"
+                                                },
+                                                "title": "Tempest",
+                                                "image_title": "Michelle Ross, \u2018Tempest\u2019, 2021",
+                                                "date": "2021",
+                                                "sale_message": "$15,000",
+                                                "cultural_maker": null,
+                                                "artists": [
+                                                    {
+                                                        "id": "QXJ0aXN0OjU2NDdiOGY4MmE4OTNhN2MyMjAwMDJhZg==",
+                                                        "href": "/artist/michelle-ross",
+                                                        "name": "Michelle Ross"
+                                                    }
+                                                ],
+                                                "collecting_institution": null,
+                                                "partner": {
+                                                    "name": "Elizabeth Leach Gallery",
+                                                    "href": "/elizabeth-leach-gallery",
+                                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                    "type": "Gallery"
+                                                },
+                                                "sale": null,
+                                                "sale_artwork": null,
+                                                "is_inquireable": true,
+                                                "is_saved": false,
+                                                "is_biddable": false
+                                            }
+                                        },
+                                        {
+                                            "__typename": "ArtworkEdge",
+                                            "node": {
+                                                "id": "QXJ0d29yazo2MDFkOTZhNjY2N2UzMDBmZDA1NWJkYzI=",
+                                                "slug": "michelle-ross-idyll-wild",
+                                                "href": "/artwork/michelle-ross-idyll-wild",
+                                                "internalID": "601d96a6667e300fd055bdc2",
+                                                "image": {
+                                                    "aspect_ratio": 1.29,
+                                                    "placeholder": "77.53333333333333%",
+                                                    "url": "https://d32dm0rphc51dk.cloudfront.net/zkartYayU6mu_OjBPvWThw/large.jpg"
+                                                },
+                                                "title": "Idyll Wild",
+                                                "image_title": "Michelle Ross, \u2018Idyll Wild\u2019, 2021",
+                                                "date": "2021",
+                                                "sale_message": "$6,000",
+                                                "cultural_maker": null,
+                                                "artists": [
+                                                    {
+                                                        "id": "QXJ0aXN0OjU2NDdiOGY4MmE4OTNhN2MyMjAwMDJhZg==",
+                                                        "href": "/artist/michelle-ross",
+                                                        "name": "Michelle Ross"
+                                                    }
+                                                ],
+                                                "collecting_institution": null,
+                                                "partner": {
+                                                    "name": "Elizabeth Leach Gallery",
+                                                    "href": "/elizabeth-leach-gallery",
+                                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                    "type": "Gallery"
+                                                },
+                                                "sale": null,
+                                                "sale_artwork": null,
+                                                "is_inquireable": true,
+                                                "is_saved": false,
+                                                "is_biddable": false
+                                            }
+                                        },
+                                        {
+                                            "__typename": "ArtworkEdge",
+                                            "node": {
+                                                "id": "QXJ0d29yazo2MDFkOTZhN2Y0Y2RmYjEyNzg3MmU1ZGM=",
+                                                "slug": "michelle-ross-keep",
+                                                "href": "/artwork/michelle-ross-keep",
+                                                "internalID": "601d96a7f4cdfb127872e5dc",
+                                                "image": {
+                                                    "aspect_ratio": 1.29,
+                                                    "placeholder": "77.46666666666667%",
+                                                    "url": "https://d32dm0rphc51dk.cloudfront.net/QHyIgSFFxamDo4G2XPiudw/large.jpg"
+                                                },
+                                                "title": "Keep",
+                                                "image_title": "Michelle Ross, \u2018Keep\u2019, 2021",
+                                                "date": "2021",
+                                                "sale_message": "$6,000",
+                                                "cultural_maker": null,
+                                                "artists": [
+                                                    {
+                                                        "id": "QXJ0aXN0OjU2NDdiOGY4MmE4OTNhN2MyMjAwMDJhZg==",
+                                                        "href": "/artist/michelle-ross",
+                                                        "name": "Michelle Ross"
+                                                    }
+                                                ],
+                                                "collecting_institution": null,
+                                                "partner": {
+                                                    "name": "Elizabeth Leach Gallery",
+                                                    "href": "/elizabeth-leach-gallery",
+                                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                    "type": "Gallery"
+                                                },
+                                                "sale": null,
+                                                "sale_artwork": null,
+                                                "is_inquireable": true,
+                                                "is_saved": false,
+                                                "is_biddable": false
+                                            }
+                                        },
+                                        {
+                                            "__typename": "ArtworkEdge",
+                                            "node": {
+                                                "id": "QXJ0d29yazo2MDExZWVlZTAzOTY5NTAwMTFlYzc1MTE=",
+                                                "slug": "alison-saar-jitterbug-from-the-portfolio-copacetic",
+                                                "href": "/artwork/alison-saar-jitterbug-from-the-portfolio-copacetic",
+                                                "internalID": "6011eeee0396950011ec7511",
+                                                "image": {
+                                                    "aspect_ratio": 0.92,
+                                                    "placeholder": "108.38150289017341%",
+                                                    "url": "https://d32dm0rphc51dk.cloudfront.net/dR-XwBdT1R6quXj89raaNQ/large.jpg"
+                                                },
+                                                "title": "Jitterbug (from the portfolio Copacetic)",
+                                                "image_title": "Alison Saar, \u2018Jitterbug (from the portfolio Copacetic)\u2019, 2019",
+                                                "date": "2019",
+                                                "sale_message": "$2,500",
+                                                "cultural_maker": null,
+                                                "artists": [
+                                                    {
+                                                        "id": "QXJ0aXN0OjUxOWY5MDM3Mjc1YjI0ZTNmNTAwMDAzZg==",
+                                                        "href": "/artist/alison-saar",
+                                                        "name": "Alison Saar"
+                                                    }
+                                                ],
+                                                "collecting_institution": null,
+                                                "partner": {
+                                                    "name": "Elizabeth Leach Gallery",
+                                                    "href": "/elizabeth-leach-gallery",
+                                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                    "type": "Gallery"
+                                                },
+                                                "sale": null,
+                                                "sale_artwork": null,
+                                                "is_inquireable": true,
+                                                "is_saved": false,
+                                                "is_biddable": false
+                                            }
+                                        },
+                                        {
+                                            "__typename": "ArtworkEdge",
+                                            "node": {
+                                                "id": "QXJ0d29yazo2MDExZWVlNmQ4YjcwNzAwMTJmZTM4ZDc=",
+                                                "slug": "alison-saar-shebop-from-the-portfolio-copacetic",
+                                                "href": "/artwork/alison-saar-shebop-from-the-portfolio-copacetic",
+                                                "internalID": "6011eee6d8b7070012fe38d7",
+                                                "image": {
+                                                    "aspect_ratio": 0.92,
+                                                    "placeholder": "108.30324909747293%",
+                                                    "url": "https://d32dm0rphc51dk.cloudfront.net/kOyQn0O4i4tzeVraAl-HPw/large.jpg"
+                                                },
+                                                "title": "Shebop (from the portfolio Copacetic)",
+                                                "image_title": "Alison Saar, \u2018Shebop (from the portfolio Copacetic)\u2019, 2019",
+                                                "date": "2019",
+                                                "sale_message": "$2,500",
+                                                "cultural_maker": null,
+                                                "artists": [
+                                                    {
+                                                        "id": "QXJ0aXN0OjUxOWY5MDM3Mjc1YjI0ZTNmNTAwMDAzZg==",
+                                                        "href": "/artist/alison-saar",
+                                                        "name": "Alison Saar"
+                                                    }
+                                                ],
+                                                "collecting_institution": null,
+                                                "partner": {
+                                                    "name": "Elizabeth Leach Gallery",
+                                                    "href": "/elizabeth-leach-gallery",
+                                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                    "type": "Gallery"
+                                                },
+                                                "sale": null,
+                                                "sale_artwork": null,
+                                                "is_inquireable": true,
+                                                "is_saved": false,
+                                                "is_biddable": false
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "__typename": "RelatedArtworkGrid",
+                                "title": "Related works",
+                                "ctaTitle": null,
+                                "ctaHref": null,
+                                "artworksConnection": null
+                            }
+                        ],
+                        "layers": [
+                            {
+                                "name": "For Sale",
+                                "internalID": "for-sale",
+                                "id": "QXJ0d29ya0xheWVyOmZvci1zYWxl"
+                            }
+                        ],
+                        "layer": {
+                            "name": "For Sale",
+                            "artworksConnection": {
+                                "edges": [
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo1ZjM1MTJmZjllNzhkMzAwMGUzMDE0N2E=",
+                                            "slug": "marisa-takal-are-there-words-you-havent-felt-1",
+                                            "href": "/artwork/marisa-takal-are-there-words-you-havent-felt-1",
+                                            "internalID": "5f3512ff9e78d3000e30147a",
+                                            "image": {
+                                                "aspect_ratio": 0.75,
+                                                "placeholder": "133.29113924050634%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/wijHQbwgulB8YYsgE_cKfA/large.jpg"
+                                            },
+                                            "title": "Are there words you haven\u2019t felt",
+                                            "image_title": "Marisa Takal, \u2018Are there words you haven\u2019t felt\u2019, 2020",
+                                            "date": "2020",
+                                            "sale_message": "Contact For Price",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU2OGRhOWI4ZjQ2YzRjNmUxNDAwMDAzNg==",
+                                                    "href": "/artist/marisa-takal",
+                                                    "name": "Marisa Takal"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Loyal",
+                                                "href": "/loyal",
+                                                "id": "UGFydG5lcjo1MmNjNjU0YmViYWQ2NGE0YzAwMDAwMDE=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo1ZjVlOTYyNGQxNGMzMzAwMTQxZTc1ZGE=",
+                                            "slug": "jared-mcgriff-pink-dream-recliner",
+                                            "href": "/artwork/jared-mcgriff-pink-dream-recliner",
+                                            "internalID": "5f5e9624d14c3300141e75da",
+                                            "image": {
+                                                "aspect_ratio": 1.16,
+                                                "placeholder": "86.09810204584669%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/7N0nbUYOHzNU8_eJCl9yHQ/large.jpg"
+                                            },
+                                            "title": "Pink Dream Recliner",
+                                            "image_title": "Jared McGriff, \u2018Pink Dream Recliner\u2019, 2019",
+                                            "date": "2019",
+                                            "sale_message": "Contact For Price",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjVkMWI5YTRjMjEzYjA3MDAxMmQ4ZDI1ZQ==",
+                                                    "href": "/artist/jared-mcgriff",
+                                                    "name": "Jared McGriff"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Spinello Projects",
+                                                "href": "/spinello-projects",
+                                                "id": "UGFydG5lcjo1MjcyYWNhY2EwOWE2N2Q4YzIwMDAwNTQ=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo1Zjc5ZTdkMjU4NjY2MjAwMGRmNWU2YWM=",
+                                            "slug": "eric-uhlir-game-six",
+                                            "href": "/artwork/eric-uhlir-game-six",
+                                            "internalID": "5f79e7d2586662000df5e6ac",
+                                            "image": {
+                                                "aspect_ratio": 0.83,
+                                                "placeholder": "119.76072607260726%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/ZzuIzpvz3tZhyYtLgFQY_A/large.jpg"
+                                            },
+                                            "title": "Game Six",
+                                            "image_title": "Eric Uhlir, \u2018Game Six\u2019, 2020",
+                                            "date": "2020",
+                                            "sale_message": "$7,000",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjVlOWI1YTc5OGFlMzFhMDAwZGE1ODViMQ==",
+                                                    "href": "/artist/eric-uhlir",
+                                                    "name": "Eric Uhlir"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Caitlin Berry Fine Art",
+                                                "href": "/caitlin-berry-fine-art",
+                                                "id": "UGFydG5lcjo1ZThjZDFkZmNhNWFjNjAwMTMxNzI5YzI=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo1ZThkNDNiYjM4NGZiNTAwMGZlMWEwZGU=",
+                                            "slug": "gresham-tapiwa-nyaude-priceless-and-weightless",
+                                            "href": "/artwork/gresham-tapiwa-nyaude-priceless-and-weightless",
+                                            "internalID": "5e8d43bb384fb5000fe1a0de",
+                                            "image": {
+                                                "aspect_ratio": 1.5,
+                                                "placeholder": "66.66666666666666%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/pBjhIsV_RhkjBHYqd2iosQ/large.jpg"
+                                            },
+                                            "title": "Priceless and Weightless",
+                                            "image_title": "Gresham Tapiwa Nyaude, \u2018Priceless and Weightless\u2019, 2018",
+                                            "date": "2018",
+                                            "sale_message": "$15,000",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU0MmQ3M2ZkNzI2MTY5M2Y3ZTU1MGYwMA==",
+                                                    "href": "/artist/gresham-tapiwa-nyaude",
+                                                    "name": "Gresham Tapiwa Nyaude"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "First Floor Gallery Harare",
+                                                "href": "/first-floor-gallery-harare",
+                                                "id": "UGFydG5lcjo1NDJkNzFkMDcyNjE2OTJjYzViYjAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo1ZmZmZjFjYmRjZGY4MjQwYjRjNDQxNDk=",
+                                            "slug": "misheck-masamvu-thoughts-before-the-rain",
+                                            "href": "/artwork/misheck-masamvu-thoughts-before-the-rain",
+                                            "internalID": "5ffff1cbdcdf8240b4c44149",
+                                            "image": {
+                                                "aspect_ratio": 1.36,
+                                                "placeholder": "73.69779802581625%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/o_uRlijwIC1msnSsmo-_WQ/large.jpg"
+                                            },
+                                            "title": "Thoughts before the Rain",
+                                            "image_title": "Misheck Masamvu, \u2018Thoughts before the Rain\u2019, 2020",
+                                            "date": "2020",
+                                            "sale_message": "Contact For Price",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjUyNmE0MDZiOWMxOGRiMzIwODAwMDU2Mw==",
+                                                    "href": "/artist/misheck-masamvu",
+                                                    "name": "Misheck Masamvu"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Goodman Gallery",
+                                                "href": "/goodman-gallery",
+                                                "id": "UGFydG5lcjo0ZGYzYmVjMDM3OThkYjAwMDEwMTMwNGE=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo1ZmNmODk2NTBkMzM4ZTAwMGRlNTg0N2U=",
+                                            "slug": "franklin-evans-20centfacespace-1",
+                                            "href": "/artwork/franklin-evans-20centfacespace-1",
+                                            "internalID": "5fcf89650d338e000de5847e",
+                                            "image": {
+                                                "aspect_ratio": 0.75,
+                                                "placeholder": "133.09671694764862%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/hpUuQPhuyzrFZ2r8gs1-XQ/large.jpg"
+                                            },
+                                            "title": "20centfacespace",
+                                            "image_title": "Franklin Evans, \u201820centfacespace\u2019, 2019",
+                                            "date": "2019",
+                                            "sale_message": "Contact For Price",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjUxNTFjYWUyZGJkY2Y0NmEyMDAwMDI4NA==",
+                                                    "href": "/artist/franklin-evans",
+                                                    "name": "Franklin Evans"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Wizard Gallery",
+                                                "href": "/wizard-gallery",
+                                                "id": "UGFydG5lcjo1ZDgzN2ZlNmQwZTA2MTAwMTRiYjU3NWQ=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo1Y2FlMTk3MGJiZGNiZTYyODEwN2RkZmY=",
+                                            "slug": "sabine-danze-apache",
+                                            "href": "/artwork/sabine-danze-apache",
+                                            "internalID": "5cae1970bbdcbe628107ddff",
+                                            "image": {
+                                                "aspect_ratio": 0.66,
+                                                "placeholder": "151.1811023622047%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/GZ0Iwy7NnIwN234pMILn4g/large.jpg"
+                                            },
+                                            "title": "Apache",
+                                            "image_title": "Sabine DANZE, \u2018Apache\u2019, 2017",
+                                            "date": "2017",
+                                            "sale_message": "\u20ac12,700",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU5Mjg0ODFlOGIwYzE0NDY4M2Q1MzFkZA==",
+                                                    "href": "/artist/sabine-danze",
+                                                    "name": "Sabine DANZE"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "In Arte Veritas",
+                                                "href": "/in-arte-veritas-gallery",
+                                                "id": "UGFydG5lcjo1YmFjYTA5MjgyY2VjZDJkNmFhNjU5ODk=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": false,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo1ZWQ1YmQ1NGQxYmNhODAwMTIzZDExM2E=",
+                                            "slug": "colin-parker-the-stragglers",
+                                            "href": "/artwork/colin-parker-the-stragglers",
+                                            "internalID": "5ed5bd54d1bca800123d113a",
+                                            "image": {
+                                                "aspect_ratio": 1.01,
+                                                "placeholder": "98.9223337049424%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/s5CeViAQMuoGa7_Hr2sRdg/large.jpg"
+                                            },
+                                            "title": "The Stragglers",
+                                            "image_title": "Colin Parker, \u2018The Stragglers\u2019, 2020",
+                                            "date": "2020",
+                                            "sale_message": "AUD $1,280",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU0Yzg2NDQ5NzI2MTY5MmI1MTdlMWQwMA==",
+                                                    "href": "/artist/colin-parker",
+                                                    "name": "Colin Parker"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Wentworth Galleries",
+                                                "href": "/wentworth-galleries",
+                                                "id": "UGFydG5lcjo1MjU1NWZkNzljMThkYjg4MzUwMDA4OTU=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    }
+                                ]
+                            },
+                            "id": "QXJ0d29ya0xheWVyOmZvci1zYWxl"
+                        },
+                        "artistSeriesConnection": {
+                            "edges": []
+                        },
+                        "seriesArtist": {
+                            "artistSeriesConnection": {
+                                "edges": []
+                            },
+                            "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA=="
+                        },
+                        "seriesForCounts": {
+                            "edges": []
+                        },
+                        "pricingContext": null
+                    },
+                    "me": null
+                }
+            },
+            "data": {
+                "artwork": {
+                    "slug": "jeremy-okai-davis-fix",
+                    "internalID": "5dec1795b7cd57000efe40da",
+                    "is_acquireable": false,
+                    "is_offerable": false,
+                    "availability": "for sale",
+                    "listPrice": {
+                        "__typename": "Money",
+                        "display": "$4,500",
+                        "major": 4500,
+                        "currencyCode": "USD",
+                        "minor": 450000
+                    },
+                    "is_in_auction": false,
+                    "sale": null,
+                    "artists": [
+                        {
+                            "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                            "slug": "jeremy-okai-davis",
+                            "internalID": "56fd5b6f275b243a460003d0",
+                            "name": "Jeremy Okai Davis",
+                            "href": "/artist/jeremy-okai-davis",
+                            "image": {
+                                "cropped": {
+                                    "url": "https://d7hftxdivxxvm.cloudfront.net?resize_to=fill&width=100&height=100&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLHBLA65o4c9LXj_Skv0oGg%2Flarge.jpg"
+                                }
+                            },
+                            "formatted_nationality_and_birthday": "American, b. 1979",
+                            "counts": {
+                                "partner_shows": 2,
+                                "follows": 20
+                            },
+                            "exhibition_highlights": [
+                                {
+                                    "partner": {
+                                        "__typename": "Partner",
+                                        "name": "Elizabeth Leach Gallery",
+                                        "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA="
+                                    },
+                                    "name": "Jeremy Okai Davis: Black Wood",
+                                    "start_at": "2020",
+                                    "cover_image": {
+                                        "cropped": {
+                                            "url": "https://d7hftxdivxxvm.cloudfront.net?resize_to=fill&width=800&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F9wUzYLi7RiYC_z3xIrweiw%2Flarge.jpg"
+                                        }
+                                    },
+                                    "city": "Portland",
+                                    "id": "U2hvdzo1Zjc1MGYwNTAyZGNkODAwMGViZWU1OTI="
+                                }
+                            ],
+                            "collections": null,
+                            "highlights": {
+                                "partnersConnection": {
+                                    "edges": []
+                                }
+                            },
+                            "auctionResultsConnection": null,
+                            "biographyBlurb": {
+                                "text": ""
+                            },
+                            "is_followed": false,
+                            "related": {
+                                "suggestedConnection": null
+                            },
+                            "is_consignable": false
+                        }
+                    ],
+                    "artist": {
+                        "internalID": "56fd5b6f275b243a460003d0",
+                        "slug": "jeremy-okai-davis",
+                        "name": "Jeremy Okai Davis",
+                        "href": "/artist/jeremy-okai-davis",
+                        "image": {
+                            "cropped": {
+                                "url": "https://d7hftxdivxxvm.cloudfront.net?resize_to=fill&width=100&height=100&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FLHBLA65o4c9LXj_Skv0oGg%2Flarge.jpg"
+                            }
+                        },
+                        "formatted_nationality_and_birthday": "American, b. 1979",
+                        "counts": {
+                            "partner_shows": 2,
+                            "follows": 20
+                        },
+                        "exhibition_highlights": [
+                            {
+                                "partner": {
+                                    "__typename": "Partner",
+                                    "name": "Elizabeth Leach Gallery",
+                                    "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA="
+                                },
+                                "name": "Jeremy Okai Davis: Black Wood",
+                                "start_at": "2020",
+                                "cover_image": {
+                                    "cropped": {
+                                        "url": "https://d7hftxdivxxvm.cloudfront.net?resize_to=fill&width=800&height=600&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F9wUzYLi7RiYC_z3xIrweiw%2Flarge.jpg"
+                                    }
+                                },
+                                "city": "Portland",
+                                "id": "U2hvdzo1Zjc1MGYwNTAyZGNkODAwMGViZWU1OTI="
+                            }
+                        ],
+                        "collections": null,
+                        "highlights": {
+                            "partnersConnection": {
+                                "edges": []
+                            }
+                        },
+                        "auctionResultsConnection": null,
+                        "biographyBlurb": {
+                            "text": ""
+                        },
+                        "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                        "is_followed": false,
+                        "related": {
+                            "artistsConnection": {
+                                "pageInfo": {
+                                    "hasNextPage": false,
+                                    "endCursor": null
+                                },
+                                "edges": []
+                            }
+                        }
+                    },
+                    "href": "/artwork/jeremy-okai-davis-fix",
+                    "date": "2019",
+                    "artist_names": "Jeremy Okai Davis",
+                    "sale_message": "$4,500",
+                    "partner": {
+                        "name": "Elizabeth Leach Gallery",
+                        "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                        "type": "Gallery",
+                        "profile": {
+                            "image": {
+                                "resized": {
+                                    "url": "https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=320&height=213&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2Ff5ThuMXEFfMNdZ9uYgm-JA%2Fmedium.jpg"
+                                }
+                            },
+                            "id": "UHJvZmlsZTo1NDUxMDI2MDc3NmY3MjIzMWViYjAwMDA=",
+                            "slug": "elizabeth-leach-gallery",
+                            "name": "Elizabeth Leach Gallery",
+                            "internalID": "54510260776f72231ebb0000",
+                            "is_followed": false,
+                            "icon": {
+                                "url": "https://d32dm0rphc51dk.cloudfront.net/blKYBQ7933N6Iqg7-s4t1g/square140.png"
+                            }
+                        },
+                        "initials": "ELG",
+                        "href": "/elizabeth-leach-gallery",
+                        "locations": [
+                            {
+                                "city": "Portland",
+                                "id": "TG9jYXRpb246NTQ2MTU5YmM3MjYxNjkyZDU0NTkwNzAw"
+                            }
+                        ],
+                        "isVerifiedSeller": false,
+                        "internalID": "54510260776f72231eb90000",
+                        "slug": "elizabeth-leach-gallery",
+                        "is_default_profile_public": true
+                    },
+                    "image_rights": "",
+                    "is_shareable": true,
+                    "meta_image": {
+                        "resized": {
+                            "width": 640,
+                            "height": 799,
+                            "url": "https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=640&height=799&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F9JBWR-XxkbcyOLUxbCKeOw%2Flarge.jpg"
+                        }
+                    },
+                    "meta": {
+                        "title": "Jeremy Okai Davis | Fix (2019) | Available for Sale | Artsy",
+                        "description": "Available for sale from Elizabeth Leach Gallery, Jeremy Okai Davis, Fix (2019), Acrylic and oil on canvas, 48 \u00d7 60 in",
+                        "long_description": "Available for sale from Elizabeth Leach Gallery, Jeremy Okai Davis, Fix (2019), Acrylic and oil on canvas, 48 \u00d7 60 in"
+                    },
+                    "context": null,
+                    "is_price_hidden": false,
+                    "is_price_range": false,
+                    "category": "Painting",
+                    "dimensions": {
+                        "in": "48 \u00d7 60 in",
+                        "cm": "121.9 \u00d7 152.4 cm"
+                    },
+                    "cultural_maker": null,
+                    "is_biddable": false,
+                    "edition_sets": [],
+                    "sale_artwork": null,
+                    "title": "Fix",
+                    "medium": "Acrylic and oil on canvas",
+                    "edition_of": null,
+                    "attributionClass": {
+                        "shortDescription": "This is a unique work",
+                        "id": "QXR0cmlidXRpb25DbGFzczp1bmlxdWU="
+                    },
+                    "myLotStanding": null,
+                    "is_for_sale": true,
+                    "is_inquireable": true,
+                    "priceIncludesTaxDisplay": null,
+                    "shippingInfo": "Shipping, tax, and additional fees quoted by seller",
+                    "shippingOrigin": null,
+                    "hasCertificateOfAuthenticity": false,
+                    "description": null,
+                    "additional_information": null,
+                    "series": null,
+                    "publisher": null,
+                    "manufacturer": null,
+                    "canRequestLotConditionsReport": false,
+                    "framed": null,
+                    "signatureInfo": null,
+                    "conditionDescription": null,
+                    "certificateOfAuthenticity": null,
+                    "mediumType": {
+                        "__typename": "ArtworkMedium",
+                        "name": "Painting",
+                        "longDescription": "Includes gouache; fresco; ink and wash; oil painting; screen painting; scroll painting; tempera; watercolor."
+                    },
+                    "articles": [],
+                    "literature": null,
+                    "exhibition_history": null,
+                    "provenance": null,
+                    "image_alt": "Jeremy Okai Davis, \u2018Fix\u2019, 2019, Painting, Acrylic and oil on canvas, Elizabeth Leach Gallery",
+                    "id": "QXJ0d29yazo1ZGVjMTc5NWI3Y2Q1NzAwMGVmZTQwZGE=",
+                    "is_saved": false,
+                    "images": [
+                        {
+                            "url": "https://d32dm0rphc51dk.cloudfront.net/9JBWR-XxkbcyOLUxbCKeOw/medium.jpg",
+                            "internalID": "5dec17960f04a20011385acf",
+                            "uri": "https://d32dm0rphc51dk.cloudfront.net/9JBWR-XxkbcyOLUxbCKeOw/large.jpg",
+                            "placeholder": {
+                                "url": "https://d7hftxdivxxvm.cloudfront.net?resize_to=fit&width=30&height=37&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2F9JBWR-XxkbcyOLUxbCKeOw%2Fsmall.jpg"
+                            },
+                            "aspectRatio": 0.8,
+                            "is_zoomable": true,
+                            "is_default": true,
+                            "deepZoom": {
+                                "Image": {
+                                    "xmlns": "http://schemas.microsoft.com/deepzoom/2008",
+                                    "Url": "https://d32dm0rphc51dk.cloudfront.net/9JBWR-XxkbcyOLUxbCKeOw/dztiles/",
+                                    "Format": "jpg",
+                                    "TileSize": 512,
+                                    "Overlap": 0,
+                                    "Size": {
+                                        "Width": 961,
+                                        "Height": 1200
+                                    }
+                                }
+                            }
+                        }
+                    ],
+                    "artworkMeta": {
+                        "share": "Check out Jeremy Okai Davis, Fix (2019), From Elizabeth Leach Gallery"
+                    },
+                    "image": {
+                        "internalID": "5dec17960f04a20011385acf",
+                        "url": "https://d32dm0rphc51dk.cloudfront.net/9JBWR-XxkbcyOLUxbCKeOw/larger.jpg",
+                        "height": 1200,
+                        "width": 961
+                    },
+                    "is_downloadable": false,
+                    "is_hangable": true,
+                    "contextGrids": [
+                        {
+                            "__typename": "ArtistArtworkGrid",
+                            "title": "Other works by Jeremy Okai Davis",
+                            "ctaTitle": "View all works by Jeremy Okai Davis",
+                            "ctaHref": "/artist/jeremy-okai-davis",
+                            "artworksConnection": {
+                                "edges": [
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo1Zjc0ZTJmZDc5ZmJjOTAwMGU0MGRmMjQ=",
+                                            "slug": "jeremy-okai-davis-model-and-charm",
+                                            "href": "/artwork/jeremy-okai-davis-model-and-charm",
+                                            "internalID": "5f74e2fd79fbc9000e40df24",
+                                            "image": {
+                                                "aspect_ratio": 0.89,
+                                                "placeholder": "112.38207547169812%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/iTpymWjbHlZ3ayg-yfsx0A/large.jpg"
+                                            },
+                                            "title": "Model & Charm",
+                                            "image_title": "Jeremy Okai Davis, \u2018Model & Charm\u2019, 2020",
+                                            "date": "2020",
+                                            "sale_message": "$4,500",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                                    "href": "/artist/jeremy-okai-davis",
+                                                    "name": "Jeremy Okai Davis"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Elizabeth Leach Gallery",
+                                                "href": "/elizabeth-leach-gallery",
+                                                "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo1Zjk0YWUxODk2ZTYyZDAwMGRjM2UxZmE=",
+                                            "slug": "jeremy-okai-davis-untitled-harry-t-moore",
+                                            "href": "/artwork/jeremy-okai-davis-untitled-harry-t-moore",
+                                            "internalID": "5f94ae1896e62d000dc3e1fa",
+                                            "image": {
+                                                "aspect_ratio": 0.67,
+                                                "placeholder": "148.71194379391102%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/Y1so8myQPBB8O6JfTBY5XQ/large.jpg"
+                                            },
+                                            "title": "Untitled (Harry T. Moore)",
+                                            "image_title": "Jeremy Okai Davis, \u2018Untitled (Harry T. Moore)\u2019, 2020",
+                                            "date": "2020",
+                                            "sale_message": "$2,200",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                                    "href": "/artist/jeremy-okai-davis",
+                                                    "name": "Jeremy Okai Davis"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Elizabeth Leach Gallery",
+                                                "href": "/elizabeth-leach-gallery",
+                                                "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo1Zjc0ZTJkNTExZjBjZjAwMGU1NGRmOTM=",
+                                            "slug": "jeremy-okai-davis-sepia",
+                                            "href": "/artwork/jeremy-okai-davis-sepia",
+                                            "internalID": "5f74e2d511f0cf000e54df93",
+                                            "image": {
+                                                "aspect_ratio": 0.89,
+                                                "placeholder": "112.41007194244604%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/eNpXtbnvR8EhYGDYYjDkxQ/large.jpg"
+                                            },
+                                            "title": "Sepia",
+                                            "image_title": "Jeremy Okai Davis, \u2018Sepia\u2019, 2020",
+                                            "date": "2020",
+                                            "sale_message": "Sold",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                                    "href": "/artist/jeremy-okai-davis",
+                                                    "name": "Jeremy Okai Davis"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Elizabeth Leach Gallery",
+                                                "href": "/elizabeth-leach-gallery",
+                                                "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo1Zjc0ZTJlMWEyMzEyNDAwMTI0NzAzZTE=",
+                                            "slug": "jeremy-okai-davis-aicha",
+                                            "href": "/artwork/jeremy-okai-davis-aicha",
+                                            "internalID": "5f74e2e1a2312400124703e1",
+                                            "image": {
+                                                "aspect_ratio": 0.89,
+                                                "placeholder": "112.20825852782765%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/3cqpkTnj198hmR4_j-HMDA/large.jpg"
+                                            },
+                                            "title": "Aicha",
+                                            "image_title": "Jeremy Okai Davis, \u2018Aicha\u2019, 2020",
+                                            "date": "2020",
+                                            "sale_message": "Sold",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                                    "href": "/artist/jeremy-okai-davis",
+                                                    "name": "Jeremy Okai Davis"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Elizabeth Leach Gallery",
+                                                "href": "/elizabeth-leach-gallery",
+                                                "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo1Zjc1MTE2NTM1YWJmZDAwMGU5Zjk0NmQ=",
+                                            "slug": "jeremy-okai-davis-toulouse",
+                                            "href": "/artwork/jeremy-okai-davis-toulouse",
+                                            "internalID": "5f75116535abfd000e9f946d",
+                                            "image": {
+                                                "aspect_ratio": 0.89,
+                                                "placeholder": "112.38151658767772%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/NEm0ShdRN3mlFmX_CeMcAQ/large.jpg"
+                                            },
+                                            "title": "Toulouse",
+                                            "image_title": "Jeremy Okai Davis, \u2018Toulouse\u2019, 2020",
+                                            "date": "2020",
+                                            "sale_message": "Sold",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                                    "href": "/artist/jeremy-okai-davis",
+                                                    "name": "Jeremy Okai Davis"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Elizabeth Leach Gallery",
+                                                "href": "/elizabeth-leach-gallery",
+                                                "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo1Zjc0ZTJkMmI0YTk4ZDAwMGViMjU5MWU=",
+                                            "slug": "jeremy-okai-davis-acrylic-on-canvas-wrapped-panel",
+                                            "href": "/artwork/jeremy-okai-davis-acrylic-on-canvas-wrapped-panel",
+                                            "internalID": "5f74e2d2b4a98d000eb2591e",
+                                            "image": {
+                                                "aspect_ratio": 1,
+                                                "placeholder": "99.92%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/2hFSWLitoed1cF35R7F8ng/large.jpg"
+                                            },
+                                            "title": "acrylic on canvas wrapped panel",
+                                            "image_title": "Jeremy Okai Davis, \u2018acrylic on canvas wrapped panel\u2019, 2020",
+                                            "date": "2020",
+                                            "sale_message": "Sold",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                                    "href": "/artist/jeremy-okai-davis",
+                                                    "name": "Jeremy Okai Davis"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Elizabeth Leach Gallery",
+                                                "href": "/elizabeth-leach-gallery",
+                                                "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": false,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo1Zjc0ZTJiZDhlZGVlMjAwMGVlZWNiNDU=",
+                                            "slug": "jeremy-okai-davis-bounce-a-dark-course",
+                                            "href": "/artwork/jeremy-okai-davis-bounce-a-dark-course",
+                                            "internalID": "5f74e2bd8edee2000eeecb45",
+                                            "image": {
+                                                "aspect_ratio": 0.52,
+                                                "placeholder": "191.54030327214684%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/J3HBwgzeQ4TWKxTR2I1GYA/large.jpg"
+                                            },
+                                            "title": "Bounce (A Dark Course)",
+                                            "image_title": "Jeremy Okai Davis, \u2018Bounce (A Dark Course)\u2019, 2020",
+                                            "date": "2020",
+                                            "sale_message": "$2,500",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                                    "href": "/artist/jeremy-okai-davis",
+                                                    "name": "Jeremy Okai Davis"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Elizabeth Leach Gallery",
+                                                "href": "/elizabeth-leach-gallery",
+                                                "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": false,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo1ZjQxNzk2NGY4YzdiMzAwMGQ2ZjM1MmM=",
+                                            "slug": "jeremy-okai-davis-a-dark-course",
+                                            "href": "/artwork/jeremy-okai-davis-a-dark-course",
+                                            "internalID": "5f417964f8c7b3000d6f352c",
+                                            "image": {
+                                                "aspect_ratio": 0.99,
+                                                "placeholder": "101.21457489878543%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/gsly3UQzBD6-lB_ca5JhlA/large.jpg"
+                                            },
+                                            "title": "A Dark Course",
+                                            "image_title": "Jeremy Okai Davis, \u2018A Dark Course\u2019, 2020",
+                                            "date": "2020",
+                                            "sale_message": "$600",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA==",
+                                                    "href": "/artist/jeremy-okai-davis",
+                                                    "name": "Jeremy Okai Davis"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Elizabeth Leach Gallery",
+                                                "href": "/elizabeth-leach-gallery",
+                                                "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": false,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "__typename": "PartnerArtworkGrid",
+                            "title": "Other works from Elizabeth Leach Gallery",
+                            "ctaTitle": "View all works from Elizabeth Leach Gallery",
+                            "ctaHref": "/elizabeth-leach-gallery",
+                            "artworksConnection": {
+                                "edges": [
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo2MDFmMzMwN2ZlOTJhMzAwMGQ3YjllMWI=",
+                                            "slug": "michelle-ross-scribed",
+                                            "href": "/artwork/michelle-ross-scribed",
+                                            "internalID": "601f3307fe92a3000d7b9e1b",
+                                            "image": {
+                                                "aspect_ratio": 1.26,
+                                                "placeholder": "79.13333333333334%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/_PaVVWmb-Oko32umCJAung/large.jpg"
+                                            },
+                                            "title": "Scribed",
+                                            "image_title": "Michelle Ross, \u2018Scribed\u2019, 2021",
+                                            "date": "2021",
+                                            "sale_message": "$4,000",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU2NDdiOGY4MmE4OTNhN2MyMjAwMDJhZg==",
+                                                    "href": "/artist/michelle-ross",
+                                                    "name": "Michelle Ross"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Elizabeth Leach Gallery",
+                                                "href": "/elizabeth-leach-gallery",
+                                                "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo2MDFkOTZhMzIxOTk3MTNkNDc1NmZhMzc=",
+                                            "slug": "michelle-ross-false-flag",
+                                            "href": "/artwork/michelle-ross-false-flag",
+                                            "internalID": "601d96a32199713d4756fa37",
+                                            "image": {
+                                                "aspect_ratio": 1.3,
+                                                "placeholder": "77.13333333333333%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/K89ZerPdgUFu3jbr3qe26w/large.jpg"
+                                            },
+                                            "title": "False Flag",
+                                            "image_title": "Michelle Ross, \u2018False Flag\u2019, 2021",
+                                            "date": "2021",
+                                            "sale_message": "$6,000",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU2NDdiOGY4MmE4OTNhN2MyMjAwMDJhZg==",
+                                                    "href": "/artist/michelle-ross",
+                                                    "name": "Michelle Ross"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Elizabeth Leach Gallery",
+                                                "href": "/elizabeth-leach-gallery",
+                                                "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo2MDFkOTZhMzY2N2UzMDBmZDA1NWJkYjM=",
+                                            "slug": "michelle-ross-infinitely-divisible",
+                                            "href": "/artwork/michelle-ross-infinitely-divisible",
+                                            "internalID": "601d96a3667e300fd055bdb3",
+                                            "image": {
+                                                "aspect_ratio": 1.27,
+                                                "placeholder": "78.53333333333333%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/k_TLxYfuJrzI7f_GuO2cOw/large.jpg"
+                                            },
+                                            "title": "Infinitely Divisible ",
+                                            "image_title": "Michelle Ross, \u2018Infinitely Divisible \u2019, 2021",
+                                            "date": "2021",
+                                            "sale_message": "$15,000",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU2NDdiOGY4MmE4OTNhN2MyMjAwMDJhZg==",
+                                                    "href": "/artist/michelle-ross",
+                                                    "name": "Michelle Ross"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Elizabeth Leach Gallery",
+                                                "href": "/elizabeth-leach-gallery",
+                                                "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo2MDFkOTZhNDY2N2UzMDBmZDA1NWJkYmI=",
+                                            "slug": "michelle-ross-tempest",
+                                            "href": "/artwork/michelle-ross-tempest",
+                                            "internalID": "601d96a4667e300fd055bdbb",
+                                            "image": {
+                                                "aspect_ratio": 1.28,
+                                                "placeholder": "78.26666666666667%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/1UVFml0DhJxt0CU5FJHt8A/large.jpg"
+                                            },
+                                            "title": "Tempest",
+                                            "image_title": "Michelle Ross, \u2018Tempest\u2019, 2021",
+                                            "date": "2021",
+                                            "sale_message": "$15,000",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU2NDdiOGY4MmE4OTNhN2MyMjAwMDJhZg==",
+                                                    "href": "/artist/michelle-ross",
+                                                    "name": "Michelle Ross"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Elizabeth Leach Gallery",
+                                                "href": "/elizabeth-leach-gallery",
+                                                "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo2MDFkOTZhNjY2N2UzMDBmZDA1NWJkYzI=",
+                                            "slug": "michelle-ross-idyll-wild",
+                                            "href": "/artwork/michelle-ross-idyll-wild",
+                                            "internalID": "601d96a6667e300fd055bdc2",
+                                            "image": {
+                                                "aspect_ratio": 1.29,
+                                                "placeholder": "77.53333333333333%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/zkartYayU6mu_OjBPvWThw/large.jpg"
+                                            },
+                                            "title": "Idyll Wild",
+                                            "image_title": "Michelle Ross, \u2018Idyll Wild\u2019, 2021",
+                                            "date": "2021",
+                                            "sale_message": "$6,000",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU2NDdiOGY4MmE4OTNhN2MyMjAwMDJhZg==",
+                                                    "href": "/artist/michelle-ross",
+                                                    "name": "Michelle Ross"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Elizabeth Leach Gallery",
+                                                "href": "/elizabeth-leach-gallery",
+                                                "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo2MDFkOTZhN2Y0Y2RmYjEyNzg3MmU1ZGM=",
+                                            "slug": "michelle-ross-keep",
+                                            "href": "/artwork/michelle-ross-keep",
+                                            "internalID": "601d96a7f4cdfb127872e5dc",
+                                            "image": {
+                                                "aspect_ratio": 1.29,
+                                                "placeholder": "77.46666666666667%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/QHyIgSFFxamDo4G2XPiudw/large.jpg"
+                                            },
+                                            "title": "Keep",
+                                            "image_title": "Michelle Ross, \u2018Keep\u2019, 2021",
+                                            "date": "2021",
+                                            "sale_message": "$6,000",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjU2NDdiOGY4MmE4OTNhN2MyMjAwMDJhZg==",
+                                                    "href": "/artist/michelle-ross",
+                                                    "name": "Michelle Ross"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Elizabeth Leach Gallery",
+                                                "href": "/elizabeth-leach-gallery",
+                                                "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo2MDExZWVlZTAzOTY5NTAwMTFlYzc1MTE=",
+                                            "slug": "alison-saar-jitterbug-from-the-portfolio-copacetic",
+                                            "href": "/artwork/alison-saar-jitterbug-from-the-portfolio-copacetic",
+                                            "internalID": "6011eeee0396950011ec7511",
+                                            "image": {
+                                                "aspect_ratio": 0.92,
+                                                "placeholder": "108.38150289017341%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/dR-XwBdT1R6quXj89raaNQ/large.jpg"
+                                            },
+                                            "title": "Jitterbug (from the portfolio Copacetic)",
+                                            "image_title": "Alison Saar, \u2018Jitterbug (from the portfolio Copacetic)\u2019, 2019",
+                                            "date": "2019",
+                                            "sale_message": "$2,500",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjUxOWY5MDM3Mjc1YjI0ZTNmNTAwMDAzZg==",
+                                                    "href": "/artist/alison-saar",
+                                                    "name": "Alison Saar"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Elizabeth Leach Gallery",
+                                                "href": "/elizabeth-leach-gallery",
+                                                "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    },
+                                    {
+                                        "__typename": "ArtworkEdge",
+                                        "node": {
+                                            "id": "QXJ0d29yazo2MDExZWVlNmQ4YjcwNzAwMTJmZTM4ZDc=",
+                                            "slug": "alison-saar-shebop-from-the-portfolio-copacetic",
+                                            "href": "/artwork/alison-saar-shebop-from-the-portfolio-copacetic",
+                                            "internalID": "6011eee6d8b7070012fe38d7",
+                                            "image": {
+                                                "aspect_ratio": 0.92,
+                                                "placeholder": "108.30324909747293%",
+                                                "url": "https://d32dm0rphc51dk.cloudfront.net/kOyQn0O4i4tzeVraAl-HPw/large.jpg"
+                                            },
+                                            "title": "Shebop (from the portfolio Copacetic)",
+                                            "image_title": "Alison Saar, \u2018Shebop (from the portfolio Copacetic)\u2019, 2019",
+                                            "date": "2019",
+                                            "sale_message": "$2,500",
+                                            "cultural_maker": null,
+                                            "artists": [
+                                                {
+                                                    "id": "QXJ0aXN0OjUxOWY5MDM3Mjc1YjI0ZTNmNTAwMDAzZg==",
+                                                    "href": "/artist/alison-saar",
+                                                    "name": "Alison Saar"
+                                                }
+                                            ],
+                                            "collecting_institution": null,
+                                            "partner": {
+                                                "name": "Elizabeth Leach Gallery",
+                                                "href": "/elizabeth-leach-gallery",
+                                                "id": "UGFydG5lcjo1NDUxMDI2MDc3NmY3MjIzMWViOTAwMDA=",
+                                                "type": "Gallery"
+                                            },
+                                            "sale": null,
+                                            "sale_artwork": null,
+                                            "is_inquireable": true,
+                                            "is_saved": false,
+                                            "is_biddable": false
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "__typename": "RelatedArtworkGrid",
+                            "title": "Related works",
+                            "ctaTitle": null,
+                            "ctaHref": null,
+                            "artworksConnection": null
+                        }
+                    ],
+                    "layers": [
+                        {
+                            "name": "For Sale",
+                            "internalID": "for-sale",
+                            "id": "QXJ0d29ya0xheWVyOmZvci1zYWxl"
+                        }
+                    ],
+                    "layer": {
+                        "name": "For Sale",
+                        "artworksConnection": {
+                            "edges": [
+                                {
+                                    "__typename": "ArtworkEdge",
+                                    "node": {
+                                        "id": "QXJ0d29yazo1ZjM1MTJmZjllNzhkMzAwMGUzMDE0N2E=",
+                                        "slug": "marisa-takal-are-there-words-you-havent-felt-1",
+                                        "href": "/artwork/marisa-takal-are-there-words-you-havent-felt-1",
+                                        "internalID": "5f3512ff9e78d3000e30147a",
+                                        "image": {
+                                            "aspect_ratio": 0.75,
+                                            "placeholder": "133.29113924050634%",
+                                            "url": "https://d32dm0rphc51dk.cloudfront.net/wijHQbwgulB8YYsgE_cKfA/large.jpg"
+                                        },
+                                        "title": "Are there words you haven\u2019t felt",
+                                        "image_title": "Marisa Takal, \u2018Are there words you haven\u2019t felt\u2019, 2020",
+                                        "date": "2020",
+                                        "sale_message": "Contact For Price",
+                                        "cultural_maker": null,
+                                        "artists": [
+                                            {
+                                                "id": "QXJ0aXN0OjU2OGRhOWI4ZjQ2YzRjNmUxNDAwMDAzNg==",
+                                                "href": "/artist/marisa-takal",
+                                                "name": "Marisa Takal"
+                                            }
+                                        ],
+                                        "collecting_institution": null,
+                                        "partner": {
+                                            "name": "Loyal",
+                                            "href": "/loyal",
+                                            "id": "UGFydG5lcjo1MmNjNjU0YmViYWQ2NGE0YzAwMDAwMDE=",
+                                            "type": "Gallery"
+                                        },
+                                        "sale": null,
+                                        "sale_artwork": null,
+                                        "is_inquireable": true,
+                                        "is_saved": false,
+                                        "is_biddable": false
+                                    }
+                                },
+                                {
+                                    "__typename": "ArtworkEdge",
+                                    "node": {
+                                        "id": "QXJ0d29yazo1ZjVlOTYyNGQxNGMzMzAwMTQxZTc1ZGE=",
+                                        "slug": "jared-mcgriff-pink-dream-recliner",
+                                        "href": "/artwork/jared-mcgriff-pink-dream-recliner",
+                                        "internalID": "5f5e9624d14c3300141e75da",
+                                        "image": {
+                                            "aspect_ratio": 1.16,
+                                            "placeholder": "86.09810204584669%",
+                                            "url": "https://d32dm0rphc51dk.cloudfront.net/7N0nbUYOHzNU8_eJCl9yHQ/large.jpg"
+                                        },
+                                        "title": "Pink Dream Recliner",
+                                        "image_title": "Jared McGriff, \u2018Pink Dream Recliner\u2019, 2019",
+                                        "date": "2019",
+                                        "sale_message": "Contact For Price",
+                                        "cultural_maker": null,
+                                        "artists": [
+                                            {
+                                                "id": "QXJ0aXN0OjVkMWI5YTRjMjEzYjA3MDAxMmQ4ZDI1ZQ==",
+                                                "href": "/artist/jared-mcgriff",
+                                                "name": "Jared McGriff"
+                                            }
+                                        ],
+                                        "collecting_institution": null,
+                                        "partner": {
+                                            "name": "Spinello Projects",
+                                            "href": "/spinello-projects",
+                                            "id": "UGFydG5lcjo1MjcyYWNhY2EwOWE2N2Q4YzIwMDAwNTQ=",
+                                            "type": "Gallery"
+                                        },
+                                        "sale": null,
+                                        "sale_artwork": null,
+                                        "is_inquireable": true,
+                                        "is_saved": false,
+                                        "is_biddable": false
+                                    }
+                                },
+                                {
+                                    "__typename": "ArtworkEdge",
+                                    "node": {
+                                        "id": "QXJ0d29yazo1Zjc5ZTdkMjU4NjY2MjAwMGRmNWU2YWM=",
+                                        "slug": "eric-uhlir-game-six",
+                                        "href": "/artwork/eric-uhlir-game-six",
+                                        "internalID": "5f79e7d2586662000df5e6ac",
+                                        "image": {
+                                            "aspect_ratio": 0.83,
+                                            "placeholder": "119.76072607260726%",
+                                            "url": "https://d32dm0rphc51dk.cloudfront.net/ZzuIzpvz3tZhyYtLgFQY_A/large.jpg"
+                                        },
+                                        "title": "Game Six",
+                                        "image_title": "Eric Uhlir, \u2018Game Six\u2019, 2020",
+                                        "date": "2020",
+                                        "sale_message": "$7,000",
+                                        "cultural_maker": null,
+                                        "artists": [
+                                            {
+                                                "id": "QXJ0aXN0OjVlOWI1YTc5OGFlMzFhMDAwZGE1ODViMQ==",
+                                                "href": "/artist/eric-uhlir",
+                                                "name": "Eric Uhlir"
+                                            }
+                                        ],
+                                        "collecting_institution": null,
+                                        "partner": {
+                                            "name": "Caitlin Berry Fine Art",
+                                            "href": "/caitlin-berry-fine-art",
+                                            "id": "UGFydG5lcjo1ZThjZDFkZmNhNWFjNjAwMTMxNzI5YzI=",
+                                            "type": "Gallery"
+                                        },
+                                        "sale": null,
+                                        "sale_artwork": null,
+                                        "is_inquireable": true,
+                                        "is_saved": false,
+                                        "is_biddable": false
+                                    }
+                                },
+                                {
+                                    "__typename": "ArtworkEdge",
+                                    "node": {
+                                        "id": "QXJ0d29yazo1ZThkNDNiYjM4NGZiNTAwMGZlMWEwZGU=",
+                                        "slug": "gresham-tapiwa-nyaude-priceless-and-weightless",
+                                        "href": "/artwork/gresham-tapiwa-nyaude-priceless-and-weightless",
+                                        "internalID": "5e8d43bb384fb5000fe1a0de",
+                                        "image": {
+                                            "aspect_ratio": 1.5,
+                                            "placeholder": "66.66666666666666%",
+                                            "url": "https://d32dm0rphc51dk.cloudfront.net/pBjhIsV_RhkjBHYqd2iosQ/large.jpg"
+                                        },
+                                        "title": "Priceless and Weightless",
+                                        "image_title": "Gresham Tapiwa Nyaude, \u2018Priceless and Weightless\u2019, 2018",
+                                        "date": "2018",
+                                        "sale_message": "$15,000",
+                                        "cultural_maker": null,
+                                        "artists": [
+                                            {
+                                                "id": "QXJ0aXN0OjU0MmQ3M2ZkNzI2MTY5M2Y3ZTU1MGYwMA==",
+                                                "href": "/artist/gresham-tapiwa-nyaude",
+                                                "name": "Gresham Tapiwa Nyaude"
+                                            }
+                                        ],
+                                        "collecting_institution": null,
+                                        "partner": {
+                                            "name": "First Floor Gallery Harare",
+                                            "href": "/first-floor-gallery-harare",
+                                            "id": "UGFydG5lcjo1NDJkNzFkMDcyNjE2OTJjYzViYjAwMDA=",
+                                            "type": "Gallery"
+                                        },
+                                        "sale": null,
+                                        "sale_artwork": null,
+                                        "is_inquireable": true,
+                                        "is_saved": false,
+                                        "is_biddable": false
+                                    }
+                                },
+                                {
+                                    "__typename": "ArtworkEdge",
+                                    "node": {
+                                        "id": "QXJ0d29yazo1ZmZmZjFjYmRjZGY4MjQwYjRjNDQxNDk=",
+                                        "slug": "misheck-masamvu-thoughts-before-the-rain",
+                                        "href": "/artwork/misheck-masamvu-thoughts-before-the-rain",
+                                        "internalID": "5ffff1cbdcdf8240b4c44149",
+                                        "image": {
+                                            "aspect_ratio": 1.36,
+                                            "placeholder": "73.69779802581625%",
+                                            "url": "https://d32dm0rphc51dk.cloudfront.net/o_uRlijwIC1msnSsmo-_WQ/large.jpg"
+                                        },
+                                        "title": "Thoughts before the Rain",
+                                        "image_title": "Misheck Masamvu, \u2018Thoughts before the Rain\u2019, 2020",
+                                        "date": "2020",
+                                        "sale_message": "Contact For Price",
+                                        "cultural_maker": null,
+                                        "artists": [
+                                            {
+                                                "id": "QXJ0aXN0OjUyNmE0MDZiOWMxOGRiMzIwODAwMDU2Mw==",
+                                                "href": "/artist/misheck-masamvu",
+                                                "name": "Misheck Masamvu"
+                                            }
+                                        ],
+                                        "collecting_institution": null,
+                                        "partner": {
+                                            "name": "Goodman Gallery",
+                                            "href": "/goodman-gallery",
+                                            "id": "UGFydG5lcjo0ZGYzYmVjMDM3OThkYjAwMDEwMTMwNGE=",
+                                            "type": "Gallery"
+                                        },
+                                        "sale": null,
+                                        "sale_artwork": null,
+                                        "is_inquireable": true,
+                                        "is_saved": false,
+                                        "is_biddable": false
+                                    }
+                                },
+                                {
+                                    "__typename": "ArtworkEdge",
+                                    "node": {
+                                        "id": "QXJ0d29yazo1ZmNmODk2NTBkMzM4ZTAwMGRlNTg0N2U=",
+                                        "slug": "franklin-evans-20centfacespace-1",
+                                        "href": "/artwork/franklin-evans-20centfacespace-1",
+                                        "internalID": "5fcf89650d338e000de5847e",
+                                        "image": {
+                                            "aspect_ratio": 0.75,
+                                            "placeholder": "133.09671694764862%",
+                                            "url": "https://d32dm0rphc51dk.cloudfront.net/hpUuQPhuyzrFZ2r8gs1-XQ/large.jpg"
+                                        },
+                                        "title": "20centfacespace",
+                                        "image_title": "Franklin Evans, \u201820centfacespace\u2019, 2019",
+                                        "date": "2019",
+                                        "sale_message": "Contact For Price",
+                                        "cultural_maker": null,
+                                        "artists": [
+                                            {
+                                                "id": "QXJ0aXN0OjUxNTFjYWUyZGJkY2Y0NmEyMDAwMDI4NA==",
+                                                "href": "/artist/franklin-evans",
+                                                "name": "Franklin Evans"
+                                            }
+                                        ],
+                                        "collecting_institution": null,
+                                        "partner": {
+                                            "name": "Wizard Gallery",
+                                            "href": "/wizard-gallery",
+                                            "id": "UGFydG5lcjo1ZDgzN2ZlNmQwZTA2MTAwMTRiYjU3NWQ=",
+                                            "type": "Gallery"
+                                        },
+                                        "sale": null,
+                                        "sale_artwork": null,
+                                        "is_inquireable": true,
+                                        "is_saved": false,
+                                        "is_biddable": false
+                                    }
+                                },
+                                {
+                                    "__typename": "ArtworkEdge",
+                                    "node": {
+                                        "id": "QXJ0d29yazo1Y2FlMTk3MGJiZGNiZTYyODEwN2RkZmY=",
+                                        "slug": "sabine-danze-apache",
+                                        "href": "/artwork/sabine-danze-apache",
+                                        "internalID": "5cae1970bbdcbe628107ddff",
+                                        "image": {
+                                            "aspect_ratio": 0.66,
+                                            "placeholder": "151.1811023622047%",
+                                            "url": "https://d32dm0rphc51dk.cloudfront.net/GZ0Iwy7NnIwN234pMILn4g/large.jpg"
+                                        },
+                                        "title": "Apache",
+                                        "image_title": "Sabine DANZE, \u2018Apache\u2019, 2017",
+                                        "date": "2017",
+                                        "sale_message": "\u20ac12,700",
+                                        "cultural_maker": null,
+                                        "artists": [
+                                            {
+                                                "id": "QXJ0aXN0OjU5Mjg0ODFlOGIwYzE0NDY4M2Q1MzFkZA==",
+                                                "href": "/artist/sabine-danze",
+                                                "name": "Sabine DANZE"
+                                            }
+                                        ],
+                                        "collecting_institution": null,
+                                        "partner": {
+                                            "name": "In Arte Veritas",
+                                            "href": "/in-arte-veritas-gallery",
+                                            "id": "UGFydG5lcjo1YmFjYTA5MjgyY2VjZDJkNmFhNjU5ODk=",
+                                            "type": "Gallery"
+                                        },
+                                        "sale": null,
+                                        "sale_artwork": null,
+                                        "is_inquireable": false,
+                                        "is_saved": false,
+                                        "is_biddable": false
+                                    }
+                                },
+                                {
+                                    "__typename": "ArtworkEdge",
+                                    "node": {
+                                        "id": "QXJ0d29yazo1ZWQ1YmQ1NGQxYmNhODAwMTIzZDExM2E=",
+                                        "slug": "colin-parker-the-stragglers",
+                                        "href": "/artwork/colin-parker-the-stragglers",
+                                        "internalID": "5ed5bd54d1bca800123d113a",
+                                        "image": {
+                                            "aspect_ratio": 1.01,
+                                            "placeholder": "98.9223337049424%",
+                                            "url": "https://d32dm0rphc51dk.cloudfront.net/s5CeViAQMuoGa7_Hr2sRdg/large.jpg"
+                                        },
+                                        "title": "The Stragglers",
+                                        "image_title": "Colin Parker, \u2018The Stragglers\u2019, 2020",
+                                        "date": "2020",
+                                        "sale_message": "AUD $1,280",
+                                        "cultural_maker": null,
+                                        "artists": [
+                                            {
+                                                "id": "QXJ0aXN0OjU0Yzg2NDQ5NzI2MTY5MmI1MTdlMWQwMA==",
+                                                "href": "/artist/colin-parker",
+                                                "name": "Colin Parker"
+                                            }
+                                        ],
+                                        "collecting_institution": null,
+                                        "partner": {
+                                            "name": "Wentworth Galleries",
+                                            "href": "/wentworth-galleries",
+                                            "id": "UGFydG5lcjo1MjU1NWZkNzljMThkYjg4MzUwMDA4OTU=",
+                                            "type": "Gallery"
+                                        },
+                                        "sale": null,
+                                        "sale_artwork": null,
+                                        "is_inquireable": true,
+                                        "is_saved": false,
+                                        "is_biddable": false
+                                    }
+                                }
+                            ]
+                        },
+                        "id": "QXJ0d29ya0xheWVyOmZvci1zYWxl"
+                    },
+                    "artistSeriesConnection": {
+                        "edges": []
+                    },
+                    "seriesArtist": {
+                        "artistSeriesConnection": {
+                            "edges": []
+                        },
+                        "id": "QXJ0aXN0OjU2ZmQ1YjZmMjc1YjI0M2E0NjAwMDNkMA=="
+                    },
+                    "seriesForCounts": {
+                        "edges": []
+                    },
+                    "pricingContext": null
+                },
+                "me": null
+            }
+        }
+    ]
+]
