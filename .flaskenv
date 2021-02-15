@@ -1,0 +1,2 @@
+FLASK_APP=art_thief_app.py
+FLASK_ENV=development

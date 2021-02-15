@@ -1,18 +1,18 @@
-from metadata_from_json import dztiles_url, artist_and_title
-from format_url import image_json
-from main import get_tiles_and_save
-from loggers import save_pic_logger, high_alert_logger
+from core.metadata_from_json import dztiles_url, artist_and_title
+from core.format_url import image_json
+from core.main import get_tiles_and_save
+from core.loggers import save_pic_logger, high_alert_logger
 
 MAX_DZNUM = 13
 
 
-def amend_dz_url(root_url:str, dz_num) -> str:
+def amend_dz_url(root_url: str, dz_num) -> str:
     if not isinstance(dz_num, int) and not dz_num.isdigit():
         raise ValueError("dz_num must be an integer")
     stem = root_url.rsplit("/", 2)
-    stem[-2] = str(dz_num) # TODO Why???????
-    return "/".join(stem)  
-    
+    stem[-2] = str(dz_num)  # TODO Why???????
+    return "/".join(stem)
+
 
 def save_pic(artsy_url):
     bootstrap = image_json(artsy_url)
@@ -35,12 +35,11 @@ def save_pic(artsy_url):
     else:
         save_pic_logger.info(f"{jpeg_label} has no high resolution version. Skipping.")
         return("no high res version")
-        
-    
+
 
 # put in a different file
 
-if __name__=='__main__':
+if __name__ == '__main__':
     save_pic("https://www.artsy.net/artwork/jeremy-okai-davis-fix")  # vanilla dz 11
     # save_pic("https://www.artsy.net/artwork/bert-stern-pirelli-calendar-by-bert-stern")  # jpg only, no dz
     # save_pic("https://www.artsy.net/artwork/dapper-bruce-lafitte-no-summercamp")   # dz 13

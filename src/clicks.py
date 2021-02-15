@@ -1,7 +1,7 @@
 import click
-from save_pic import save_pic
-from related_images import rabbit_hole
-from surprise_me import get_random_picture
+from core.save_pic import save_pic
+# from related_images import rabbit_hole
+from core.surprise_me import get_random_picture
 
 # ----------argparse---------------
 
@@ -48,11 +48,11 @@ def save_pics(artsy_urls):
 # example: python3 clicks.py explore 4 https://www.artsy.net/artwork/gerhard-richter-abstract-painting-abstraktes-bild-1
 
 
-@click.command(name='explore')
-@click.argument('num_of_images', type=int)
-@click.argument('artsy_url')
-def explore(num_of_images, artsy_url):
-    rabbit_hole(num_of_images, artsy_url)
+# @click.command(name='explore')
+# @click.argument('num_of_images', type=int)
+# @click.argument('artsy_url')
+# def explore(num_of_images, artsy_url):
+#     rabbit_hole(num_of_images, artsy_url)
 
 # example: python3 clicks.py surprise 3
 
