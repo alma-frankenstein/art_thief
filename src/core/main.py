@@ -1,16 +1,22 @@
 """ Find the dimensions of an image. Get each tile and paste it onto a blank canvas, then
     save that image by the image name and artist"""
 
+from loggers import get_tiles_logger
+from core.loggers import get_tiles_logger
+from typing import Tuple
+from pathlib import Path
+from PIL import Image
+import requests
 import re
 from io import BytesIO
-from pathlib import Path
-from typing import Tuple
+<< << << < Updated upstream: main.py
+== == == =
+# import logging
+>>>>>> > Stashed changes: src/core/main.py
+<< << << < Updated upstream: main.py
+== == == =
+>>>>>> > Stashed changes: src/core/main.py
 
-from PIL import Image
-
-import requests
-
-from loggers import get_tiles_logger
 
 TILE_MAX_RANGE = 10
 TILE_SIZE = 512
@@ -95,6 +101,5 @@ def get_tiles(dz_url, w_counter, h_counter):
             get_tiles_logger.debug(f"fetching {root_url.format(i, j)} ...")
             tile_request = requests.get(root_url.format(i, j))
             paste_on_canvas(i, j, image_data=tile_request.content)
-
 
 # # TODO Turn the whole thing into a flask app and host it on GH?

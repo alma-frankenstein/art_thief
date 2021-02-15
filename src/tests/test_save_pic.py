@@ -3,7 +3,7 @@ import pytest
 
 import requests
 
-from save_pic import amend_dz_url, save_pic
+from core.save_pic import amend_dz_url, save_pic
 
 from tests.example_urls import ExampleUrls
 
