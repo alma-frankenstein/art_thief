@@ -1,0 +1,19 @@
+name: Python Security Audit
+# https://github.com/tonybaloney/pycharm-security
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  schedule:
+    - cron: '0 0 * * 2'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run PyCharm Security Check
+        uses: tonybaloney/pycharm-security@master
+        with:
+          fail_on_warnings: true

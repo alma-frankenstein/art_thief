@@ -1,0 +1,28 @@
+name: MyPy
+# https://github.com/python/mypy
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python 3
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip -q install --upgrade pip
+          pip -q install -r requirements-dev.txt
+
+      - name: Check types with MyPy
+        run: |
+          mypy .
+
