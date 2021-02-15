@@ -1,7 +1,7 @@
 """ Find the dimensions of an image. Get each tile and paste it onto a blank canvas, then
     save that image by the image name and artist"""
 
-from loggers import get_tiles_logger
+from core.loggers import get_tiles_logger
 from core.loggers import get_tiles_logger
 from typing import Tuple
 from pathlib import Path
@@ -9,13 +9,6 @@ from PIL import Image
 import requests
 import re
 from io import BytesIO
-<< << << < Updated upstream: main.py
-== == == =
-# import logging
->>>>>> > Stashed changes: src/core/main.py
-<< << << < Updated upstream: main.py
-== == == =
->>>>>> > Stashed changes: src/core/main.py
 
 
 TILE_MAX_RANGE = 10
