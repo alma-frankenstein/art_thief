@@ -57,4 +57,6 @@ def get_random_picture():
 
 # random_picture_in_collection('collection/post-war')
 
-# get_random_picture()
+
+if __name__ == '__main__':
+    get_random_picture()
