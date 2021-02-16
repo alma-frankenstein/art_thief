@@ -26,7 +26,8 @@ def get_tiles_and_save(dz_url, title_artist):
     height_counter, actual_height = find_max_height(dz_url)
     get_tiles(dz_url, width_counter, height_counter)
     try:
-        crop_and_save(actual_width, actual_height, title_artist)
+        image_path = crop_and_save(actual_width, actual_height, title_artist)
+        return image_path
     except SystemError:
         get_tiles_logger.info("Wrong dztile number, unable to save image!")
         return False

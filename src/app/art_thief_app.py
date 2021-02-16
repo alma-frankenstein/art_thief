@@ -19,6 +19,7 @@ def surprises():
 
 @app.route('/some/route/')
 def serve_img():
-    # get_random_picture()
+    path_to_image = get_random_picture()
     img = Image.open('src/static/temp_image.jpg')
+    # img = Image.open(path_to_image)    # current:   home/alma/repos/artscrapr/src/saved_images/Handmade Noise 2017 by Vik Muniz.jpg
     return serve_pil_image(img)
