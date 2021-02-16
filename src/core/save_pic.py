@@ -29,8 +29,7 @@ def save_pic(artsy_url):
                 if dz_num_counter == MAX_DZNUM:
                     high_alert_logger.debug(f"picture bigger than MAX_DZNUM {MAX_DZNUM}!")
                 save_pic_logger.info("successfully saved picture.")
-                return("successfully saved")
-                # break
+                return(get_tiles_and_save(amended_dz_url, jpeg_label))  # return value is file path
             dz_num_counter -= 1
     else:
         save_pic_logger.info(f"{jpeg_label} has no high resolution version. Skipping.")
