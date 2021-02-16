@@ -19,5 +19,6 @@ def surprises():
 
 @app.route('/some/route/')
 def serve_img():
+    # get_random_picture()
     img = Image.open('src/static/temp_image.jpg')
     return serve_pil_image(img)

@@ -48,8 +48,10 @@ def crop_and_save(actual_w, actual_h, title_artist):
     """ Trim blank margins from the image canvas, save the image by piece name and artist """
     cropped_image = new_image.crop((0, 0, actual_w, actual_h))
     title_artist = remove_special(title_artist)
-    image_path = Path.cwd().joinpath("saved_images", f"{title_artist}.jpg")
+    # image_path = Path.cwd().joinpath("saved_images", f"{title_artist}.jpg")
+    image_path = Path.cwd().joinpath("src/saved_images", f"{title_artist}.jpg")
     cropped_image.save(image_path)
+    return image_path
 
 
 def find_max_width(dz_url) -> Tuple[int, int]:
