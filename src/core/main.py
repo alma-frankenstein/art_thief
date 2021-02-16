@@ -26,8 +26,8 @@ def get_tiles_and_save(dz_url, title_artist):
     height_counter, actual_height = find_max_height(dz_url)
     get_tiles(dz_url, width_counter, height_counter)
     try:
-        image_path = crop_and_save(actual_width, actual_height, title_artist)
-        return image_path
+        image_path, title_artist = crop_and_save(actual_width, actual_height, title_artist)
+        return image_path, title_artist
     except SystemError:
         get_tiles_logger.info("Wrong dztile number, unable to save image!")
         return False
@@ -50,9 +50,10 @@ def crop_and_save(actual_w, actual_h, title_artist):
     cropped_image = new_image.crop((0, 0, actual_w, actual_h))
     title_artist = remove_special(title_artist)
     # image_path = Path.cwd().joinpath("saved_images", f"{title_artist}.jpg")
-    image_path = Path.cwd().joinpath("src/saved_images", f"{title_artist}.jpg")
+    # image_path = Path.cwd().joinpath("src/saved_images", f"{title_artist}.jpg")
+    image_path = Path.cwd().joinpath("src/static", f"{title_artist}.jpg")
     cropped_image.save(image_path)
-    return image_path
+    return image_path, title_artist
 
 
 def find_max_width(dz_url) -> Tuple[int, int]:

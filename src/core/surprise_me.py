@@ -42,8 +42,8 @@ def random_picture_in_collection(collection_href):
     rando_url = urljoin("https://www.artsy.net", rando_pic_href)
     # logging.info(f"random url: {rando_url}")
     surprise_me_logger.info(f"random url: {rando_url}")
-    file_path = save_pic(rando_url)
-    return file_path
+    file_path, title_artist = save_pic(rando_url)
+    return file_path, title_artist
 
 # return open image handler
 
@@ -51,8 +51,8 @@ def random_picture_in_collection(collection_href):
 def get_random_picture():
     filtered_collections = filter_collections()
     collection_href = rand_collection_href(filtered_collections)
-    file_path = random_picture_in_collection(collection_href)
-    return file_path
+    file_path, title_artist = random_picture_in_collection(collection_href)
+    return file_path, title_artist
 
 # for _ in range(40):
 #     get_random_picture()
