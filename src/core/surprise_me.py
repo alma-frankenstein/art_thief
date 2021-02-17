@@ -1,9 +1,12 @@
 import random
+from typing import Tuple
 from urllib.parse import urljoin
+
+from PIL.Image import Image
 
 from src.core.format_url import get_image_json, get_source, parse_source_code
 from src.core.loggers import surprise_me_logger
-from src.core.save_pic import get_image_from_artsy, save_pic
+from src.core.save_pic import get_artist_title_from_artsy_url, get_image_from_artsy, save_pic
 
 
 def get_collections(parsed_html, substring):
@@ -29,7 +32,7 @@ def rand_collection_href(collections):
     return collection_href
 
 
-def random_picture_in_collection(collection_href):
+def random_picture_in_collection(collection_href: str) -> str:
     collection_url = urljoin("https://www.artsy.net", collection_href)
     # logging.info(f"Fetching from collection url: {collection_url}")
     collection_json = get_image_json(collection_url)
@@ -41,14 +44,15 @@ def random_picture_in_collection(collection_href):
     rando_url = urljoin("https://www.artsy.net", rando_pic_href)
     # logging.info(f"random url: {rando_url}")
     surprise_me_logger.info(f"random url: {rando_url}")
-    img, title_artist = get_image_from_artsy(rando_url)
-    return img, title_artist
+    return rando_url
 
 
-def get_random_picture():
+def get_random_picture() -> Tuple[Image, str]:
     filtered_collections = filter_collections()
     collection_href = rand_collection_href(filtered_collections)
-    img, title_artist = random_picture_in_collection(collection_href)
+    some_url = random_picture_in_collection(collection_href)
+    img = get_image_from_artsy(some_url)
+    title_artist = get_artist_title_from_artsy_url(some_url)
     return img, title_artist
 
 

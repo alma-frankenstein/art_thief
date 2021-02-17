@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Optional, Tuple, Union
+from typing import Optional, Union
 
 from PIL.Image import Image
 
@@ -29,7 +29,13 @@ def amend_dz_url(root_url: str, dz_num: Union[str, int]) -> str:
     return "/".join(stem)
 
 
-def get_image_from_artsy(artsy_url: str) -> Optional[Tuple[Image, str]]:
+def get_artist_title_from_artsy_url(artsy_url: str) -> Optional[str]:
+    bootstrap = get_image_json(artsy_url)
+    jpeg_label = artist_and_title(bootstrap)
+    return jpeg_label
+
+
+def get_image_from_artsy(artsy_url: str) -> Optional[Image]:
     """
     TODO: Better docstring
     Args:
@@ -39,12 +45,11 @@ def get_image_from_artsy(artsy_url: str) -> Optional[Tuple[Image, str]]:
 
     """
     bootstrap = get_image_json(artsy_url)
-    jpeg_label = artist_and_title(bootstrap)
+
     root_url = dztiles_url(bootstrap)
 
     if root_url:
         save_pic_logger.info(f"attempting to fetch: {artsy_url} ...")
-        save_pic_logger.info(f"artwork name: {jpeg_label}")
 
         dz_num_counter = MAX_DZNUM
         while dz_num_counter > 8:
@@ -59,9 +64,9 @@ def get_image_from_artsy(artsy_url: str) -> Optional[Tuple[Image, str]]:
             if dz_num_counter == MAX_DZNUM:
                 high_alert_logger.debug(f"This picture is the same size as the maximum tile size we are fetching ({MAX_DZNUM})!   It may be time to make it bigger")
             save_pic_logger.info("Successfully assembled picture.")
-            return img, jpeg_label
+            return img
     else:
-        save_pic_logger.info(f"{jpeg_label} has no high resolution version. Skipping.")
+        # save_pic_logger.info(f"{jpeg_label} has no high resolution version. Skipping.")
         return None
 
 
@@ -87,6 +92,8 @@ def save_pic(an_img: Image, title: str) -> Path:
 # put in a different file
 
 if __name__ == '__main__':
-    save_pic(*get_image_from_artsy("https://www.artsy.net/artwork/jeremy-okai-davis-fix"))  # vanilla dz 11
+    url = "https://www.artsy.net/artwork/jeremy-okai-davis-fix"
+
+    save_pic(get_image_from_artsy(url), get_artist_title_from_artsy_url(url))  # vanilla dz 11
     # save_pic("https://www.artsy.net/artwork/bert-stern-pirelli-calendar-by-bert-stern")  # jpg only, no dz
     # save_pic("https://www.artsy.net/artwork/dapper-bruce-lafitte-no-summercamp")   # dz 13
