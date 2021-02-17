@@ -1,13 +1,14 @@
 """ Suite of tests for the metadata_from_json.py module """
 
 import json
+from pathlib import Path
 
-from metadata_from_json import artist_and_title, dztiles_url
+from src.core.metadata_from_json import artist_and_title, dztiles_url
 
-from tests.example_related_images import related_images
-from tests.example_urls import ExampleUrls
+from src.tests.example_related_images import related_images
+from src.tests.example_urls import ExampleUrls
 
-with open('tests/example_bootstrap.json', 'r') as file_obj:
+with open(Path(Path(__file__).resolve().parent, 'example_bootstrap.json'), 'r') as file_obj:
     okai_example_bootstrap = json.load(file_obj)
 
 
