@@ -1,11 +1,9 @@
 """ Suite of tests for the save_pic.py module """
 import pytest
-
 import requests
 
-from core.save_pic import amend_dz_url, save_pic
-
-from tests.example_urls import ExampleUrls
+from src.core.save_pic import amend_dz_url, save_pic
+from src.tests.example_urls import ExampleUrls
 
 
 def test_amend_dz_url_single_digit():
@@ -13,7 +11,7 @@ def test_amend_dz_url_single_digit():
     url = "https://d32dm0rphc51dk.cloudfront.net/JQI2YbnwwGCiT7dHH41_9A/dztiles/13/{}_{}.jpg"
     new_dz_num = 7
     assert amend_dz_url(
-        url, new_dz_num) == "https://d32dm0rphc51dk.cloudfront.net/JQI2YbnwwGCiT7dHH41_9A/dztiles/7/{}_{}.jpg"
+            url, new_dz_num) == "https://d32dm0rphc51dk.cloudfront.net/JQI2YbnwwGCiT7dHH41_9A/dztiles/7/{}_{}.jpg"
 
 
 def test_amend_dz_url_single_digit_str():
@@ -21,7 +19,7 @@ def test_amend_dz_url_single_digit_str():
     url = "https://d32dm0rphc51dk.cloudfront.net/JQI2YbnwwGCiT7dHH41_9A/dztiles/13/{}_{}.jpg"
     new_dz_num = "7"
     assert amend_dz_url(
-        url, new_dz_num) == "https://d32dm0rphc51dk.cloudfront.net/JQI2YbnwwGCiT7dHH41_9A/dztiles/7/{}_{}.jpg"
+            url, new_dz_num) == "https://d32dm0rphc51dk.cloudfront.net/JQI2YbnwwGCiT7dHH41_9A/dztiles/7/{}_{}.jpg"
 
 
 def test_amend_dz_url_double_digit():
@@ -29,7 +27,7 @@ def test_amend_dz_url_double_digit():
     url = "https://d32dm0rphc51dk.cloudfront.net/JQI2YbnwwGCiT7dHH41_9A/dztiles/13/{}_{}.jpg"
     new_dz_num = 77
     assert amend_dz_url(
-        url, new_dz_num) == "https://d32dm0rphc51dk.cloudfront.net/JQI2YbnwwGCiT7dHH41_9A/dztiles/77/{}_{}.jpg"
+            url, new_dz_num) == "https://d32dm0rphc51dk.cloudfront.net/JQI2YbnwwGCiT7dHH41_9A/dztiles/77/{}_{}.jpg"
 
 
 def test_amend_dz_url_invalid_dz_num():

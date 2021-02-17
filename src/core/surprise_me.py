@@ -1,8 +1,9 @@
 import random
-from core.save_pic import save_pic
 from urllib.parse import urljoin
-from core.format_url import get_source, parse_source_code, image_json
-from core.loggers import surprise_me_logger
+
+from src.core.format_url import get_image_json, get_source, parse_source_code
+from src.core.loggers import surprise_me_logger
+from src.core.save_pic import get_image_from_artsy, save_pic
 
 
 def get_collections(parsed_html, substring):
@@ -27,38 +28,29 @@ def rand_collection_href(collections):
     # logging.info(f"collection_href: {collection_href}")
     return collection_href
 
-# called by art_thief_app:
-
 
 def random_picture_in_collection(collection_href):
     collection_url = urljoin("https://www.artsy.net", collection_href)
     # logging.info(f"Fetching from collection url: {collection_url}")
-    collection_json = image_json(collection_url)
+    collection_json = get_image_json(collection_url)
     artist_images = collection_json[0][1]["json"]["data"]["collection"]["artworksConnection"]["edges"]
     possible_images = len(artist_images)
-    image_index = random.randint(0, possible_images - 1)   # -1 because randint is inclusive
-    rando_pic_href = artist_images[image_index]["node"]["href"]   # ex. /artwork/mindy-cherri-wwjd
+    image_index = random.randint(0, possible_images - 1)  # -1 because randint is inclusive
+    rando_pic_href = artist_images[image_index]["node"]["href"]  # ex. /artwork/mindy-cherri-wwjd
     # logging.info(f"random picture href: {rando_pic_href}")
     rando_url = urljoin("https://www.artsy.net", rando_pic_href)
     # logging.info(f"random url: {rando_url}")
     surprise_me_logger.info(f"random url: {rando_url}")
-    file_path, title_artist = save_pic(rando_url)
-    return file_path, title_artist
-
-# return open image handler
+    img, title_artist = get_image_from_artsy(rando_url)
+    return img, title_artist
 
 
 def get_random_picture():
     filtered_collections = filter_collections()
     collection_href = rand_collection_href(filtered_collections)
-    file_path, title_artist = random_picture_in_collection(collection_href)
-    return file_path, title_artist
-
-# for _ in range(40):
-#     get_random_picture()
-
-# random_picture_in_collection('collection/post-war')
+    img, title_artist = random_picture_in_collection(collection_href)
+    return img, title_artist
 
 
 if __name__ == '__main__':
-    get_random_picture()
+    save_pic(*get_random_picture())
