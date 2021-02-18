@@ -4,16 +4,10 @@ from flask import Flask, render_template
 from flask import url_for
 
 from src.app.pil_image import serve_pil_image
-from src.core.save_pic import get_artist_title_from_artsy_url, get_image_from_artsy
+from src.core.get_and_save_pic import get_artist_title_from_artsy_url, get_image_from_artsy
 from src.core.surprise_me import filter_collections, get_random_picture, rand_collection_href, random_picture_in_collection
 
 app = Flask(__name__)
-
-
-@app.route('/')
-@app.route('/surprises')
-def surprises():
-    return render_template('index.html')
 
 
 @app.route('/random')
@@ -33,6 +27,7 @@ def serve_saved_img(img_path):
     return serve_pil_image(img)
 
 
+@app.route('/')
 @app.route('/random_with_info')
 def some_image_with_more_info():
     filtered_collections = filter_collections()

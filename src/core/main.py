@@ -1,7 +1,5 @@
-""" Find the dimensions of an image. Get each tile and paste it onto a blank canvas, then
-    save that image by the image name and artist"""
+""" Find the dimensions of an image, then get each tile and paste it onto a blank canvas """
 
-import re
 from io import BytesIO
 from typing import Tuple
 
@@ -9,7 +7,7 @@ import requests
 from PIL import Image
 from src.core.loggers import get_tiles_logger
 
-TILE_MAX_RANGE = 10
+TILE_MAX_RANGE = 20
 TILE_SIZE = 512
 
 
@@ -18,7 +16,8 @@ def get_tiles_and_build_img(dz_url) -> Image:
     Retreive image pieces and return a cropped completed image
 
     Args:
-        dz_url:  The template string for the image tiles.  example: 'https://d32dm0rphc51dk.cloudfront.net/dFyhynkSypHRoFpJsyj0pg/dztiles/14/{}_{}.jpg'
+        dz_url:  The template string for the image tiles.
+        example: 'https://d32dm0rphc51dk.cloudfront.net/dFyhynkSypHRoFpJsyj0pg/dztiles/14/{}_{}.jpg'
     Returns:
         The completed Image file from those pieces.
 
@@ -35,15 +34,14 @@ def paste_on_canvas(canvas, x, y, tile_data):
     canvas.paste(image, (TILE_SIZE * x, TILE_SIZE * y))
 
 
-def remove_special(stem):
-    """ Remove special characters so the artwork title can be used as a file name """
-    return re.sub(r"[^a-zA-Z0-9]+", ' ', stem)
+def replace_slashes(stem):
+    """ Replace '/' with 'slash' so the artwork title can be used as a file name """
+    return stem.replace("/", "slash")
 
 
 def crop(an_img: Image, actual_w: int, actual_h: int) -> Image:
     """ Trim blank margins from the image canvas"""
-    cropped_image = an_img.crop((0, 0, actual_w, actual_h))
-    return cropped_image
+    return an_img.crop((0, 0, actual_w, actual_h))
 
 
 def find_max_width(dz_url) -> Tuple[int, int]:

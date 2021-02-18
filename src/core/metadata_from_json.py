@@ -61,7 +61,6 @@ def related_image_url(json_bootstrap):
     """
     related_images = json_bootstrap[0][1]["json"]["data"]["artwork"]["layer"]["artworksConnection"]["edges"]
     num_possible_related = len(related_images)
-    # -1 because randint is inclusive
     image_index = random.randint(0, num_possible_related - 1)
     related_image_href = related_images[image_index]["node"]["href"]
     return urljoin("https://www.artsy.net", related_image_href)
