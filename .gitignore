@@ -13,3 +13,5 @@ saved_images/
 .flake8
 .pylint
 src/static
+src/src/static/
+design_possibility.py

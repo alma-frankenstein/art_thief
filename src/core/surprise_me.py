@@ -2,10 +2,12 @@
 import random
 from typing import Tuple
 from urllib.parse import urljoin
+import requests
+from bs4 import BeautifulSoup
 
 from PIL.Image import Image
 
-from src.core.format_url import get_image_json, get_source, parse_source_code
+from src.core.format_url import get_image_json
 from src.core.loggers import surprise_me_logger
 from src.core.get_and_save_pic import get_artist_title_from_artsy_url, get_image_from_artsy, save_pic
 
@@ -22,16 +24,11 @@ def get_collections(parsed_html, substring):
 def filter_collections() -> list:
     """ Remove exceptions '/collection/textured-histories' and '/collections' from
     list of collections"""
-    source_string = get_source("https://www.artsy.net/")
-    the_soup = parse_source_code(source_string)
+    r = requests.get("https://www.artsy.net/")
+    the_soup = BeautifulSoup(r.content, 'html.parser')
     all_collections = get_collections(the_soup, "collection")
     filtered_collections = list(set(x for x in all_collections if "http" not in x))
     return filtered_collections
-
-
-def rand_collection_href(collections):
-    """ Randomly choose a collection href from the list of all possible """
-    return random.choice(collections)
 
 
 def random_picture_in_collection(collection_href: str) -> str:
@@ -51,7 +48,7 @@ def random_picture_in_collection(collection_href: str) -> str:
 def get_random_picture() -> Tuple[Image, str]:
     """ Chain together functions to get a random image, with its title and artist, from artsy.net """
     filtered_collections = filter_collections()
-    collection_href = rand_collection_href(filtered_collections)
+    collection_href = random.choice(filtered_collections)
     some_url = random_picture_in_collection(collection_href)
     img = get_image_from_artsy(some_url)
     title_artist = get_artist_title_from_artsy_url(some_url)
