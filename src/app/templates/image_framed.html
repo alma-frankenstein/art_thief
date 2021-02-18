@@ -2,10 +2,17 @@
 
 {% block content %}
 
-    <img src="{{ img_url }}">
+<img src="{{ img_url }}">
 
-    <div>
+<div>
     {{ artist_info }}
-    </div>
+</div>
+
+<script>
+    setTimeout(freshPic, 40000);
+    function freshPic() {
+        window.location.href = "{{ url_for('some_image_with_more_info') }}"
+    }
+</script>
 
 {% endblock %}

@@ -22,13 +22,6 @@ def serve_img(seed):
     img, title_artist = get_random_picture()
     return serve_pil_image(img)
 
-# IDEA:
-#   What about a template with Javascript and all the javascript does is:
-#        start a timer
-#        at x seconds if fetches localhost/randomimg_<somenum>.jpg
-#        displays that image in a div
-#        repeat
-
 
 @app.route('/randomimg_<path:img_url>')
 def serve_saved_img(img_url):
