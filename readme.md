@@ -30,8 +30,6 @@ Create a virtual environment for the project:
 
 Run ```pip install -r requirements.txt``` to install dependencies
 
-Create a migration repository for a database: ```flask db init```
-
 Still with the virtual environment activated, run ```flask run```, then open the browser window indicated
 (this will probably be http://127.0.0.1:5000/). Refresh the browser page to load a new picture.
 

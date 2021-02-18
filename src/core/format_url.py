@@ -5,24 +5,12 @@ These are the preliminary steps before pulling out metadata about the piece of a
 import json
 
 import requests
+
+from typing import Optional
 from bs4 import BeautifulSoup
 
 
-def get_source(url):
-    """ Get source contents from a webpage """
-    source = requests.get(url)
-    return source.content
-
-
-def parse_source_code(source_string, save_locally=False):
-    """ Take a string of source code, return it as parsed html """
-    if save_locally:
-        with open('source_code.html', 'wb') as file_obj:
-            file_obj.write(source_string)
-    return BeautifulSoup(source_string, 'html.parser')
-
-
-def get_json_bootstrap(parsed_html, substring, save_locally=False):
+def get_json_bootstrap(parsed_html: BeautifulSoup, substring: str, save_locally: bool = False) -> Optional[dict]:
     """ Pull the relevant code from the parsed html, return it as a json object """
     for block in parsed_html.find_all('script'):
         if substring in str(block):
@@ -38,6 +26,6 @@ def get_json_bootstrap(parsed_html, substring, save_locally=False):
 
 def get_image_json(artsy_url):
     """ String together steps to get, parse, and jsonify source code """
-    source_string = get_source(artsy_url)
-    the_soup = parse_source_code(source_string)
+    r = requests.get(artsy_url)
+    the_soup = BeautifulSoup(r.content, 'html.parser')
     return get_json_bootstrap(the_soup, "__RELAY_BOOTSTRAP__")
