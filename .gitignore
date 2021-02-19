@@ -9,3 +9,7 @@ source_code.html
 oddball_images.txt
 json_outputs/
 saved_images/
+.flake8
+.pylint
+src/static
+.pytest_cache
