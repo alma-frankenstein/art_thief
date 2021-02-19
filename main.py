@@ -5,21 +5,9 @@ import logging
 from pathlib import Path
 import re
 from typing import Tuple
-
-logging.basicConfig(level=logging.INFO)
-
-# TODO Automate the url grab
-# TODO Automate the tile counts
-# TODO Include Metadata (artist, title, etc)
-
-# root_url = "https://d32dm0rphc51dk.cloudfront.net/dAMtqpwtIUgN0zlJpjYrmA/dztiles/12/{}_{}.jpg"   # Dali
-# root_url = "https://d32dm0rphc51dk.cloudfront.net/z6cZrfbgQXCnoZPztYQTsQ/dztiles/11/{}_{}.jpg"  # Mucha
-# root_url = "https://d32dm0rphc51dk.cloudfront.net/HFgPe_vJgqATQdyClCvyMQ/dztiles/11/{}_{}.jpg"  # Man Ray
-# root_url = "https://d32dm0rphc51dk.cloudfront.net/wslu5vVcYM-CRPQ72I3fEQ/dztiles/12/{}_{}.jpg"  # Picasso
+from loggers import get_tiles_logger
 
 
-# Mucha 3x3
-# Dali 5x8 (final: Fetching image 4_7.jpg)
 TILE_MAX_RANGE = 10
 TILE_SIZE = 512
 
@@ -29,13 +17,17 @@ new_image = Image.new(
     'RGB', (TILE_SIZE * TILE_MAX_RANGE, TILE_SIZE * TILE_MAX_RANGE))
 
 
-def fabulous_picture(dz_url, title_artist): # build from tiles
+def get_tiles_and_save(dz_url, title_artist):
     width_counter, actual_width = find_max_width(dz_url)
     height_counter, actual_height = find_max_height(dz_url)
     get_tiles(dz_url, width_counter, height_counter)
-    print(f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
-    crop_n_show(actual_width, actual_height, title_artist)
-    
+    # print(f"Image size computed at: {actual_width}x{actual_height} (NOT {new_image.size})")
+    try:
+        crop_and_save(actual_width, actual_height, title_artist)
+    except SystemError:
+        get_tiles_logger.info("Wrong dztile number, unable to save image!")
+        return False
+    return True
 
 def paste_on_canvas(i, j, image_data):
     im = Image.open(BytesIO(image_data))
@@ -48,14 +40,11 @@ def remove_special(stem):
     return stem
 
 
-def crop_n_show(actual_w, actual_h, title_artist):
+def crop_and_save(actual_w, actual_h, title_artist):
     cropped_image = new_image.crop((0, 0, actual_w, actual_h))
     title_artist = remove_special(title_artist)
-    # p = Path.cwd().joinpath(f"x{title_artist}.jpg")
     p = Path.cwd().joinpath("saved_images", f"{title_artist}.jpg")
-    logging.info(p)
     cropped_image.save(p)
-    # cropped_image.save(f"x{title_artist}.jpg")
 
 
 def find_max_width(dz_url) -> Tuple[int, int]:
@@ -85,17 +74,15 @@ def _find_max_dimension(dz_url, max_range, find_width: bool = True) -> Tuple[int
         else:
             return dim, actual_size
     print("WARNING:  Image boundary not found.  This may only be part of it!")
-    logging.info(f"Max dim found: {dim}")
+    get_tiles_logger.info(f"Max dim found: {dim}")
     return dim + 1, actual_size
 
-
-# TODO Parallelize the tile fetch
-# TODO Capture Title, Author, Year, etc and put in filename/metadata
 
 def get_tiles(dz_url, w_counter, h_counter):
     root_url = dz_url
     for i in range(1, w_counter):
         for j in range(1, h_counter):
+            get_tiles_logger.debug(f"fetching {root_url.format(i, j)} ...")
             r = requests.get(root_url.format(i, j))
             paste_on_canvas(i, j, image_data=r.content)
 

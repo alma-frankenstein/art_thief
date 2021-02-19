@@ -1,19 +1,16 @@
-import logging
 from metadata_from_json import dztiles_url, artist_and_title
 from format_url import image_json
-from main import fabulous_picture
-from urllib.parse import urljoin
+from main import get_tiles_and_save
+from loggers import save_pic_logger, high_alert_logger
+
+MAX_DZNUM = 13
 
 
-# def amend_dz_url(root_url):
-#     stem = root_url[:-12]
-#     new_dz_num = "9/{}_{}.jpg"
-#     new_dz_url = urljoin(stem, new_dz_num)
-#     return new_dz_url
-
-def amend_dz_url(root_url:str, dz_num:str="9") -> str:
+def amend_dz_url(root_url:str, dz_num) -> str:
+    if not isinstance(dz_num, int) and not dz_num.isdigit():
+        raise ValueError("dz_num must be an integer")
     stem = root_url.rsplit("/", 2)
-    stem[-2] = dz_num # TODO Why???????
+    stem[-2] = str(dz_num) # TODO Why???????
     return "/".join(stem)  
     
 
@@ -22,28 +19,28 @@ def save_pic(artsy_url):
     jpeg_label = artist_and_title(bootstrap)
     root_url = dztiles_url(bootstrap)
     if root_url:
-        try:
-            fabulous_picture(root_url, jpeg_label)
-        except SystemError as e:
-            logging.error(f"attempting to fetch: {artsy_url}")
-            logging.error(f"artwork name: {jpeg_label}")
-            try:
-                amended_dz_url = amend_dz_url(root_url)
-                fabulous_picture(amended_dz_url, jpeg_label)
-            except:
-                raise e
+        save_pic_logger.info(f"attempting to fetch: {artsy_url} ...")
+        save_pic_logger.info(f"artwork name: {jpeg_label} ...")
+        dz_num_counter = MAX_DZNUM
+        while dz_num_counter > 8:
+            amended_dz_url = amend_dz_url(root_url, dz_num_counter)
+            save_pic_logger.info(f"dztiles number was too large. Trying {dz_num_counter} as {amended_dz_url} ...")
+            if get_tiles_and_save(amended_dz_url, jpeg_label):
+                if dz_num_counter == MAX_DZNUM:
+                    high_alert_logger.debug(f"picture bigger than MAX_DZNUM {MAX_DZNUM}!")
+                save_pic_logger.info("successfully saved picture.")
+                return("successfully saved")
+                break
+            dz_num_counter -= 1
     else:
-        logging.warning(f"{jpeg_label} has no high resolution version. Skipping")
+        save_pic_logger.info(f"{jpeg_label} has no high resolution version. Skipping.")
+        return("no high res version")
         
     
-# save_pic("https://www.artsy.net/artwork/david-wojnarowicz-arthur-rimbaud-in-new-york-diner-2")
-# save_pic("https://www.artsy.net/artwork/bert-stern-pirelli-calendar-by-bert-stern")  # no dztiles
-# save_pic("https://www.artsy.net/artwork/salvador-dali-madonne")
 
-# these 3 have aspect ratios of 0.99 or 1, and dztiles/9
-# save_pic("https://www.artsy.net/artwork/joel-peter-witkin-carrot-cake-number-1")
-# save_pic("https://www.artsy.net/artwork/stanley-whitney-untitled-449")
-# save_pic("https://www.artsy.net/artwork/georges-mazilu-portrait-de-femme")
+# put in a different file
 
-
-# print(amend_dz_url("https://d32dm0rphc51dk.cloudfront.net/naV_9uqzYITVYviI1V2iHA/dztiles/10/{}_{}.jpg"))
+if __name__=='__main__':
+    save_pic("https://www.artsy.net/artwork/jeremy-okai-davis-fix")  # vanilla dz 11
+    # save_pic("https://www.artsy.net/artwork/bert-stern-pirelli-calendar-by-bert-stern")  # jpg only, no dz
+    # save_pic("https://www.artsy.net/artwork/dapper-bruce-lafitte-no-summercamp")   # dz 13
