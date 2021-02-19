@@ -90,6 +90,7 @@ def save_pic(an_img: Image, title: str) -> Path:
     image_path = Path.cwd().joinpath("src/static", f"{title_artist}.jpg")
     image_path.parent.mkdir(parents=True, exist_ok=True)
     an_img.save(image_path)
+    save_pic_logger.info(f"image saved as {image_path}.")
     return image_path
 
 
