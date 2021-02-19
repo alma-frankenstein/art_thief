@@ -11,5 +11,7 @@ json_outputs/
 saved_images/
 .flake8
 .pylint
+src/src/static/
+design_possibility.py
 src/static
 .pytest_cache

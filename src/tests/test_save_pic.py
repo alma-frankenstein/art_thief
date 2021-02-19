@@ -1,6 +1,10 @@
-from save_pic import amend_dz_url, save_pic
-from tests.example_urls import ExampleUrls
+""" Suite of tests for the save_pic.py module """
+from pathlib import Path
 import pytest
+import requests
+
+from src.core.get_and_save_pic import amend_dz_url, save_pic, get_image_from_artsy, get_artist_title_from_artsy_url
+from src.tests.example_urls import ExampleUrls
 
 
 def test_amend_dz_url_single_digit():
@@ -33,19 +37,20 @@ def test_amend_dz_url_invalid_dz_num():
 
 def test_save_pic_with_valid_artsy_url():
     url = ExampleUrls.vanilla
-    assert save_pic(url) == "successfully saved"
+    assert save_pic(get_image_from_artsy(url), get_artist_title_from_artsy_url(
+        url)) == Path('src/static/Fix (2019) by Jeremy Okai Davis.jpg').absolute()
 
 
 def test_save_pic_with_jpg_only_artsy_url():
     url = ExampleUrls.jpg_only
-    assert save_pic(url) == "no high res version"
+    with pytest.raises(AttributeError):
+        save_pic(get_image_from_artsy(url), "Title string!")
+    # assert save_pic(get_image_from_artsy(url), "Title string!") == None
 
 
-@pytest.mark.xfail
-def test_save_pic_with_invalid_url():
-    url = ExampleUrls.bogus_url
-    assert save_pic(url) == "works okay"
-
-
-
+@ pytest.mark.parametrize("bad_url", ["hailSatan", "blah", "kdsajf", "sakfja", "1"])
+def test_parametrized_save_pic_with_invalid_url(bad_url):
+    """ save_pic() should fail with an invalid url """
+    with pytest.raises(requests.exceptions.MissingSchema):
+        get_image_from_artsy(bad_url)
 
