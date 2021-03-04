@@ -22,4 +22,4 @@ def test_dz_tile_url():
 
 def test_random():
     x = ArtsyImage(ExampleUrls.vanilla)
-    assert isinstance(x.related_image_url, str)
+    assert isinstance(x.get_related_image_url(), str)

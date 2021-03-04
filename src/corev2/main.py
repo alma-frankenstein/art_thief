@@ -26,7 +26,7 @@ class ArtsyImage:
 
     TILE_MAX_RANGE: int = 20
     TILE_SIZE: int = 512
-    MAX_DZNUM: int = 13
+    MAX_DZNUM: int = 14
     MIN_DZNUM: int = 8
 
     JSON_VARIABLE_NAME: str = "__RELAY_BOOTSTRAP__"
@@ -47,7 +47,6 @@ class ArtsyImage:
 
         self.artist_and_title = self._get_artist_and_title()
         self.dztiles_url = self._get_dztiles_url()
-        self.related_image_url = self._get_related_image_url()
 
     def _get_artist_and_title(self) -> str:
         """
@@ -82,7 +81,7 @@ class ArtsyImage:
         else:
             raise ValueError("No High resolution image available for this image")
 
-    def _get_related_image_url(self) -> str:
+    def get_related_image_url(self) -> str:
         """
         Get a random image similar to a given image from the json metadata
 
