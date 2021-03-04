@@ -1,10 +1,10 @@
 """ Find the dimensions of an image, then get each tile and paste it onto a blank canvas """
-
 from io import BytesIO
 from typing import Tuple
 
 import requests
 from PIL import Image
+
 from src.core.loggers import get_tiles_logger
 
 TILE_MAX_RANGE = 20

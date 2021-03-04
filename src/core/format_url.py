@@ -3,10 +3,9 @@
 These are the preliminary steps before pulling out metadata about the piece of art. """
 
 import json
+from typing import Optional
 
 import requests
-
-from typing import Optional
 from bs4 import BeautifulSoup
 
 

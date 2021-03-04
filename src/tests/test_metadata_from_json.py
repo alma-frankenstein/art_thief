@@ -4,7 +4,6 @@ import json
 from pathlib import Path
 
 from src.core.metadata_from_json import artist_and_title, dztiles_url
-
 from src.tests.example_related_images import related_images
 from src.tests.example_urls import ExampleUrls
 

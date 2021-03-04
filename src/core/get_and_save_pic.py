@@ -57,7 +57,7 @@ def get_image_from_artsy(artsy_url: str) -> Optional[Image]:
         while dz_num_counter > 8:
             amended_dz_url = amend_dz_url(root_url, dz_num_counter)
             save_pic_logger.info(
-                f"dztiles number was too large. Trying {dz_num_counter} as {amended_dz_url.format(0, 0)} ...")
+                    f"dztiles number was too large. Trying {dz_num_counter} as {amended_dz_url.format(0, 0)} ...")
             try:
                 img = get_tiles_and_build_img(amended_dz_url)
             except ValueError as e:
@@ -66,7 +66,7 @@ def get_image_from_artsy(artsy_url: str) -> Optional[Image]:
                 continue
             if dz_num_counter == MAX_DZNUM:
                 high_alert_logger.debug(
-                    f"This picture is the same size as the maximum tile size we are fetching({MAX_DZNUM})!\
+                        f"This picture is the same size as the maximum tile size we are fetching({MAX_DZNUM})!\
                     It may be time to make it bigger")
             save_pic_logger.info("Successfully assembled picture.")
             return img

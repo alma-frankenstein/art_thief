@@ -1,7 +1,9 @@
 import click
 from core.save_pic import save_pic
+
 # from related_images import rabbit_hole
 from core.surprise_me import get_random_picture
+
 
 # ----------argparse---------------
 
@@ -36,6 +38,7 @@ from core.surprise_me import get_random_picture
 def save_or_explore():
     pass
 
+
 # example: python3 clicks.py save_pics https://www.artsy.net/artwork/ndidi-emefiele-play-station-2-1
 
 
@@ -44,6 +47,7 @@ def save_or_explore():
 def save_pics(artsy_urls):
     for url in artsy_urls:
         save_pic(url)
+
 
 # example: python3 clicks.py explore 4 https://www.artsy.net/artwork/gerhard-richter-abstract-painting-abstraktes-bild-1
 
@@ -70,7 +74,6 @@ save_or_explore.add_command(surprise)
 
 if __name__ == '__main__':
     save_or_explore()
-
 
 # https://www.artsy.net/artwork/joel-peter-witkin-carrot-cake-number-1
 # https://www.artsy.net/artwork/bert-stern-pirelli-calendar-by-bert-stern

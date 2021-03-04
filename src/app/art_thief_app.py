@@ -1,20 +1,17 @@
-from random import randint
+import random
 
-from flask import Flask, render_template
-from flask import url_for
+from flask import Flask, render_template, url_for
 
 from src.app.pil_image import serve_pil_image
 from src.core.get_and_save_pic import get_artist_title_from_artsy_url, get_image_from_artsy
 from src.core.surprise_me import filter_collections, get_random_picture, random_picture_in_collection
-import random
-
 
 app = Flask(__name__)
 
 
 @app.route('/random')
 def some_image():
-    return render_template('image_framed.html', img_url=url_for('serve_img', seed=randint(0, 1_000_000_000)))
+    return render_template('image_framed.html', img_url=url_for('serve_img', seed=random.randint(0, 1_000_000_000)))
 
 
 @app.route('/randomimg_<seed>.jpg')

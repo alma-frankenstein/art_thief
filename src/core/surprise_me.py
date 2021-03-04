@@ -2,14 +2,14 @@
 import random
 from typing import Tuple
 from urllib.parse import urljoin
+
 import requests
+from PIL.Image import Image
 from bs4 import BeautifulSoup
 
-from PIL.Image import Image
-
 from src.core.format_url import get_image_json
-from src.core.loggers import surprise_me_logger
 from src.core.get_and_save_pic import get_artist_title_from_artsy_url, get_image_from_artsy, save_pic
+from src.core.loggers import surprise_me_logger
 
 
 def get_collections(parsed_html, substring):
