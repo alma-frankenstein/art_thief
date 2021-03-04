@@ -45,10 +45,8 @@ class ArtsyImage:
         self.pixel_height = 0
         self._dz_index = self.MAX_DZNUM
 
-        self.artist_and_title = self._get_artist_and_title()
-        self.dztiles_url = self._get_dztiles_url()
-
-    def _get_artist_and_title(self) -> str:
+    @property
+    def artist_and_title(self) -> str:
         """
         Returns:
             The Title and Artist info for the image in question.
@@ -65,7 +63,8 @@ class ArtsyImage:
 
         return f"{title_and_year} by {artist_name}"
 
-    def _get_dztiles_url(self) -> Optional[str]:
+    @property
+    def dztiles_url(self) -> Optional[str]:
         """
         Returns:
             The template string url for the maximum resolution tiles of the image
@@ -80,20 +79,6 @@ class ArtsyImage:
             return dz_url
         else:
             raise ValueError("No High resolution image available for this image")
-
-    def get_related_image_url(self) -> str:
-        """
-        Get a random image similar to a given image from the json metadata
-
-        Returns:
-            The base url for another image related to the json_bootstrap data
-            ex: 'https://www.artsy.net/artwork/joshua-goode-pop-culture-bronze-sculpture-sabart-toothed-cat'
-        """
-        related_images = self.image_json[0][1]["json"]["data"]["artwork"]["layer"]["artworksConnection"]["edges"]
-        num_possible_related = len(related_images)
-        image_index = random.randint(0, num_possible_related - 1)
-        related_image_href = related_images[image_index]["node"]["href"]
-        return urljoin("https://www.artsy.net", related_image_href)
 
     def _get_image_json_data(self):
         """
@@ -220,8 +205,22 @@ class ArtsyImage:
         save_pic_logger.info(f"image saved as {image_path}.")
         return image_path
 
+    def get_related_image_url(self) -> str:
+        """
+        Get a random image similar to a given image from the json metadata
+
+        Returns:
+            The base url for another image related to the json_bootstrap data
+            ex: 'https://www.artsy.net/artwork/joshua-goode-pop-culture-bronze-sculpture-sabart-toothed-cat'
+        """
+        related_images = self.image_json[0][1]["json"]["data"]["artwork"]["layer"]["artworksConnection"]["edges"]
+        num_possible_related = len(related_images)
+        image_index = random.randint(0, num_possible_related - 1)
+        related_image_href = related_images[image_index]["node"]["href"]
+        return urljoin("https://www.artsy.net", related_image_href)
+
 
 if __name__ == "__main__":
-    x = ArtsyImage("https://www.artsy.net/artwork/bert-stern-pirelli-calendar-by-bert-stern")
+    x = ArtsyImage("https://www.artsy.net/artwork/jeremy-okai-davis-fix")
     x.fetch()
     x.image.show()
